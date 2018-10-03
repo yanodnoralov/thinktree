@@ -1808,15 +1808,18 @@
 		"oS": 0,
 		"uL": 1
 		},
-	"/sass/_plugins.css": {
-		"aP": 1,
+	"/sass/_plugins.scss": {
+		"aP": 0,
 		"bl": 0,
-		"ft": 16,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "/sass/_plugins-min.css",
+		"oAP": "/sass/_plugins.css",
 		"oF": 0,
-		"oS": 3
+		"oS": 0,
+		"uL": 1
 		},
 	"/sass/bootstrap-grid-scss/breakpoints/mixins/_breakpoints.scss": {
 		"aP": 0,

@@ -480,11 +480,50 @@ body.hide-elements {
 
 //home page products list
 
+.all-products-wrapper{
+	    margin-top: 60px;
+}
+
 
 #healthio{
 	.product-inner{
-		    background: url(img/TT/project-1-background.png);
-    background-size: contain;
+	background: url(img/TT/project-1-background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right center;
+
+	}
+}
+
+#wicis-sports{
+	.product-inner{
+	background: url(img/TT/project-2-background.png);
+     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 25% center;
+
+    
+    img{
+	    max-width:75%;
+    }
+	}
+}
+
+#luminaid{
+	.product-inner{
+	background: url(img/TT/project-3-background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right center;
+	}
+}
+
+#pica{
+	.product-inner{
+	background: url(img/TT/project-4-background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right center;
 	}
 }
 
@@ -503,13 +542,23 @@ body.hide-elements {
 	}
 }
 
+.product-row{
+	
+}
+
 
 .product-row {
-	padding: 160px 0;
+	padding: 100px 0;
 	position: relative;
 	.product-inner {
 		position: relative;
 		z-index: 4;
+		    padding: 75px 0px;
+		    
+		    img{
+			    text-align: center;
+		    }
+
 		
 		p{
 			margin:15px 0px 30px 0px;
@@ -544,9 +593,11 @@ body.hide-elements {
 	}
 }
 #sky-ss7-gateways {
+/*
 	&.has-curve-bottom {
 		padding-bottom: 600px !important;
 	}
+*/
 	.info-popup {
 		left: 20%;
 		margin-top: 45px;
@@ -1005,12 +1056,14 @@ h3.section-title {
 	    left: 0;
 	}
 }
+/*
 .has-curve-bottom {
 	padding-bottom: 760px !important;
 	&+.product-row .product-inner {
 		margin-top: -760px;
 	}
 }
+*/
 .container-wide {
 	max-width: none;
 	padding-left: 30px;
@@ -1417,15 +1470,19 @@ body:not(.home) .site-footer {
 	.py-standard-separator {
 		padding-bottom: 100px;
 	}
+/*
 	.has-curve-bottom {
 		padding-bottom: 560px !important;
 		&+.product-row .product-inner {
 			margin-top: -560px;
 		}
 	}
+*/
+/*
 	#sky-ss7-gateways.has-curve-bottom {
 	    padding-bottom: 360px !important;
 	}
+*/
 	#sky-pbx {
 		padding-bottom: 100px;
 	}
@@ -1437,6 +1494,23 @@ body:not(.home) .site-footer {
 	}
 }
 @media screen and (max-width: 767px) {
+	
+	.all-products-wrapper {
+    margin-top: 0px;
+}
+
+.product-row {
+    padding: 0px 0 0px;
+}
+
+#wicis-sports{
+	.product-inner{
+    
+    img{
+	    max-width:50% !important;
+    }
+	}
+}
 	
 	#header-contact{
 		display: none;
@@ -1484,8 +1558,12 @@ body:not(.home) .site-footer {
 
 	.product-row {
 		.product-inner {
-			.row.reverse-wrap-mobile {
-				flex-wrap: wrap-reverse;
+			.row{
+				flex-wrap: wrap-reverse
+			}
+			
+			.reverse-wrap-mobile {
+				flex-wrap: wrap;
 			}
 			.text-right, .text-right p {
 			    text-align: left !important;
@@ -1543,9 +1621,11 @@ body:not(.home) .site-footer {
 	#skyphone-softphone.product-row {
 		padding-bottom: 60px;
 	}
+/*
 	#sky-ss7-gateways.has-curve-bottom {
     	padding-bottom: 400px !important;
 	}
+*/
 	ul.ul-w-images {
 		display: block;
 		width: 100%;

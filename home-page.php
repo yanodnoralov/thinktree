@@ -105,11 +105,6 @@ get_header();
 				</div>
 			</div>
 			</div><!-- product-inner -->
-			<div class="separator-bottom separator-curve">
-				<svg class="seperator" viewBox="0 0 2957 1420.11" preserveAspectRatio="none">
-					<path d="M0,1282.11s521,401,1415-462,1248-857,1542-797v1397H0Z" style="fill:#ffffff"/>
-				</svg>
-			</div>
 		</div><!-- luminaid -->
 		<?php endif; ?>
 		

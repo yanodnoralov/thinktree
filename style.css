@@ -3378,9 +3378,34 @@ body.hide-elements {
   .home-hero span {
     color: #3ABA5D; }
 
+.all-products-wrapper {
+  margin-top: 60px; }
+
 #healthio .product-inner {
   background: url(img/TT/project-1-background.png);
-  background-size: contain; }
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right center; }
+
+#wicis-sports .product-inner {
+  background: url(img/TT/project-2-background.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 25% center; }
+  #wicis-sports .product-inner img {
+    max-width: 75%; }
+
+#luminaid .product-inner {
+  background: url(img/TT/project-3-background.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right center; }
+
+#pica .product-inner {
+  background: url(img/TT/project-4-background.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right center; }
 
 .product-tags {
   margin-top: 5px;
@@ -3396,11 +3421,14 @@ body.hide-elements {
     background-color: #3ABA5D; }
 
 .product-row {
-  padding: 160px 0;
+  padding: 100px 0;
   position: relative; }
   .product-row .product-inner {
     position: relative;
-    z-index: 4; }
+    z-index: 4;
+    padding: 75px 0px; }
+    .product-row .product-inner img {
+      text-align: center; }
     .product-row .product-inner p {
       margin: 15px 0px 30px 0px; }
   .product-row .span-line {
@@ -3424,12 +3452,15 @@ body.hide-elements {
     z-index: 2;
     position: relative; }
 
-#sky-ss7-gateways.has-curve-bottom {
-  padding-bottom: 600px !important; }
-
-#sky-ss7-gateways .info-popup {
-  left: 20%;
-  margin-top: 45px; }
+#sky-ss7-gateways {
+  /*
+	&.has-curve-bottom {
+		padding-bottom: 600px !important;
+	}
+*/ }
+  #sky-ss7-gateways .info-popup {
+    left: 20%;
+    margin-top: 45px; }
 
 #sky-session-controller .product-inner {
   margin-top: -400px; }
@@ -3822,11 +3853,14 @@ h3.section-title {
     top: -1px;
     left: 0; }
 
+/*
 .has-curve-bottom {
-  padding-bottom: 760px !important; }
-  .has-curve-bottom + .product-row .product-inner {
-    margin-top: -760px; }
-
+	padding-bottom: 760px !important;
+	&+.product-row .product-inner {
+		margin-top: -760px;
+	}
+}
+*/
 .container-wide {
   max-width: none;
   padding-left: 30px;
@@ -4153,12 +4187,19 @@ body:not(.home) .site-footer {
     padding: 100px 0 0px; }
   .py-standard-separator {
     padding-bottom: 100px; }
-  .has-curve-bottom {
-    padding-bottom: 560px !important; }
-    .has-curve-bottom + .product-row .product-inner {
-      margin-top: -560px; }
-  #sky-ss7-gateways.has-curve-bottom {
-    padding-bottom: 360px !important; }
+  /*
+	.has-curve-bottom {
+		padding-bottom: 560px !important;
+		&+.product-row .product-inner {
+			margin-top: -560px;
+		}
+	}
+*/
+  /*
+	#sky-ss7-gateways.has-curve-bottom {
+	    padding-bottom: 360px !important;
+	}
+*/
   #sky-pbx {
     padding-bottom: 100px; } }
 
@@ -4167,6 +4208,12 @@ body:not(.home) .site-footer {
     font-size: 35px; } }
 
 @media screen and (max-width: 767px) {
+  .all-products-wrapper {
+    margin-top: 0px; }
+  .product-row {
+    padding: 0px 0 0px; }
+  #wicis-sports .product-inner img {
+    max-width: 50% !important; }
   #header-contact {
     display: none; }
   .container-wide {
@@ -4194,8 +4241,10 @@ body:not(.home) .site-footer {
     left: auto; }
   .logo svg {
     width: 60px; }
-  .product-row .product-inner .row.reverse-wrap-mobile {
+  .product-row .product-inner .row {
     flex-wrap: wrap-reverse; }
+  .product-row .product-inner .reverse-wrap-mobile {
+    flex-wrap: wrap; }
   .product-row .product-inner .text-right, .product-row .product-inner .text-right p {
     text-align: left !important; }
     .product-row .product-inner .text-right .span-line, .product-row .product-inner .text-right p .span-line {
@@ -4228,8 +4277,11 @@ body:not(.home) .site-footer {
       height: 250px; }
   #skyphone-softphone.product-row {
     padding-bottom: 60px; }
-  #sky-ss7-gateways.has-curve-bottom {
-    padding-bottom: 400px !important; }
+  /*
+	#sky-ss7-gateways.has-curve-bottom {
+    	padding-bottom: 400px !important;
+	}
+*/
   ul.ul-w-images {
     display: block;
     width: 100%; }

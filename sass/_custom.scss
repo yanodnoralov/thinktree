@@ -1,5 +1,5 @@
 @import "custom-mixins";
-@import "plugins";
+@import "_plugins.css";
 
 //global vars
 $color-primary: #2a57be;
@@ -12,9 +12,9 @@ $transition-links-out: all 0.45s ease-out;
 $transition-header: all 0.2s ease-out;
 
 //typography
-$font-body: "futura-pt",sans-serif;
-$font-condensed: "futura-pt-condensed",sans-serif;
-$font-headings: "proxima-nova",sans-serif;
+$font-body: "work-sans",sans-serif;
+$font-condensed: "proxima-nova-condensed",sans-serif;
+$font-headings: "proxima-nova-condensed",sans-serif;
 * {
 	-webkit-font-smoothing: antialiased !important;
     -moz-osx-font-smoothing: grayscale !important;
@@ -22,7 +22,7 @@ $font-headings: "proxima-nova",sans-serif;
 body {
 	font-family: $font-body;
 	font-size: 20px;
-	font-weight: 400;
+	font-weight: 300;
 	color: $color-body-text;
 }
 @for $index from 1 through 6 {

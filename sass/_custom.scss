@@ -2,7 +2,7 @@
 @import "_plugins.css";
 
 //global vars
-$color-primary: #2a57be;
+$color-primary: #3ABA5D;
 $color-headings: #000;
 $color-body-text: #686868;
 $color-primary-lighter: #0ad0fd;
@@ -114,7 +114,7 @@ body.hide-elements {
 .site-header {
 	position: fixed;
 	width: 100%;
-	padding: 15px 0;
+	padding: 20px 0;
 	z-index: 9;
 	#right-menu {
 		align-items: center;
@@ -324,7 +324,7 @@ body.hide-elements {
 		transition: $transition-header;
 	}
 	width: 180px;
-	height: 55px;
+	height: auto;
 }
 #site-navigation {
 	background: transparent;
@@ -1078,7 +1078,6 @@ h3.section-title {
 }
 a.btn-header {
 	border: 1px solid white;
-	background: rgba(255,255,255,0.1);
 	padding: 8px 25px;
 	min-width: 0;
 	font-size: 0.75em;
@@ -1095,6 +1094,7 @@ a.btn-header {
 	&:hover {
 		color: white !important;
 		border-color: $color-primary !important;
+		background-color:$color-primary;
 	}
 }
 
@@ -1408,6 +1408,10 @@ body:not(.home) .site-footer {
 	}
 }
 @media screen and (max-width: 767px) {
+	
+	#header-contact{
+		display: none;
+	}
 	.container-wide {
 		padding-left: 15px;
 		padding-right: 15px;
@@ -1424,7 +1428,6 @@ body:not(.home) .site-footer {
 		font-size: 1.7em;
 	}
 	.home-hero {
-    	padding: 6em 0 6em 0;
     	h3 {
 	    	font-size: 1.3em;
     	}

@@ -2973,7 +2973,7 @@ a {
     text-decoration: none;
     outline: 0; }
   a:visited {
-    color: #2a57be; }
+    color: #3ABA5D; }
 
 b,
 strong {
@@ -3004,7 +3004,7 @@ body.hide-elements {
 .site-header {
   position: fixed;
   width: 100%;
-  padding: 15px 0;
+  padding: 20px 0;
   z-index: 9; }
   .site-header #right-menu {
     align-items: center;
@@ -3161,7 +3161,7 @@ body.hide-elements {
 
 .logo {
   width: 180px;
-  height: 55px; }
+  height: auto; }
   .logo a {
     display: block; }
   .logo .white-fill {
@@ -3348,7 +3348,7 @@ body.hide-elements {
       margin-left: -81px;
       text-align: center; }
       #sky-pbx .img-pbx .sky-dance-globe span {
-        background: #2a57be;
+        background: #3ABA5D;
         z-index: 2;
         padding: 2px 8px;
         border-radius: 6px;
@@ -3512,7 +3512,7 @@ body.hide-elements {
   .form-wrap p {
     margin-bottom: 20px; }
   .form-wrap input.btn {
-    color: #2a57be;
+    color: #3ABA5D;
     padding: 12px 30px;
     min-width: 200px;
     font-size: 0.8em;
@@ -3523,11 +3523,11 @@ body.hide-elements {
     line-height: 24px;
     cursor: pointer; }
     .form-wrap input.btn:hover {
-      background: #2a57be;
-      border-color: #2a57be; }
+      background: #3ABA5D;
+      border-color: #3ABA5D; }
     .form-wrap input.btn:focus {
       outline: none;
-      border-color: #2a57be; }
+      border-color: #3ABA5D; }
 
 .site-footer {
   background: #f6fafb;
@@ -3664,7 +3664,7 @@ h3.section-title {
 
 .span-line {
   display: block;
-  background-color: #2a57be;
+  background-color: #3ABA5D;
   width: 25px;
   height: 3px;
   border-radius: 5px;
@@ -3776,7 +3776,7 @@ h3.section-title {
     position: absolute;
     left: 0;
     top: 0;
-    background: #2a57be;
+    background: #3ABA5D;
     transition: all 0.45s ease-out;
     z-index: -1;
     transform-origin: top; }
@@ -3793,12 +3793,12 @@ h3.section-title {
   .btn-outline:hover {
     color: white !important; }
   .btn-outline.btn-primary {
-    border-color: #2a57be; }
+    border-color: #3ABA5D; }
 
 .btn-primary {
-  color: #2a57be; }
+  color: #3ABA5D; }
   .btn-primary:visited {
-    color: #2a57be; }
+    color: #3ABA5D; }
 
 .btn-white {
   color: white;
@@ -3806,11 +3806,10 @@ h3.section-title {
   .btn-white:visited {
     color: white; }
   .btn-white:hover {
-    border-color: #2a57be; }
+    border-color: #3ABA5D; }
 
 a.btn-header {
   border: 1px solid white;
-  background: rgba(255, 255, 255, 0.1);
   padding: 8px 25px;
   min-width: 0;
   font-size: 0.75em;
@@ -3825,7 +3824,8 @@ a.btn-header {
     width: 101%; }
   a.btn-header:hover {
     color: white !important;
-    border-color: #2a57be !important; }
+    border-color: #3ABA5D !important;
+    background-color: #3ABA5D; }
 
 .grey-blue-bg {
   background: #f4f7fc; }
@@ -3918,8 +3918,8 @@ a.btn-header {
           display: flex; }
 
 .content-area a.btn {
-  border: 1px solid #2a57be;
-  color: #2a57be; }
+  border: 1px solid #3ABA5D;
+  color: #3ABA5D; }
   .content-area a.btn.file {
     background-image: url("./img/file-icon.png");
     background-size: 17px;
@@ -3927,7 +3927,7 @@ a.btn-header {
     background-repeat: no-repeat;
     padding: 15px 35px 15px 70px; }
   .content-area a.btn:hover {
-    color: #2a57be; }
+    color: #3ABA5D; }
 
 .product-content-row {
   margin-top: 3.5em; }
@@ -4061,6 +4061,8 @@ body:not(.home) .site-footer {
     font-size: 35px; } }
 
 @media screen and (max-width: 767px) {
+  #header-contact {
+    display: none; }
   .container-wide {
     padding-left: 15px;
     padding-right: 15px; }
@@ -4070,12 +4072,10 @@ body:not(.home) .site-footer {
       text-align: center !important; }
   h2, .h2 {
     font-size: 1.7em; }
-  .home-hero {
-    padding: 6em 0 6em 0; }
-    .home-hero h3 {
-      font-size: 1.3em; }
-    .home-hero .bg-video {
-      display: none; }
+  .home-hero h3 {
+    font-size: 1.3em; }
+  .home-hero .bg-video {
+    display: none; }
   body {
     font-size: 19px; }
   .huge-title {

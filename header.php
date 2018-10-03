@@ -88,14 +88,14 @@
 				</nav><!-- #site-navigation -->
 				
 				<nav id="right-menu">
-					<a class="btn btn-header" href="
+					<a class="btn btn-header" id="header-contact" href="
 						<?php if ( is_front_page() ) {	
 							echo '#contact';
 						} else {
 							echo '' . esc_url( home_url( '/' ) ) . '#contact';
 						}?>
 					">
-					<span class="filler"></span>Contact Us</a>
+					Contact Us</a>
 					
 					<div id="nav-toggle">
 					<svg xmlns="http://www.w3.org/2000/svg" width="53" height="24.05" viewBox="0 0 43 24.05"><rect id="bar2" x="5.63" y="11" width="32.25" height="2.05"/><rect id="bar3" x="5.63" y="18" width="32.25" height="2.05"/><rect id="dot2" x="40.95" y="18" width="2.05" height="2.05"/><rect id="bar1" x="5.63" y="4" width="32.25" height="2.05"/><rect id="dot1" y="4" width="2.05" height="2.05"/></svg>

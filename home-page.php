@@ -26,17 +26,17 @@ get_header();
 			<?php $heroContent = get_field('hero_content');
 			if( $heroContent ): ?>
 				<h1 class="huge-title rellax" data-rellax-speed="-1" data-rellax-percentage="0.5">
-					We build extraordinary digital products.
+					We build <span>extraordinary</span> digital products.
 				</h1>
 			<?php endif; ?>
 		</div>
-		<div class="bg-img">
-			<img src="<?php echo get_template_directory_uri()?>/img/TT/hero-placeholder.jpg">
-		</div>
+
+<!--
 		<div class="separator-bottom">
 			<svg class="seperator seperator-white" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" viewBox="0 0 2800 109"><path d="M2800,0V109H0V0C0,59.5,626.81,107.73,1400,107.73S2800,59.5,2800,0Z" style="fill:#fff"/>
 </svg>
 		</div>
+-->
 	</div><!-- home-hero -->
 	
 	

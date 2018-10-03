@@ -65,7 +65,7 @@
 				<div class="site-branding align-self-start">
 					<div class="logo">
 							<a href="<?php echo get_home_url(); ?>">
-								<img src="/thinktree/wp-content/themes/yan-base/img/TT/thinktree-logo.svg">
+								<img src="<?php echo get_template_directory_uri()?>/img/TT/thinktree-logo.svg">
 						</a>
 					</div>
 					<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
@@ -76,12 +76,7 @@
 					<?php endif; ?>
 				</div><!-- .site-branding -->
 				
-				<div id="nav-toggle">
-					<svg xmlns="http://www.w3.org/2000/svg" width="53" height="24.05" viewBox="0 0 43 24.05"><rect id="bar2" x="5.63" y="11" width="32.25" height="2.05"/><rect id="bar3" x="5.63" y="18" width="32.25" height="2.05"/><rect id="dot2" x="40.95" y="18" width="2.05" height="2.05"/><rect id="bar1" x="5.63" y="4" width="32.25" height="2.05"/><rect id="dot1" y="4" width="2.05" height="2.05"/></svg>
-					
-<!-- 					<svg xmlns="http://www.w3.org/2000/svg" width="53" height="24.05" viewBox="0 0 43 24.05"><rect id="bar2" x="5.63" y="7" width="32.25" height="2.05"/><rect id="bar3" x="5.63" y="14" width="32.25" height="2.05"/><rect id="dot2" x="40.95" y="14" width="2.05" height="2.05"/><rect id="bar1" x="5.63" width="32.25" height="2.05"/><rect id="dot1" width="2.05" height="2.05"/></svg> -->
-				</div>
-		
+						
 				<nav id="site-navigation" class="main-navigation">
 <!-- 					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'yan-base' ); ?></button> -->
 					<?php
@@ -92,7 +87,7 @@
 					?>
 				</nav><!-- #site-navigation -->
 				
-				<nav id="right-menu" class="justify-self-end">
+				<nav id="right-menu">
 					<a class="btn btn-header" href="
 						<?php if ( is_front_page() ) {	
 							echo '#contact';
@@ -101,6 +96,13 @@
 						}?>
 					">
 					<span class="filler"></span>Contact Us</a>
+					
+					<div id="nav-toggle">
+					<svg xmlns="http://www.w3.org/2000/svg" width="53" height="24.05" viewBox="0 0 43 24.05"><rect id="bar2" x="5.63" y="11" width="32.25" height="2.05"/><rect id="bar3" x="5.63" y="18" width="32.25" height="2.05"/><rect id="dot2" x="40.95" y="18" width="2.05" height="2.05"/><rect id="bar1" x="5.63" y="4" width="32.25" height="2.05"/><rect id="dot1" y="4" width="2.05" height="2.05"/></svg>
+					
+<!-- 					<svg xmlns="http://www.w3.org/2000/svg" width="53" height="24.05" viewBox="0 0 43 24.05"><rect id="bar2" x="5.63" y="7" width="32.25" height="2.05"/><rect id="bar3" x="5.63" y="14" width="32.25" height="2.05"/><rect id="dot2" x="40.95" y="14" width="2.05" height="2.05"/><rect id="bar1" x="5.63" width="32.25" height="2.05"/><rect id="dot1" width="2.05" height="2.05"/></svg> -->
+				</div>
+
 				</nav>
 			</div>
 		</div>

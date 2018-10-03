@@ -479,12 +479,41 @@ body.hide-elements {
 
 
 //home page products list
+
+
+#healthio{
+	.product-inner{
+		    background: url(img/TT/project-1-background.png);
+    background-size: contain;
+	}
+}
+
+.product-tags{
+	margin-top:5px;
+	display: flex;
+	div{
+	font-size:12px;
+	text-transform:uppercase;
+	font-weight: 400;
+	padding:3px 10px;
+	border-radius: 6px;
+	margin-right:10px;
+	color:#ffffff;
+	background-color:$color-primary;
+	}
+}
+
+
 .product-row {
 	padding: 160px 0;
 	position: relative;
 	.product-inner {
 		position: relative;
 		z-index: 4;
+		
+		p{
+			margin:15px 0px 30px 0px;
+		}
 	}
 	.span-line {
 		margin: 10px 0 6px;

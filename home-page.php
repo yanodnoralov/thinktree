@@ -30,13 +30,6 @@ get_header();
 				</h1>
 			<?php endif; ?>
 		</div>
-
-<!--
-		<div class="separator-bottom">
-			<svg class="seperator seperator-white" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" viewBox="0 0 2800 109"><path d="M2800,0V109H0V0C0,59.5,626.81,107.73,1400,107.73S2800,59.5,2800,0Z" style="fill:#fff"/>
-</svg>
-		</div>
--->
 	</div><!-- home-hero -->
 	
 	
@@ -44,93 +37,70 @@ get_header();
 		
 		<?php $product1 = get_field('product_row_1');
 		if( $product1 ): ?>
-		<div id="sky-dance" class="product-row has-curve-bottom ">
+		<div id="healthio" class="product-row has-curve-bottom ">
 			<div class="product-inner">
 			<div class="container">
 				<div class="row d-sm-flex align-items-center reverse-wrap-mobile">
 					<div class="col-md-6">
-						<div class="img-circle-group hide">
-							<div class="circle-element"></div>
-							<img width="384" height="384" class="spin rellax" data-rellax-speed="-1"  data-rellax-percentage="0.5" src="<?php echo get_template_directory_uri(); ?>/img/sky-dance-web.png">
-						</div>
+							<img src="<?php echo get_template_directory_uri(); ?>/img/TT/project-1-mockup.png">
 		            </div>            
 		            <div class="col-md-6 hide pl-md-0 rellax" data-rellax-speed=".75"  data-rellax-percentage="0.5">
-		                <p class="h6"><?php echo $product1['subtitle']; ?></p>
-		                <span class="span-line"></span>
-		                <h2 class="rellax" data-rellax-speed="-.25"  data-rellax-percentage="0.2"><?php echo $product1['title']; ?></h2>
-		                <p><?php echo $product1['short_description']; ?></p>
-		                <a href="<?php echo $product1['learn_more_link']; ?>" class="btn btn-outline btn-primary"><span class="filler"></span>Learn More</a>
+		                <h2>Healthio</h2>
+		                <div class="product-tags">
+			                <div>Mobile App</div>
+			                <div>Development</div>
+		                </div>
+		                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cras mattis consectetur purus sit amet fermentum. 						Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
+		                <a href="<?php echo $product1['learn_more_link']; ?>" class="btn btn-outline btn-primary"><span class="filler"></span>View Project</a>
 		            </div>
 				</div>
 			</div>
 			</div><!-- product-inner -->
-			<div class="separator-bottom separator-curve">
-				<svg class="seperator" viewBox="0 0 2957 1420.11" preserveAspectRatio="none">
-					<path d="M0,1282.11s521,401,1415-462,1248-857,1542-797v1397H0Z" style="fill:#f4f7fc"/>
-				</svg>
-			</div>
-		</div><!-- skydance -->
+		</div><!-- healthio -->
 		<?php endif; ?>
 		
 		<?php $product2 = get_field('product_row_2');
 		if( $product2 ): ?>
-		<div id="skyphone-softphone" class="product-row grey-blue-bg">
+		<div id="wicis-sports" class="product-row">
 			<div class="product-inner">
 			<div class="container">
 				<div class="row d-sm-flex align-items-center">        
-		            <div class="col-md-6 hide text-right pr-md-0 rellax" data-rellax-speed=".75"  data-rellax-percentage="0.5">
-		                <p class="h6"><?php echo $product2['subtitle']; ?></p>
-		                <span class="span-line float-right"></span>
-		                <h2 class="rellax" data-rellax-speed="-.25"  data-rellax-percentage="0.2"><?php echo $product2['title']; ?></h2>
-		                <p><?php echo $product2['short_description']; ?></p>
-		                <a href="<?php echo $product2['learn_more_link']; ?>" class="btn btn-outline btn-primary"><span class="filler"></span>Learn More</a>
+		            <div class="col-md-6 hide pr-md-0 rellax" data-rellax-speed=".75"  data-rellax-percentage="0.5">
+		                <h2>WiCis Sports</h2>
+		                <div class="product-tags">
+			                <div>Mobile App</div>
+		                </div>
+		                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cras mattis consectetur purus sit amet fermentum. 						Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
+		                <a href="<?php echo $product2['learn_more_link']; ?>" class="btn btn-outline btn-primary"><span class="filler"></span>View Project</a>
 		            </div>
 		            <div class="col-md-6">
-						<div class="img-phone hide">
-							<div class="info-popup">
-								<div class="popup-content">
-									<?php echo $product2['popup_text']; ?>
-								</div>
-								<svg xmlns="http://www.w3.org/2000/svg" width="7.07" height="17" viewBox="0 0 7.07 17"><path d="M2.46,7.37a2,2,0,0,0,.14-.64c0-.3-.14-.43-.37-.43-.53,0-.94.47-1.39,1.7L.41,9.1H0L.59,7.45a3,3,0,0,1,3-2.21C5,5.24,5.49,6,5.49,7a4.06,4.06,0,0,1-.23,1.26L3,14.86a1.9,1.9,0,0,0-.14.63.39.39,0,0,0,.43.44c.39,0,.83-.31,1.36-1.7l.39-1h.41L4.9,14.78A2.94,2.94,0,0,1,2,17c-1.33,0-2-.65-2-1.78a5.38,5.38,0,0,1,.33-1.65ZM5.48,0c1,0,1.59.52,1.59,1.35a2.09,2.09,0,0,1-2.23,2c-1,0-1.57-.51-1.57-1.31A2,2,0,0,1,5.48,0Z" style="fill:#fbfcff"/>
-								</svg>
-							</div>
-							<img width="587" height="978" class="phone-full" src="<?php echo get_template_directory_uri(); ?>/img/phone-app-selective.png">
-<!--
-							<img width="242" height="652" class="phone-left" src="<?php echo get_template_directory_uri(); ?>/img/phone-app-left.png">
-							<img width="566" height="845" class="phone-right" src="<?php echo get_template_directory_uri(); ?>/img/phone-app-right.png">
--->
+							<img src="<?php echo get_template_directory_uri(); ?>/img/TT/project-2-mockup.png">
 						</div>
 		            </div>    
 				</div>
 			</div>
 			</div><!-- product-inner -->
-		</div><!-- skyphone -->
+		</div><!-- wicis -->
 		<?php endif; ?>
 		
 		<?php $product3 = get_field('product_row_3');
 		if( $product3 ): ?>
-		<div id="sky-ss7-gateways" class="product-row has-curve-bottom grey-blue-bg pt-0">
+		<div id="luminaid" class="product-row has-curve-bottom pt-0">
 			<div class="product-inner ">
 			<div class="container">
 				<div class="row d-sm-flex align-items-center reverse-wrap-mobile">
 					<div class="col-md-6">
-						<div class="img-simple hide">
-							<div class="info-popup">
-								<div class="popup-content">
-									<?php echo $product3['popup_text']; ?>
-								</div>
-								<svg xmlns="http://www.w3.org/2000/svg" width="7.07" height="17" viewBox="0 0 7.07 17"><path d="M2.46,7.37a2,2,0,0,0,.14-.64c0-.3-.14-.43-.37-.43-.53,0-.94.47-1.39,1.7L.41,9.1H0L.59,7.45a3,3,0,0,1,3-2.21C5,5.24,5.49,6,5.49,7a4.06,4.06,0,0,1-.23,1.26L3,14.86a1.9,1.9,0,0,0-.14.63.39.39,0,0,0,.43.44c.39,0,.83-.31,1.36-1.7l.39-1h.41L4.9,14.78A2.94,2.94,0,0,1,2,17c-1.33,0-2-.65-2-1.78a5.38,5.38,0,0,1,.33-1.65ZM5.48,0c1,0,1.59.52,1.59,1.35a2.09,2.09,0,0,1-2.23,2c-1,0-1.57-.51-1.57-1.31A2,2,0,0,1,5.48,0Z" style="fill:#fbfcff"/>
-								</svg>
-							</div>
-							<img width="484" height="364" class="" src="<?php echo get_template_directory_uri(); ?>/img/sky-ss7-gateway.jpg">
-						</div>
+							<img src="<?php echo get_template_directory_uri(); ?>/img/TT/project-3-mockup.png">
+
 		            </div>            
 		            <div class="col-md-6 hide pl-md-0 rellax" data-rellax-speed=".75" data-rellax-percentage="0.5">
-			            <p class="h6"><?php echo $product3['subtitle']; ?></p>
-		                <span class="span-line"></span>
-		                <h2 class="rellax" data-rellax-speed="-.25"  data-rellax-percentage="0.2"><?php echo $product3['title']; ?></h2>
-		                <p><?php echo $product3['short_description']; ?></p>
-		                <a href="<?php echo $product3['learn_more_link']; ?>" class="btn btn-outline btn-primary"><span class="filler"></span>Learn More</a>
+		                <h2>Luminaid</h2>
+		                <div class="product-tags">
+			                <div>Mobile App</div>
+			                <div>UI/UX Design</div>
+		                </div>
+		                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cras mattis consectetur purus sit amet fermentum. 						Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
+		                <a href="<?php echo $product3['learn_more_link']; ?>" class="btn btn-outline btn-primary"><span class="filler"></span>View Project</a>
 		            </div>
 				</div>
 			</div>
@@ -140,68 +110,33 @@ get_header();
 					<path d="M0,1282.11s521,401,1415-462,1248-857,1542-797v1397H0Z" style="fill:#ffffff"/>
 				</svg>
 			</div>
-		</div><!-- skydance -->
+		</div><!-- luminaid -->
 		<?php endif; ?>
 		
 		<?php $product4 = get_field('product_row_4');
 		if( $product4 ): ?>
-		<div id="sky-session-controller" class="product-row">
+		<div id="pica" class="product-row">
 			<div class="product-inner">
 			<div class="container">
 				<div class="row d-sm-flex align-items-center">           
-		            <div class="col-md-6 hide text-right pr-md-0 rellax" data-rellax-speed=".75" data-rellax-percentage="0.5">
-			            <p class="h6"><?php echo $product4['subtitle']; ?></p>
-		                <span class="span-line float-right"></span>
-		                <h2 class="rellax" data-rellax-speed="-.25"  data-rellax-percentage="0.2"><?php echo $product4['title']; ?></h2>
-		                <p><?php echo $product4['short_description']; ?></p>
-		                <a href="<?php echo $product4['learn_more_link']; ?>" class="btn btn-outline btn-primary"><span class="filler"></span>Learn More</a>
+		            <div class="col-md-6 hide pr-md-0 rellax" data-rellax-speed=".75" data-rellax-percentage="0.5">
+		                <h2>Pica</h2>
+		                <div class="product-tags">
+			                <div>Mobile App</div>
+			                <div>UI/UX Design</div>
+		                </div>
+		                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cras mattis consectetur purus sit amet fermentum. 						Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
+		                <a href="<?php echo $product4['learn_more_link']; ?>" class="btn btn-outline btn-primary"><span class="filler"></span>View Project</a>
 		            </div>
-		            <div class="col-md-6 text-right">
-						<div class="img-simple hide">
-							<div class="info-popup">
-								<div class="popup-content">
-									<?php echo $product4['popup_text']; ?>
-								</div>
-								<svg xmlns="http://www.w3.org/2000/svg" width="7.07" height="17" viewBox="0 0 7.07 17"><path d="M2.46,7.37a2,2,0,0,0,.14-.64c0-.3-.14-.43-.37-.43-.53,0-.94.47-1.39,1.7L.41,9.1H0L.59,7.45a3,3,0,0,1,3-2.21C5,5.24,5.49,6,5.49,7a4.06,4.06,0,0,1-.23,1.26L3,14.86a1.9,1.9,0,0,0-.14.63.39.39,0,0,0,.43.44c.39,0,.83-.31,1.36-1.7l.39-1h.41L4.9,14.78A2.94,2.94,0,0,1,2,17c-1.33,0-2-.65-2-1.78a5.38,5.38,0,0,1,.33-1.65ZM5.48,0c1,0,1.59.52,1.59,1.35a2.09,2.09,0,0,1-2.23,2c-1,0-1.57-.51-1.57-1.31A2,2,0,0,1,5.48,0Z" style="fill:#fbfcff"/>
-								</svg>
-							</div>
-							<img width="460" height="412" class="" src="<?php echo get_template_directory_uri(); ?>/img/session-controller.jpg">
-						</div>
+		            <div class="col-md-6">
+			            <img src="<?php echo get_template_directory_uri(); ?>/img/TT/project-4-mockup.png">
 		            </div> 
 				</div>
 			</div>
 			</div><!-- product-inner -->
-		</div><!-- session controller -->
+		</div><!-- pica-->
 		<?php endif; ?>
-		
-		<?php $product5 = get_field('product_row_5');
-		if( $product5 ): ?>
-		<div id="sky-pbx" class="product-row pt-lg-0 ">
-			<div class="product-inner">
-			<div class="container">
-				<div class="row d-sm-flex align-items-center reverse-wrap-mobile">
-					<div class="col-md-6">
-						<div class="img-pbx hide">
-							<div class="sky-dance-globe">
-								<span>Sky DANCE</span>
-								<img width="162" height="162" class="spin" src="<?php echo get_template_directory_uri(); ?>/img/sky-dance-globe-sm8.png">
-							</div>
-							<img width="461" height="449" class="" src="<?php echo get_template_directory_uri(); ?>/img/sky-pbx-img.jpg">
-						</div>
-		            </div>      
-		            <div class="col-md-6 hide pr-md-0 rellax" data-rellax-speed=".75" data-rellax-percentage="0.5">
-		                <p class="h6"><?php echo $product5['subtitle']; ?></p>
-		                <span class="span-line"></span>
-		                <h2 class="rellax" data-rellax-speed="-.25" data-rellax-percentage="0.2"><?php echo $product5['title']; ?></h2>
-		                <p><?php echo $product5['short_description']; ?></p>
-		                <a href="<?php echo $product5['learn_more_link']; ?>" class="btn btn-outline btn-primary"><span class="filler"></span>Learn More</a>
-		            </div>
-				</div>
-			</div>
-			</div><!-- product-inner -->
-		</div><!-- sky pbx -->
-		<?php endif; ?>
-		
+				
 	</div><!-- all-products-wrapper -->
 	
 	<?php 
@@ -365,7 +300,7 @@ get_header();
 		</div>
 	</div><!-- our-clients -->
 	
-	<div id="about-us" class="about-us py-standard-separator pt-separator-above grey-blue-bg pb-0 ">
+	<div id="about-us" class="about-us py-standard-separator pt-separator-above pb-0 ">
 	    <div class="container">
 	    <h3 class="text-center section-title">About Us</h3>
 			<div class="row d-sm-flex align-items-center">          

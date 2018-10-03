@@ -51,7 +51,6 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
-@import url(_plugins.css);
 html {
   line-height: 1.15;
   /* 1 */
@@ -2901,6 +2900,94 @@ html {
 .invisible {
   visibility: hidden !important; }
 
+/* Slider */
+.slick-slider {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+  -khtml-user-select: none;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent; }
+
+.slick-list {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  margin: 0;
+  padding: 0; }
+
+.slick-list:focus {
+  outline: none; }
+
+.slick-list.dragging {
+  cursor: pointer;
+  cursor: hand; }
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0); }
+
+.slick-track {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+.slick-track:before,
+.slick-track:after {
+  display: table;
+  content: ''; }
+
+.slick-track:after {
+  clear: both; }
+
+.slick-loading .slick-track {
+  visibility: hidden; }
+
+.slick-slide {
+  display: none;
+  float: left;
+  height: 100%;
+  min-height: 1px; }
+
+[dir='rtl'] .slick-slide {
+  float: right; }
+
+.slick-slide img {
+  display: block; }
+
+.slick-slide.slick-loading img {
+  display: none; }
+
+.slick-slide.dragging img {
+  pointer-events: none; }
+
+.slick-initialized .slick-slide {
+  display: block; }
+
+.slick-loading .slick-slide {
+  visibility: hidden; }
+
+.slick-vertical .slick-slide {
+  display: block;
+  height: auto;
+  border: 1px solid transparent; }
+
+.slick-arrow.slick-hidden {
+  display: none; }
+
 * {
   -webkit-font-smoothing: antialiased !important;
   -moz-osx-font-smoothing: grayscale !important; }
@@ -2966,7 +3053,7 @@ h6, .h6 {
   font-size: .8em; }
 
 .huge-title {
-  font-size: 5em;
+  font-size: 3.8em;
   line-height: 1em; }
 
 a {
@@ -3038,12 +3125,10 @@ body.hide-elements {
   .site-header #nav-toggle {
     align-self: center;
     width: 53px;
-    position: absolute;
-    left: 50%;
-    margin-left: -26.5px;
+    margin-left: 40px;
     cursor: pointer;
     z-index: 13;
-    margin-top: 4px; }
+    margin-top: 6px; }
     .site-header #nav-toggle svg rect {
       transition: all 0.45s ease-out;
       transition-delay: 250ms; }
@@ -3164,7 +3249,7 @@ body.hide-elements {
   display: none; }
 
 .logo {
-  width: 76px;
+  width: 180px;
   height: 55px; }
   .logo a {
     display: block; }
@@ -3278,7 +3363,9 @@ body.hide-elements {
   text-align: center;
   position: relative;
   padding: 10em 0 10em 0;
-  min-height: 100vh; }
+  min-height: 100vh;
+  background: url(img/TT/hero-placeholder.jpg);
+  background-size: cover; }
   .home-hero .bg-overlay {
     background: #00b5e9;
     background: -webkit-linear-gradient(top, #00b5e9, #1839c6);
@@ -3290,6 +3377,8 @@ body.hide-elements {
     margin-bottom: 30px; }
   .home-hero h3 {
     font-size: 1.5em; }
+  .home-hero span {
+    color: #3ABA5D; }
 
 .product-row {
   padding: 160px 0;
@@ -3516,7 +3605,7 @@ body.hide-elements {
     padding: 12px 30px;
     min-width: 200px;
     font-size: 0.8em;
-    font-family: "proxima-nova-condensed", sans-serif;
+    font-family: "work-sans", sans-serif;
     background: none;
     border-radius: 0;
     margin-top: -5px;
@@ -3762,7 +3851,7 @@ h3.section-title {
   text-align: center;
   font-size: 0.8em;
   letter-spacing: 1px;
-  font-family: "proxima-nova-condensed", sans-serif;
+  font-family: "work-sans", sans-serif;
   font-weight: 500;
   text-transform: uppercase;
   transition: all 0.45s ease-out;
@@ -3815,7 +3904,7 @@ a.btn-header {
   min-width: 0;
   font-size: 0.75em;
   letter-spacing: 1px;
-  font-family: "proxima-nova-condensed", sans-serif;
+  font-family: "work-sans", sans-serif;
   font-weight: 500;
   text-transform: uppercase;
   color: white;
@@ -4031,7 +4120,7 @@ body:not(.home) .site-footer {
   .overview {
     max-width: 100%; }
   .huge-title {
-    font-size: 4em; }
+    font-size: 3.8em; }
   h2, .h2 {
     font-size: 2em; }
   h4, .h4 {
@@ -4088,8 +4177,6 @@ body:not(.home) .site-footer {
     left: auto; }
   .logo svg {
     width: 60px; }
-  #right-menu {
-    display: none !important; }
   .product-row .product-inner .row.reverse-wrap-mobile {
     flex-wrap: wrap-reverse; }
   .product-row .product-inner .text-right, .product-row .product-inner .text-right p {

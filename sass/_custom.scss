@@ -652,12 +652,38 @@ body.hide-elements {
 
 
 //our services
+
+
 .services {
 	background-color: #2168d4;
-	background-image: url("./img/services-bg-sm.jpg");
-	background-size: 100%;
+    background-image: url(/img/tt/services.jpg);
+    background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center bottom;
+	
+	
+	#services-content{
+		flex-direction:row-reverse;
+	}
+	
+	
+	*{
+		color:#ffffff;
+	}
+	
+	
+	.slick-slider{
+		width:100%;
+	}
+	
+	
+	.slick-track{
+		width:960px;
+		height:600px;
+		display:flex;
+		flex-direction:column;
+	}
+
 	.services-nav-wrapper {
 		color: white;
 		text-align: center;
@@ -670,19 +696,25 @@ body.hide-elements {
 			transform: scale(1);
 			transition: $transition-links-out;
 		}
+		
+		
+		.slick-slide{
+			float:none;
+			
+		}
 		.nav-item {
-			border-bottom: 5px solid #bfc2c8;
-			padding-top: 35px;
-			height: 200px;
-			padding-bottom: 15px;
 			cursor: pointer;
 			justify-content: center;
 			flex-wrap: wrap;
 			transition: $transition-links-out;
 			display: flex;
+			height:30px;
+			width:100% !important;
+			
+			h5{
+				margin:0px;
+			}
 			&.slick-current {
-				border-bottom-color: $color-primary-lighter;
-				background: rgba(0,0,0,0.2);
 			}
 			&:hover {
 				background: rgba(0,0,0,0.2);
@@ -715,8 +747,6 @@ body.hide-elements {
 		}
 	}
 	.active-services-wrapper {
-		background: white;
-		padding: 60px 30px;
 		.h4 {
 			margin-top: 0;
 			br {
@@ -724,9 +754,7 @@ body.hide-elements {
 			}
 		}
 		.content-slide {
-			box-shadow:0 0 4px 4px rgba(120, 187, 251, 0.9);
 			margin-bottom: 10px;
-			border: 0.5px solid rgba(120, 187, 251, 0.4);
 			border-bottom: 0;
 			padding-top: 20px;
 			&:focus {
@@ -1029,6 +1057,7 @@ h3.section-title {
 		margin: 40px 0px 0 40px;
 	}
 }
+/*
 .seperator-white path {
 	fill: white;
 }
@@ -1056,6 +1085,7 @@ h3.section-title {
 	    left: 0;
 	}
 }
+*/
 /*
 .has-curve-bottom {
 	padding-bottom: 760px !important;

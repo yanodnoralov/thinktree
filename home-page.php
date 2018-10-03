@@ -144,98 +144,71 @@ get_header();
 	
 	
 	<div id="our-services" class="services position-relative py-standard-separator ">
-		<div class="separator-top">
-			<svg class="seperator seperator-white" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" viewBox="0 0 2800 109">
-				<path class="st0" d="M0,109V0h2800v109c0-59.5-626.8-107.7-1400-107.7S0,49.5,0,109z" style="fill:#fff"//>
-			</svg>
-		</div>
 		<div class="container rellax" data-rellax-speed=".75"  data-rellax-percentage="0.5">
-			<h3 class="text-center white section-title">Our Services</h3>
+			<h3 class="text-center white section-title">Services</h3>
+			
+			<div id="services-content">
 			<div class="row services-nav-wrapper">
                 <div class="col-sm nav-item active">
-                    <img src="<?php echo $service1['thumbnail1']['sizes'][ 'thumbnail' ]; ?>"/>
-                    <p class="h4"><?php echo $service1['title']; ?></p>
+                    <h5>Mobile Design</h5>
                 </div>
                 <div class="col-sm nav-item">
-	                <img src="<?php echo $service2['thumbnail']['sizes'][ 'thumbnail' ]; ?>"/>
-                    <p class="h4"><?php echo $service2['title']; ?></p>
+                    <h5>Web Development</h5>
 	            </div>
                 <div class="col-sm nav-item">
-	                <img src="<?php echo $service3['thumby']['sizes'][ 'thumbnail' ]; ?>"/>
-                    <p class="h4"><?php echo $service3['title']; ?></p>
+                    <h5>UI Design</h5>
                     </div>
                 <div class="col-sm nav-item">
-                    <img width="66" height="74" src="<?php echo get_template_directory_uri(); ?>/img/general-service.png">
-                	<p class="h4">General<br>Service</p>
+                    <h5>Bluetooth</h5>
                 </div>
                 <div class="col-sm nav-item">
-                    <img width="74" height="74" src="<?php echo get_template_directory_uri(); ?>/img/consulting-support.png">
-                    <p class="h4">Consulting<br>Support</p>
+                    <h5>Internet of Things</h5>
                 </div>
 	        </div><!-- row services-nav-wrapper -->
 			<div class="row active-services-wrapper">
 				<div class="content-slide">
 					<div class="row mx-0">
-			            <div class="col-lg-3 text-center pt-sm-5 col-sm-3 img-col">
-				            <img class="mx-auto" src="<?php echo $service1['description_image1']['sizes'][ 'thumbnail' ]; ?>"/>
-			            </div>
 			            <div class="col-lg-9 col-sm-9">
-			                <p class="h4"><?php echo $service1['title']; ?></p>
-			                <?php echo $service1['description']; ?>
+			                <h4>Mobile Design</h4>
+			                <p>Anyone can make an app but it takes hard work and ingenuity to make an app have a lasting impression. We’re here to do exactly that. Build the best to keep your customers engaged and wanting more. Pulling from an experienced team of iOS and Android developers we will make sure to deliver a mobile app that is sure to dominate the App Store.</p>
 			            </div>
 					</div>
 				</div>
 				<div class="content-slide">
 					<div class="row mx-0">
-			            <div class="col-lg-3 text-center pt-sm-5 col-sm-3 img-col">
-				            <img class="mx-auto" src="<?php echo $service2['description_image']['sizes'][ 'thumbnail' ]; ?>"/>
-			            </div>
 			            <div class="col-lg-9 col-sm-9">
-				            <p class="h4"><?php echo $service2['title']; ?></p>
-			                <?php echo $service2['description']; ?>
+				            <h4>Web Development</h4>
+			                <p>Sed posuere consectetur est at lobortis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla vitae elit libero, a pharetra augue. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Maecenas sed diam eget risus varius blandit sit amet non magna. Vestibulum id ligula porta felis euismod semper. Cras mattis consectetur purus sit amet fermentum.</p>
 			            </div>
 					</div>
 				</div>
 				<div class="content-slide">
 					<div class="row mx-0">
-			            <div class="col-lg-3 text-center pt-sm-5 col-sm-3 img-col">
-				            <img class="mx-auto" src="<?php echo $service3['description_image2']['sizes'][ 'thumbnail' ]; ?>"/>
-			            </div>
 			            <div class="col-lg-9 col-sm-9">
-				            <p class="h4"><?php echo $service3['title']; ?></p>
-			                <?php echo $service3['description']; ?>
+				            <h4>UI Design</h4>
+			                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed diam eget risus varius blandit sit amet non magna. Donec id elit non mi porta gravida at eget metus. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
 			            </div>
 					</div>
 				</div>
 				<div class="content-slide">
 					<div class="row mx-0">
-			            <div class="col-lg-3 text-center pt-sm-5 col-sm-3 img-col">
-				            <img class="mx-auto" src="<?php echo $service4['desc_image']['sizes'][ 'thumbnail' ]; ?>"/>
-			            </div>
 			            <div class="col-lg-9 col-sm-9">
-				            <p class="h4"><?php echo $service4['title']; ?></p>
-			                <?php echo $service4['description']; ?>
+				            <h4>Bluetooth</h4>
+			                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Donec id elit non mi porta gravida at eget metus.</p>
 			            </div>
 					</div>
 				</div>
 				<div class="content-slide">
 					<div class="row mx-0">
-			            <div class="col-lg-3 text-center pt-sm-5 col-sm-3 img-col">
-				            <img class="mx-auto" src="<?php echo $service5['description_image']['sizes'][ 'thumbnail' ]; ?>"/>
-			            </div>
 			            <div class="col-lg-9 col-sm-9">
-				            <p class="h4"><?php echo $service5['title']; ?></p>
-			                <?php echo $service5['description']; ?>
+				            <h4>Internet of Things</h4>
+			                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
 			            </div>
 					</div>
 				</div>
+			</div>
 			</div><!-- row -->
 	    </div><!-- container -->
-	    <div class="separator-bottom">
-			<svg class="seperator seperator-white" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" viewBox="0 0 2800 108.8">
-				<path class="st1" d="M2800,104.1v4.8H0v-4.8C195.9,43.6,748.7,0,1400,0S2604.1,43.6,2800,104.1z"/>
-			</svg>
-		</div>
 	</div><!-- our-services -->
 	
 	<div id="our-clients" class="our-clients-wrapper py-standard-separator pt-separator-above position-relative ">
@@ -288,12 +261,8 @@ get_header();
 				
 	        </div>
 		</div>
-		<div class="separator-bottom">
-			<svg class="seperator seperator-white" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" viewBox="0 0 2800 108.8">
-				<path class="st1" d="M2800,104.1v4.8H0v-4.8C195.9,43.6,748.7,0,1400,0S2604.1,43.6,2800,104.1z" style="fill:#f4f7fc;"/>
-			</svg>
-		</div>
 	</div><!-- our-clients -->
+	
 	
 	<div id="about-us" class="about-us py-standard-separator pt-separator-above pb-0 ">
 	    <div class="container">
@@ -349,12 +318,6 @@ get_header();
 			</div>
 	    </div>
 	    <div class="bg-wrapper rellax" data-rellax-speed="0.75" data-rellax-percentage="0.5"></div>
-	    <div class="separator-top separator-curve">
-			<svg class="seperator" viewBox="0 0 2957 1420.11" preserveAspectRatio="none">
-				<path class="st0" d="M2957,138c0,0-521-401-1415,462S294,1457,0,1397L0,0l2957,0V138z" style="fill:#ffffff"/>
-			</svg>
-
-		</div>
 	</div><!-- contact-us -->
 
 <?php

@@ -4205,9 +4205,27 @@ body:not(.home) .site-footer {
 
 @media screen and (min-width: 768px) {
   #site-navigation.main-navigation li {
-    font-size: 35px; } }
+    font-size: 35px; }
+  #portfolio {
+    position: absolute;
+    top: 43vh;
+    left: -50px;
+    transform: rotate(270deg);
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    #portfolio a {
+      color: #ffffff;
+      font-weight: 400; }
+    #portfolio #portfolioline {
+      background-color: #ffffff;
+      width: 2px;
+      height: 35px;
+      margin-bottom: 12px; } }
 
 @media screen and (max-width: 767px) {
+  #portfolio {
+    display: none !important; }
   .all-products-wrapper {
     margin-top: 0px; }
   .product-row {

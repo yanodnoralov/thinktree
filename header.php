@@ -104,6 +104,9 @@
 				</div>
 
 				</nav>
+				<nav id="portfolio"><div id="portfolioline"></div>
+				<a href="#">PORTFOLIO</a>
+				</nav>
 			</div>
 		</div>
 	</header><!-- #masthead -->

@@ -26,7 +26,7 @@ get_header();
 			<?php $heroContent = get_field('hero_content');
 			if( $heroContent ): ?>
 				<h1 class="huge-title rellax" data-rellax-speed="-1" data-rellax-percentage="0.5">
-					We build <span>extraordinary</span> digital products.
+					We build <span>extraordinary</span><br> digital products.
 				</h1>
 			<?php endif; ?>
 		</div>
@@ -85,7 +85,7 @@ get_header();
 		
 		<?php $product3 = get_field('product_row_3');
 		if( $product3 ): ?>
-		<div id="luminaid" class="product-row has-curve-bottom pt-0">
+		<div id="luminaid" class="product-row pt-0">
 			<div class="product-inner ">
 			<div class="container">
 				<div class="row d-sm-flex align-items-center reverse-wrap-mobile">

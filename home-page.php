@@ -33,11 +33,8 @@ get_header();
 				</h3>
 			<?php endif; ?>
 		</div>
-		<div class="bg-overlay"></div>
-		<div class="bg-video">
-			<video id="hero_vid" loop="loop" muted="muted" preload="none" poster="<?php echo get_template_directory_uri(); ?>/img/hero-first-frame.jpg">
-				<source src="<?php echo get_template_directory_uri(); ?>/img/hero-lq.webm" type="video/webm">
-				<source src="<?php echo get_template_directory_uri(); ?>/img/hero-lq.mp4" type="video/mp4">
+		<div class="bg-img">
+				<img src="/thinktree/wp-content/themes/yan-base/img/TT/hero-placeholder.jpg">
 			</video>
 		</div>
 		<div class="separator-bottom">

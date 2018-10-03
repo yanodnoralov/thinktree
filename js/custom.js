@@ -27,7 +27,7 @@ if ($(window).width() < 576) {
 // home hero waypoint 
 $(".home-hero").waypoint(function(direction) {
   if (direction === 'up') {
-	vid.play(); 
+// 	vid.play(); 
     makeHeaderLight();
     console.log("makeHeaderLight up");
   }
@@ -41,7 +41,7 @@ $(".home-hero").waypoint(function(direction) {
 $(".all-products-wrapper").waypoint(function(direction) {
   if (direction === 'down') {
     makeHeaderDark();
-    vid.pause(); 
+	//vid.pause(); 
     console.log("makeHeaderDark down");
   }
 }, {

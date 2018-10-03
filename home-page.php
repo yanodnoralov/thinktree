@@ -26,11 +26,8 @@ get_header();
 			<?php $heroContent = get_field('hero_content');
 			if( $heroContent ): ?>
 				<h1 class="huge-title rellax" data-rellax-speed="-1" data-rellax-percentage="0.5">
-					<?php echo $heroContent['main_heading']; ?>
+					We build extraordinary digital products.
 				</h1>
-				<h3 class="mx-lg-5 px-lg-5 rellax" data-rellax-speed="-.25"  data-rellax-percentage="0.5">
-					<?php echo $heroContent['sub_heading']; ?>
-				</h3>
 			<?php endif; ?>
 		</div>
 		<div class="bg-img">

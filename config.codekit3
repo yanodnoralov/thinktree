@@ -3957,7 +3957,7 @@
 			}
 		},
 	"esLintSourceType": 0,
-	"externalServerAddress": "http:\/\/www.skynetworks.loc\/",
+	"externalServerAddress": "http:\/\/localhost:8888\/thinktree\/",
 	"gitIgnoreBuildFolder": 1,
 	"hideConfigFile": 0,
 	"jsCheckerReservedNamesString": "",

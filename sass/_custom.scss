@@ -668,6 +668,77 @@ body.hide-elements {
 
 //our services
 
+#services{
+		background-image: url(img/TT/services.jpg);
+    background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center bottom;
+			padding: 70px 0px;
+
+
+	
+	#services-inner{
+		display:flex;
+		align-items: baseline;
+					padding: 20px 0px 0px 0px;
+
+		*{
+			color:#ffffff;
+		}
+		
+		.services-content{
+			padding-left: 0px;
+			.inactive{
+				display: none;
+			}
+			
+			
+			
+			div{
+				padding: 0px;
+				width:75%;
+			}
+			
+		}
+		
+		.services-titles{
+			padding-left: 100px;
+			
+			h5{font-size:24px;
+			text-transform: uppercase;
+			margin:15px 0px;
+			}
+			
+			.active{
+			h5{margin: 0px !important;}
+			display: flex;
+			flex-direction: row;
+			align-items: baseline;
+			position:relative;
+			right:20px;
+			}
+			
+			.inactive{
+				opacity:.6;
+			}
+			
+			.active:before{
+				content:'•';
+				font-size:25px;
+				padding-right:10px;
+				
+			}
+		}
+		
+		
+		}
+
+
+}
+
+
+
+/*
 
 .services {
     background-image: url(img/TT/services.jpg);
@@ -779,6 +850,7 @@ body.hide-elements {
 		}
 	}
 }
+*/
 
 
 
@@ -1779,6 +1851,13 @@ body:not(.home) .site-footer {
 }
 @media screen and (max-width: 991px) {
 	
+	#services{
+		.services-titles{
+			padding-left:0px !important;
+		}
+	}
+	
+	
 	#blog{
 		.blog-container{
 			height: 100%;
@@ -1904,6 +1983,16 @@ body:not(.home) .site-footer {
 }
 @media screen and (max-width: 767px) {
 	
+	#services{
+		#services-inner{
+			flex-direction: column-reverse;
+			
+			.services-content div{
+				width: 100%;
+			}
+		}
+	}
+	
 /*
 	#blog{
 		.blog-container{
@@ -1932,10 +2021,10 @@ body:not(.home) .site-footer {
 */
 	
 		#process-titles{
-		justify-content: space-between !important;
+		justify-content: start !important;
 		div{
 			padding: 0px 10px 0px 0px !important;
-			margin:0px !important;
+			margin:0px 25px 0px 0px !important;
 		}
 }
 
@@ -1971,9 +2060,9 @@ body:not(.home) .site-footer {
 		align-items: center;
 		
 		img{
-			width: 100% !important;
+			width: 80% !important;
 			margin-bottom: 30px;
-			
+			padding: 35px 20px !important;
 		} 
 	}
 	

@@ -143,6 +143,10 @@ get_header();
 	?>
 	
 	
+	
+	
+<!--
+	
 	<div id="our-services" class="services position-relative py-standard-separator ">
 		<div class="container rellax" data-rellax-speed=".75"  data-rellax-percentage="0.5">
 			<h3 class="white section-title">Services</h3>
@@ -207,12 +211,73 @@ get_header();
                 <div class="col-sm nav-item">
                     <h5>Internet of Things</h5>
                 </div>
-	        </div><!-- row services-nav-wrapper -->
+	        </div>
 
-			</div><!-- row -->
 			</div>
-	    </div><!-- container -->
-	</div><!-- our-services -->
+			</div>
+	    </div>
+	</div>
+	
+	
+-->
+
+
+	
+<div id="services" class="pt-separator-above">
+	<div class="container">
+			<h3 class="white section-title">Services</h3>
+			<div id="services-inner">
+				<div class="services-content col-lg-8 col-md-9 col-sm-12">
+			            <div class="active">
+			                <h4>Mobile Design</h4>
+			                <p>Anyone can make an app but it takes hard work and ingenuity to make an app have a lasting impression. We’re here to do exactly that. Build the best to keep your customers engaged and wanting more. Pulling from an experienced team of iOS and Android developers we will make sure to deliver a mobile app that is sure to dominate the App Store.</p>
+			            </div>
+
+			            <div class="inactive">
+				            <h4>Web Development</h4>
+			                <p>Sed posuere consectetur est at lobortis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla vitae elit libero, a pharetra augue. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Maecenas sed diam eget risus varius blandit sit amet non magna. Vestibulum id ligula porta felis euismod semper. Cras mattis consectetur purus sit amet fermentum.</p>
+			            </div>
+
+			            <div class="inactive">
+				            <h4>UI Design</h4>
+			                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed diam eget risus varius blandit sit amet non magna. Donec id elit non mi porta gravida at eget metus. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+			            </div>
+							
+			            <div class="inactive">
+				            <h4>Bluetooth</h4>
+			                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Donec id elit non mi porta gravida at eget metus.</p>
+			            </div>
+
+			            <div class="inactive">
+				            <h4>Internet of Things</h4>
+			                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
+			            </div>
+
+			</div>
+			
+
+			<div class="services-titles col-lg-4 col-md-3 col-sm-12">
+                <div class="active">
+                    <h5>Mobile Design</h5>
+                </div>
+                <div class="inactive">
+                    <h5>Web Development</h5>
+	            </div>
+                <div class="inactive">
+                    <h5>UI Design</h5>
+                    </div>
+                <div class="inactive">
+                    <h5>Bluetooth</h5>
+                </div>
+                <div class="inactive">
+                    <h5>Internet of Things</h5>
+                </div>
+			</div><!-- row -->
+		</div>
+	</div><!-- container -->
+</div><!-- our-services -->
+
+	
 	
 	<div id="our-clients" class="our-clients-wrapper py-standard-separator pt-separator-above position-relative ">
 	    <div class="container">

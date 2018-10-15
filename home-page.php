@@ -356,12 +356,12 @@ get_header();
 	<div id="blog" class="pt-separator-above">
 		<div class="container">
 		<h3 class="green_border">Blog</h3>
-		<div class="blog-container">
-			<div class="blog-left">
+		<div class="blog-container row">
+			<div class="blog-left col-lg-9">
 				<h5 id="blog-1">Think Tree Studios Shines as 
 					Leading Denver App Developers</h5>
 			</div>
-			<div class="blog-right">
+			<div class="blog-right col-lg-3">
 				<h5 id="blog-2">Best Mobile Solutions 
 					Development Company – Colorado</h5>
 				<h5 id="blog-3">Top Colorado 
@@ -410,21 +410,21 @@ get_header();
 		<div class="bottom-bg bg-white"></div>
 	</div><!-- about-us -->
 	
-	<div class="contact-us-wrapper">
+	<div class="contact-us-wrapper pt-separator-above">
 	    <div class="container">
 	        <div class="row mt-5">
-	            <div class="col-md-12 col-lg-4 text-left contact-left rellax" data-rellax-speed="-1.5" data-rellax-percentage="0">
-	                <h3 class="section-title">Contact Us</h3>
+	            <div class="col-lg-12" data-rellax-speed="-1.5" data-rellax-percentage="0">
+	                <h3 class="section-title green_border">Contact</h3>
+<!--
 	                <div class="contact-info-list">
 		                <?php if( get_field('contact_info') ): ?>
 							<?php the_field('contact_info'); ?>
 						<?php endif; ?>
 	                </div>
+-->
 	            </div>
-				<div id="contact" class="col-md-12 col-lg-5 contact-form pull-right offset-lg-3">
-					<div class="form-wrap">
+					<div class="form-wrap col-lg-9">
 						<?php echo do_shortcode( '[contact-form-7 id="14" title="Contact"]' ); ?>
-					</div>
 				</div>
 			</div>
 	    </div>

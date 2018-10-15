@@ -145,27 +145,9 @@ get_header();
 	
 	<div id="our-services" class="services position-relative py-standard-separator ">
 		<div class="container rellax" data-rellax-speed=".75"  data-rellax-percentage="0.5">
-			<h3 class="text-center white section-title">Services</h3>
-			
-			<div id="services-content">
-			<div class="row services-nav-wrapper">
-                <div class="col-sm nav-item active">
-                    <h5>Mobile Design</h5>
-                </div>
-                <div class="col-sm nav-item">
-                    <h5>Web Development</h5>
-	            </div>
-                <div class="col-sm nav-item">
-                    <h5>UI Design</h5>
-                    </div>
-                <div class="col-sm nav-item">
-                    <h5>Bluetooth</h5>
-                </div>
-                <div class="col-sm nav-item">
-                    <h5>Internet of Things</h5>
-                </div>
-	        </div><!-- row services-nav-wrapper -->
-			<div class="row active-services-wrapper">
+			<h3 class="white section-title">Services</h3>
+			<div class="services-content">
+						<div class="row active-services-wrapper">
 				<div class="content-slide">
 					<div class="row mx-0">
 			            <div class="col-lg-9 col-sm-9">
@@ -207,13 +189,35 @@ get_header();
 					</div>
 				</div>
 			</div>
+			
+			<div id="services-content">
+			<div class="row services-nav-wrapper">
+                <div class="col-sm nav-item active">
+                    <h5>Mobile Design</h5>
+                </div>
+                <div class="col-sm nav-item">
+                    <h5>Web Development</h5>
+	            </div>
+                <div class="col-sm nav-item">
+                    <h5>UI Design</h5>
+                    </div>
+                <div class="col-sm nav-item">
+                    <h5>Bluetooth</h5>
+                </div>
+                <div class="col-sm nav-item">
+                    <h5>Internet of Things</h5>
+                </div>
+	        </div><!-- row services-nav-wrapper -->
+
 			</div><!-- row -->
+			</div>
 	    </div><!-- container -->
 	</div><!-- our-services -->
 	
 	<div id="our-clients" class="our-clients-wrapper py-standard-separator pt-separator-above position-relative ">
 	    <div class="container">
 	     <h3 class="text-center section-title">Our Happy Clients</h3>
+<!--
 	        <div class="d-flex flex-wrap flex-row rellax" data-rellax-speed=".75"  data-rellax-percentage="0.5">
 		        
 		        <?php
@@ -260,6 +264,30 @@ get_header();
 				endif;?>
 				
 	        </div>
+-->
+
+
+		<div id="logos-container">
+			<img src="wp-content/themes/yan-base/img/TT/healthio.png">
+			<img src="wp-content/themes/yan-base/img/TT/wicis-sports.png">
+			<img src="wp-content/themes/yan-base/img/TT/luminaid.png">
+			<img src="wp-content/themes/yan-base/img/TT/sky-networks.png">
+			<img src="wp-content/themes/yan-base/img/TT/repz.png">
+			<img src="wp-content/themes/yan-base/img/TT/synq3.png">
+			<img src="wp-content/themes/yan-base/img/TT/Voiptel-Logo.png">
+			<img src="wp-content/themes/yan-base/img/TT/kidcase.jpg">
+			<img src="wp-content/themes/yan-base/img/TT/pica-logo.png">
+			<img src="wp-content/themes/yan-base/img/TT/fliptask.png">
+			<img src="wp-content/themes/yan-base/img/TT/rage-unlimited.png">
+			<img src="wp-content/themes/yan-base/img/TT/coman-publishing.png">
+			<img src="wp-content/themes/yan-base/img/TT/fliptask.png">
+			<img src="wp-content/themes/yan-base/img/TT/Center_Integrative_Medicine.png">
+			<img src="wp-content/themes/yan-base/img/TT/irrived.png">
+			<img src="wp-content/themes/yan-base/img/TT/enso.png">
+			<img src="wp-content/themes/yan-base/img/TT/aci.png">
+			<img src="wp-content/themes/yan-base/img/TT/nusura.jpg">
+
+		</div>
 		</div>
 	</div><!-- our-clients -->
 	

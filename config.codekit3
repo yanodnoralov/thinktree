@@ -890,11 +890,11 @@
 		"oT": 1,
 		"q": 100
 		},
-	"\/img\/TT\/colman-publishing.png": {
+	"\/img\/TT\/coman-publishing.png": {
 		"ft": 32768,
 		"iS": 7733,
 		"oA": 0,
-		"oAP": "\/img\/TT\/colman-publishing.png",
+		"oAP": "\/img\/TT\/coman-publishing.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -910,6 +910,17 @@
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
+		"q": 100
+		},
+	"\/img\/TT\/enso.png": {
+		"ft": 32768,
+		"iS": 11929,
+		"oA": 0,
+		"oAP": "\/img\/TT\/enso.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
 		"q": 100
 		},
 	"\/img\/TT\/fliptask.png": {
@@ -956,6 +967,17 @@
 		"oT": 1,
 		"q": 100
 		},
+	"\/img\/TT\/irrived.png": {
+		"ft": 32768,
+		"iS": 18962,
+		"oA": 0,
+		"oAP": "\/img\/TT\/irrived.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"\/img\/TT\/kidcase.jpg": {
 		"ft": 16384,
 		"iS": 2414,
@@ -973,8 +995,8 @@
 		"oA": 0,
 		"oAP": "\/img\/TT\/luminaid.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -987,6 +1009,17 @@
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
+		"q": 100
+		},
+	"\/img\/TT\/pica-logo.png": {
+		"ft": 32768,
+		"iS": 63991,
+		"oA": 0,
+		"oAP": "\/img\/TT\/pica-logo.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
 		"q": 100
 		},
 	"\/img\/TT\/process-background.jpg": {
@@ -1116,8 +1149,8 @@
 		"oA": 0,
 		"oAP": "\/img\/TT\/repz.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -1138,8 +1171,8 @@
 		"oA": 0,
 		"oAP": "\/img\/TT\/sky-networks.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -1148,6 +1181,17 @@
 		"iS": 22928,
 		"oA": 0,
 		"oAP": "\/img\/TT\/strategy.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/img\/TT\/synq3.png": {
+		"ft": 32768,
+		"iS": 15758,
+		"oA": 0,
+		"oAP": "\/img\/TT\/synq3.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -1182,6 +1226,17 @@
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/img\/TT\/Voiptel-Logo.png": {
+		"ft": 32768,
+		"iS": 21646,
+		"oA": 0,
+		"oAP": "\/img\/TT\/Voiptel-Logo.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},

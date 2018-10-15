@@ -655,15 +655,14 @@ body.hide-elements {
 
 
 .services {
-	background-color: #2168d4;
-    background-image: url(/img/tt/services.jpg);
+    background-image: url(img/TT/services.jpg);
     background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center bottom;
 	
 	
-	#services-content{
-		flex-direction:row-reverse;
+	.services-content{
+		display: flex;
 	}
 	
 	
@@ -709,7 +708,6 @@ body.hide-elements {
 			transition: $transition-links-out;
 			display: flex;
 			height:30px;
-			width:100% !important;
 			
 			h5{
 				margin:0px;

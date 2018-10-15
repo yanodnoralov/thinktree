@@ -3502,13 +3502,12 @@ body.hide-elements {
         z-index: 1; }
 
 .services {
-  background-color: #2168d4;
-  background-image: url(/img/tt/services.jpg);
+  background-image: url(img/TT/services.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center bottom; }
-  .services #services-content {
-    flex-direction: row-reverse; }
+  .services .services-content {
+    display: flex; }
   .services * {
     color: #ffffff; }
   .services .slick-slider {
@@ -3537,8 +3536,7 @@ body.hide-elements {
       flex-wrap: wrap;
       transition: all 0.45s ease-out;
       display: flex;
-      height: 30px;
-      width: 100% !important; }
+      height: 30px; }
       .services .services-nav-wrapper .nav-item h5 {
         margin: 0px; }
       .services .services-nav-wrapper .nav-item:hover {

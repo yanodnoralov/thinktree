@@ -3397,31 +3397,56 @@ body.hide-elements {
 .all-products-wrapper {
   margin-top: 60px; }
 
-#healthio .product-inner {
-  background: url(img/TT/project-1-background.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: right center; }
+.parallax-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%; }
 
-#wicis-sports .product-inner {
-  background: url(img/TT/project-2-background.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 25% center; }
-  #wicis-sports .product-inner img {
+#healthio {
+  position: relative; }
+  #healthio .parallax-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url(img/TT/project-1-background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right center; }
+
+#wicis-sports {
+  position: relative; }
+  #wicis-sports .parallax-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url(img/TT/project-2-background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right center; }
+  #wicis-sports img {
     max-width: 60%; }
 
-#luminaid .product-inner {
-  background: url(img/TT/project-3-background.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: right center; }
+#luminaid {
+  position: relative; }
+  #luminaid .parallax-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url(img/TT/project-3-background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right center; }
 
-#pica .product-inner {
-  background: url(img/TT/project-4-background.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: right center; }
+#pica {
+  position: relative; }
+  #pica .parallax-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url(img/TT/project-4-background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right center; }
 
 .product-tags {
   margin-top: 5px;
@@ -3726,7 +3751,8 @@ body.hide-elements {
   background: url(img/TT/process-background.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center center; }
+  background-position: center center;
+  padding: 90px 0px; }
   #process * {
     color: #ffffff; }
   #process #process-titles {
@@ -4366,7 +4392,8 @@ a.btn-header {
 
 .content-area a.btn {
   border: 1px solid #3ABA5D;
-  color: #3ABA5D; }
+  color: #3ABA5D;
+  font-weight: 600 !important; }
   .content-area a.btn.file {
     background-image: url("./img/file-icon.png");
     background-size: 17px;
@@ -4449,6 +4476,10 @@ body:not(.home) .site-footer {
     padding-right: 30px; } }
 
 @media screen and (max-width: 1200px) {
+  #portfolio {
+    display: none !important; } }
+
+@media screen and (max-width: 1200px) {
   .our-clients-wrapper .my-flex-item {
     border: none; }
   .our-clients-wrapper .my-flex-item:nth-last-child(-n + 3) {
@@ -4515,7 +4546,7 @@ body:not(.home) .site-footer {
     width: 290px;
     height: 290px; }
   .product-row {
-    padding: 100px 0 0px; }
+    padding: 100px 0 50px 0; }
   .py-standard-separator {
     padding-bottom: 100px; }
   /*

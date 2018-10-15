@@ -499,47 +499,77 @@ body.hide-elements {
 	    margin-top: 60px;
 }
 
+.parallax-bg {
+	position: absolute;
+	width:100%;
+	height:100%;
+}
+
 
 #healthio{
-	.product-inner{
+	position:relative;
+
+	
+	.parallax-bg {
+	position: absolute;
+	width:100%;
+	height:100%;
 	background: url(img/TT/project-1-background.png);
-    background-size: cover;
+	    background-size: cover;
     background-repeat: no-repeat;
     background-position: right center;
 
-	}
+}
 }
 
 #wicis-sports{
-	.product-inner{
+		position:relative;
+
+	.parallax-bg {
+	position: absolute;
+	width:100%;
+	height:100%;
 	background: url(img/TT/project-2-background.png);
-     background-size: cover;
+	    background-size: cover;
     background-repeat: no-repeat;
-    background-position: 25% center;
+    background-position: right center;
+
+}
 
     
     img{
 	    max-width:60%;
     }
-	}
 }
 
 #luminaid{
-	.product-inner{
+		position:relative;
+
+	.parallax-bg {
+	position: absolute;
+	width:100%;
+	height:100%;
 	background: url(img/TT/project-3-background.png);
-    background-size: cover;
+	    background-size: cover;
     background-repeat: no-repeat;
     background-position: right center;
-	}
+
+}
 }
 
 #pica{
-	.product-inner{
+		position:relative;
+
+	.parallax-bg {
+	position: absolute;
+	width:100%;
+	height:100%;
 	background: url(img/TT/project-4-background.png);
-    background-size: cover;
+	    background-size: cover;
     background-repeat: no-repeat;
     background-position: right center;
-	}
+
+}
 }
 
 .product-tags{
@@ -938,6 +968,7 @@ body.hide-elements {
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center center;
+	padding:90px 0px;
 	
 	    *{
 	    color: #ffffff;
@@ -1704,6 +1735,7 @@ a.btn-header {
 	a.btn {
 		border: 1px solid $color-primary;
 		color: $color-primary;
+		font-weight: 600 !important;
 		&.file {
 			background-image: url("./img/file-icon.png");
 			background-size: 17px;
@@ -1806,6 +1838,13 @@ body:not(.home) .site-footer {
 		    max-width: 100%;
 		    padding-left: 30px;
 		    padding-right: 30px;
+	}
+}
+
+
+@media screen and (max-width: 1200px) {
+	#portfolio{
+		display: none !important;
 	}
 }
 @media screen and (max-width: 1200px) {
@@ -1936,7 +1975,7 @@ body:not(.home) .site-footer {
 		}
 	}
 	.product-row {
-    	padding: 100px 0 0px;
+    	padding: 100px 0 50px 0;
 	}
 	.py-standard-separator {
 		padding-bottom: 100px;

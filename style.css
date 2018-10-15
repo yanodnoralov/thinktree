@@ -3088,6 +3088,21 @@ body.hide-elements {
 	}
 }
 */
+.green_border:after {
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  content: "";
+  height: 2px;
+  width: 120px;
+  margin-top: 15px;
+  background-size: 120px;
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="120" height="2" viewBox="0 0 120 2"><line y1="0.75" x2="108" y2="0.75" style="fill:#81d135;stroke:#81d135;stroke-miterlimit:10;stroke-width:2px"/><line x1="113" y1="0.75" x2="120" y2="0.75" style="fill:#81d135;stroke:#81d135;stroke-miterlimit:10;stroke-width:2px"/></svg>') no-repeat center center; }
+  @media (min-width: 576px) {
+    .green_border:after {
+      margin-top: 20px; } }
+
 .site-header {
   position: fixed;
   width: 100%;
@@ -3584,7 +3599,8 @@ body.hide-elements {
     position: relative; }
 
 .our-clients-wrapper {
-  background-color: white; }
+  background-color: white;
+  margin-top: 40px; }
   .our-clients-wrapper img {
     display: block;
     margin: 0 auto;
@@ -3602,6 +3618,19 @@ body.hide-elements {
     align-items: center; }
   .our-clients-wrapper div:nth-of-type(5n) {
     border: none; }
+  .our-clients-wrapper #logos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px; }
+    .our-clients-wrapper #logos-container img {
+      width: 20%;
+      padding: 20px; }
+
+#accolades {
+  background-color: #F9F9F9;
+  text-align: center; }
 
 .contact-us-wrapper {
   position: relative;
@@ -3770,10 +3799,11 @@ body.hide-elements {
   margin-left: -120px;
   z-index: 1; }
 
+/*
 .py-standard-separator {
-  padding-top: 90px;
-  padding-bottom: 160px; }
-
+	padding-top: 90px;
+}
+*/
 .pt-separator-above {
   padding-top: 60px; }
 
@@ -4173,6 +4203,8 @@ body:not(.home) .site-footer {
     top: 90px; } }
 
 @media screen and (max-width: 991px) {
+  #logos-container img {
+    width: 30% !important; }
   .overview {
     max-width: 100%; }
   .huge-title {
@@ -4229,6 +4261,8 @@ body:not(.home) .site-footer {
       margin-bottom: 12px; } }
 
 @media screen and (max-width: 767px) {
+  #logos-container img {
+    width: 40% !important; }
   #portfolio {
     display: none !important; }
   .all-products-wrapper {

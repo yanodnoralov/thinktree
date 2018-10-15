@@ -216,7 +216,7 @@ get_header();
 	
 	<div id="our-clients" class="our-clients-wrapper py-standard-separator pt-separator-above position-relative ">
 	    <div class="container">
-	     <h3 class="text-center section-title">Our Happy Clients</h3>
+	     <h3 class="text-center section-title green_border">Customers + Partners</h3>
 <!--
 	        <div class="d-flex flex-wrap flex-row rellax" data-rellax-speed=".75"  data-rellax-percentage="0.5">
 		        
@@ -271,7 +271,7 @@ get_header();
 			<img src="wp-content/themes/yan-base/img/TT/healthio.png">
 			<img src="wp-content/themes/yan-base/img/TT/wicis-sports.png">
 			<img src="wp-content/themes/yan-base/img/TT/luminaid.png">
-			<img src="wp-content/themes/yan-base/img/TT/sky-networks.png">
+			<img src="wp-content/themes/yan-base/img/TT/sky-networks1.png">
 			<img src="wp-content/themes/yan-base/img/TT/repz.png">
 			<img src="wp-content/themes/yan-base/img/TT/synq3.png">
 			<img src="wp-content/themes/yan-base/img/TT/Voiptel-Logo.png">
@@ -280,7 +280,6 @@ get_header();
 			<img src="wp-content/themes/yan-base/img/TT/fliptask.png">
 			<img src="wp-content/themes/yan-base/img/TT/rage-unlimited.png">
 			<img src="wp-content/themes/yan-base/img/TT/coman-publishing.png">
-			<img src="wp-content/themes/yan-base/img/TT/fliptask.png">
 			<img src="wp-content/themes/yan-base/img/TT/Center_Integrative_Medicine.png">
 			<img src="wp-content/themes/yan-base/img/TT/irrived.png">
 			<img src="wp-content/themes/yan-base/img/TT/enso.png">
@@ -292,6 +291,18 @@ get_header();
 	</div><!-- our-clients -->
 	
 	
+	<div id="accolades" class="pt-separator-above">
+		<h3 class="green_border">Accolades</h3>
+		<div class="accolades-container">
+		<img src="wp-content/themes/yan-base/img/TT/App_Developers_Denver_2018.png">
+		<img src="wp-content/themes/yan-base/img/TT/IPhone_App_Developers_Denver_2018.png">
+		<img src="wp-content/themes/yan-base/img/TT/Android_App_Developers_Denver_2018.png">
+		<img src="wp-content/themes/yan-base/img/TT/UX_Agencies_Denver_2018.png">
+		</div>
+	</div>
+	
+	
+<!--
 	<div id="about-us" class="about-us py-standard-separator pt-separator-above pb-0 ">
 	    <div class="container">
 	    <h3 class="text-center section-title">About Us</h3>

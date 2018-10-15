@@ -3631,6 +3631,16 @@ body.hide-elements {
 #accolades {
   background-color: #F9F9F9;
   text-align: center; }
+  #accolades .accolades-container {
+    margin-bottom: 60px;
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between; }
+    #accolades .accolades-container img {
+      width: 23%;
+      height: 100%;
+      box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.08);
+      padding: 30px; }
 
 .contact-us-wrapper {
   position: relative;
@@ -3805,7 +3815,8 @@ body.hide-elements {
 }
 */
 .pt-separator-above {
-  padding-top: 60px; }
+  padding-top: 60px;
+  padding-bottom: 60px; }
 
 h3.section-title {
   margin-top: 0; }
@@ -4203,6 +4214,13 @@ body:not(.home) .site-footer {
     top: 90px; } }
 
 @media screen and (max-width: 991px) {
+  .accolades-container {
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; }
+    .accolades-container img {
+      width: 49% !important;
+      margin-bottom: 10px; }
   #logos-container img {
     width: 30% !important; }
   .overview {
@@ -4263,6 +4281,13 @@ body:not(.home) .site-footer {
 @media screen and (max-width: 767px) {
   #logos-container img {
     width: 40% !important; }
+  .accolades-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .accolades-container img {
+      width: 100% !important;
+      margin-bottom: 30px; }
   #portfolio {
     display: none !important; }
   .all-products-wrapper {

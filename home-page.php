@@ -292,12 +292,14 @@ get_header();
 	
 	
 	<div id="accolades" class="pt-separator-above">
+		<div class="container">
 		<h3 class="green_border">Accolades</h3>
 		<div class="accolades-container">
 		<img src="wp-content/themes/yan-base/img/TT/App_Developers_Denver_2018.png">
 		<img src="wp-content/themes/yan-base/img/TT/IPhone_App_Developers_Denver_2018.png">
 		<img src="wp-content/themes/yan-base/img/TT/Android_App_Developers_Denver_2018.png">
 		<img src="wp-content/themes/yan-base/img/TT/UX_Agencies_Denver_2018.png">
+		</div>
 		</div>
 	</div>
 	

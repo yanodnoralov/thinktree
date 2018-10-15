@@ -2991,7 +2991,7 @@ html {
 
 body {
   font-family: "work-sans", sans-serif;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 300;
   color: #686868; }
 
@@ -3642,6 +3642,49 @@ body.hide-elements {
       box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.08);
       padding: 30px; }
 
+#process {
+  background: url(img/TT/process-background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center; }
+  #process * {
+    color: #ffffff; }
+  #process #process-titles {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap; }
+    #process #process-titles div {
+      flex-basis: 100px;
+      margin: 0px 20px; }
+    #process #process-titles .inactive {
+      opacity: .6; }
+    #process #process-titles .active h5 {
+      border-bottom: solid; }
+    #process #process-titles .num {
+      font-size: 16px;
+      font-weight: 800;
+      color: #000000; }
+    #process #process-titles h3 {
+      margin: 0px 20px 0px 0px;
+      line-height: 80px; }
+    #process #process-titles h5 {
+      font-size: 24px;
+      text-transform: uppercase;
+      margin-top: 0px; }
+  #process #process-content img {
+    width: 22%;
+    height: 100%; }
+  #process #process-content div > div {
+    width: 70%; }
+  #process #process-content .inactive-process {
+    display: none; }
+  #process #process-content .active-process {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    align-items: center; }
+
 .contact-us-wrapper {
   position: relative;
   background-color: #f6fafb;
@@ -4214,6 +4257,10 @@ body:not(.home) .site-footer {
     top: 90px; } }
 
 @media screen and (max-width: 991px) {
+  #process-titles h3 {
+    width: 100%; }
+  #process-titles div {
+    margin: 0px 50px 0px 0px !important; }
   .accolades-container {
     justify-content: center;
     align-items: center;
@@ -4279,6 +4326,20 @@ body:not(.home) .site-footer {
       margin-bottom: 12px; } }
 
 @media screen and (max-width: 767px) {
+  #process-titles {
+    justify-content: space-between !important; }
+    #process-titles div {
+      padding: 0px 10px 0px 0px !important;
+      margin: 0px !important; }
+  #process-content img {
+    width: 40% !important;
+    height: 100% !important;
+    margin-bottom: 30px; }
+  #process-content div > div {
+    width: 100% !important; }
+  #process-content .active-process {
+    flex-direction: column;
+    align-items: flex-start !important; }
   #logos-container img {
     width: 40% !important; }
   .accolades-container {

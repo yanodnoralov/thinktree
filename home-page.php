@@ -303,6 +303,56 @@ get_header();
 		</div>
 	</div>
 	
+	<div id="process" class="pt-separator-above">
+		<div class="container">
+			<div id="process-titles">
+				<h3>Process</h3>
+				<div id="process-1-title" class="active"><span class="num">01</span><h5>Strategy</h5></div>
+				<div id="process-2-title" class="inactive"><span class="num">02</span><h5>Designs</h5></div>
+				<div id="process-3-title" class="inactive"><span class="num">03</span><h5>Development</h5></div>
+				<div id="process-4-title" class="inactive"><span class="num">04</span><h5>Launch</h5></div>
+				<div id="process-5-title" class="inactive"><span class="num">05</span><h5>Maintenance<br>and Growth</h5></div>				
+			</div>
+			<div id="process-content">
+				<div id="process-1-content" class="active-process">
+					<img src="wp-content/themes/yan-base/img/TT/strategy.png">
+					<div>
+						<h4>Strategy</h4>
+						<p>From just a napkin sketch to a full blown business plan, this is the first step in creating a successful product. We 						work to understand your concept, determine what problems it solves and figure out the best way to implement it. Once a 							general direction is agreed, we turn your concept into a minimum viable product that we can build upon.</p>
+					</div>
+				</div>
+				<div id="process-2-content" class="inactive-process">
+					<img src="wp-content/themes/yan-base/img/TT/design.png">
+					<div>
+						<h4>Design</h4>
+						<p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Fusce dapibus, tellus ac cursus commodo, tortor mauris 						condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas faucibus mollis interdum. Cras mattis consectetur 							purus sit amet fermentum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec 							elit.</p>
+					</div>
+				</div>
+				<div id="process-3-content" class="inactive-process">
+					<img src="wp-content/themes/yan-base/img/TT/development.png">
+					<div>
+						<h4>Development</h4>
+						<p>Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Morbi leo risus, porta ac consectetur ac, 								vestibulum at eros. Donec id elit non mi porta gravida at eget metus. Curabitur blandit tempus porttitor.</p>
+					</div>
+				</div>
+				<div id="process-4-content" class="inactive-process">
+					<img src="wp-content/themes/yan-base/img/TT/launch.png">
+					<div>
+						<h4>Launch</h4>
+						<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Sed posuere consectetur est at lobortis. Cras mattis 							consectetur purus sit amet fermentum. Donec id elit non mi porta gravida at eget metus. Vivamus sagittis lacus vel augue 						laoreet rutrum faucibus dolor auctor.</p>
+					</div>
+				</div>
+				<div id="process-5-content" class="inactive-process">
+					<img src="wp-content/themes/yan-base/img/TT/maintenance.png">
+					<div>
+						<h4>Maintenance and Growth</h4>
+						<p>Aenean lacinia bibendum nulla sed consectetur. Maecenas sed diam eget risus varius blandit sit amet non magna. Etiam 						porta sem malesuada magna mollis euismod. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia 						odio sem nec elit.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
 	
 <!--
 	<div id="about-us" class="about-us py-standard-separator pt-separator-above pb-0 ">

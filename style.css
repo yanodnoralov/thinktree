@@ -2994,7 +2994,7 @@ body {
   font-family: "work-sans", sans-serif;
   font-size: 18px;
   font-weight: 300;
-  color: #686868; }
+  color: #000000; }
 
 h1, .h1 {
   color: #000; }
@@ -3409,7 +3409,7 @@ body.hide-elements {
   background-repeat: no-repeat;
   background-position: 25% center; }
   #wicis-sports .product-inner img {
-    max-width: 75%; }
+    max-width: 60%; }
 
 #luminaid .product-inner {
   background: url(img/TT/project-3-background.png);
@@ -3443,6 +3443,8 @@ body.hide-elements {
     position: relative;
     z-index: 4;
     padding: 75px 0px; }
+    .product-row .product-inner .img-wrapper {
+      text-align: center; }
     .product-row .product-inner img {
       text-align: center; }
     .product-row .product-inner p {
@@ -3965,9 +3967,12 @@ body.hide-elements {
       border-color: #ffffff; }
 
 .site-footer {
-  background: #f6fafb;
+  background: #f4f4f4;
   border-top: 1px solid #eaeeef;
-  padding: 30px 0; }
+  padding: 30px 0;
+  color: #989898;
+  text-align: center;
+  font-weight: 400; }
 
 .info-popup {
   background: #0ecdfa;
@@ -4547,7 +4552,11 @@ body:not(.home) .site-footer {
       background-color: #ffffff;
       width: 2px;
       height: 35px;
-      margin-bottom: 12px; } }
+      margin-bottom: 12px; }
+  .p-right {
+    padding-left: 40px !important; }
+  .p-left {
+    padding-right: 40px !important; } }
 
 @media screen and (max-width: 767px) {
   #services #services-inner {

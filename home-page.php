@@ -41,10 +41,10 @@ get_header();
 			<div class="product-inner">
 			<div class="container">
 				<div class="row d-sm-flex align-items-center reverse-wrap-mobile">
-					<div class="col-md-6">
+					<div class="col-md-6 img-wrapper">
 							<img src="<?php echo get_template_directory_uri(); ?>/img/TT/project-1-mockup.png">
 		            </div>            
-		            <div class="col-md-6 hide pl-md-0 rellax" data-rellax-speed=".75"  data-rellax-percentage="0.5">
+		            <div class="col-md-6 hide pl-md-0 rellax p-right" data-rellax-speed=".75"  data-rellax-percentage="0.5">
 		                <h2>Healthio</h2>
 		                <div class="product-tags">
 			                <div>Mobile App</div>
@@ -65,7 +65,7 @@ get_header();
 			<div class="product-inner">
 			<div class="container">
 				<div class="row d-sm-flex align-items-center">        
-		            <div class="col-md-6 hide pr-md-0 rellax" data-rellax-speed=".75"  data-rellax-percentage="0.5">
+		            <div class="col-md-6 hide pr-md-0 rellax p-left" data-rellax-speed=".75"  data-rellax-percentage="0.5">
 		                <h2>WiCis Sports</h2>
 		                <div class="product-tags">
 			                <div>Mobile App</div>
@@ -73,7 +73,7 @@ get_header();
 		                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cras mattis consectetur purus sit amet fermentum. 						Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
 		                <a href="<?php echo $product2['learn_more_link']; ?>" class="btn btn-outline btn-primary"><span class="filler"></span>View Project</a>
 		            </div>
-		            <div class="col-md-6">
+		            <div class="col-md-6 img-wrapper">
 							<img src="<?php echo get_template_directory_uri(); ?>/img/TT/project-2-mockup.png">
 						</div>
 		            </div>    
@@ -89,11 +89,11 @@ get_header();
 			<div class="product-inner ">
 			<div class="container">
 				<div class="row d-sm-flex align-items-center reverse-wrap-mobile">
-					<div class="col-md-6">
+					<div class="col-md-6 img-wrapper">
 							<img src="<?php echo get_template_directory_uri(); ?>/img/TT/project-3-mockup.png">
 
 		            </div>            
-		            <div class="col-md-6 hide pl-md-0 rellax" data-rellax-speed=".75" data-rellax-percentage="0.5">
+		            <div class="col-md-6 hide pl-md-0 rellax p-right" data-rellax-speed=".75" data-rellax-percentage="0.5">
 		                <h2>Luminaid</h2>
 		                <div class="product-tags">
 			                <div>Mobile App</div>
@@ -114,7 +114,7 @@ get_header();
 			<div class="product-inner">
 			<div class="container">
 				<div class="row d-sm-flex align-items-center">           
-		            <div class="col-md-6 hide pr-md-0 rellax" data-rellax-speed=".75" data-rellax-percentage="0.5">
+		            <div class="col-md-6 hide pr-md-0 rellax p-left" data-rellax-speed=".75" data-rellax-percentage="0.5">
 		                <h2>Pica</h2>
 		                <div class="product-tags">
 			                <div>Mobile App</div>
@@ -123,7 +123,7 @@ get_header();
 		                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cras mattis consectetur purus sit amet fermentum. 						Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
 		                <a href="<?php echo $product4['learn_more_link']; ?>" class="btn btn-outline btn-primary"><span class="filler"></span>View Project</a>
 		            </div>
-		            <div class="col-md-6">
+		            <div class="col-md-6 img-wrapper">
 			            <img src="<?php echo get_template_directory_uri(); ?>/img/TT/project-4-mockup.png">
 		            </div> 
 				</div>
@@ -475,7 +475,7 @@ get_header();
 		<div class="bottom-bg bg-white"></div>
 	</div><!-- about-us -->
 	
-	<div class="contact-us-wrapper pt-separator-above">
+	<div class="contact-us-wrapper pt-separator-above" id="contact">
 	    <div class="container">
 	        <div class="row mt-5">
 	            <div class="col-lg-12" data-rellax-speed="-1.5" data-rellax-percentage="0">

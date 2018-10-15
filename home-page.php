@@ -353,6 +353,26 @@ get_header();
 		</div>
 	</div>
 	
+	<div id="blog" class="pt-separator-above">
+		<div class="container">
+		<h3 class="green_border">Blog</h3>
+		<div class="blog-container">
+			<div class="blog-left">
+				<h5 id="blog-1">Think Tree Studios Shines as 
+					Leading Denver App Developers</h5>
+			</div>
+			<div class="blog-right">
+				<h5 id="blog-2">Best Mobile Solutions 
+					Development Company – Colorado</h5>
+				<h5 id="blog-3">Top Colorado 
+					Mobile App Developers</h5>
+			</div>
+			
+
+		</div>
+		</div>
+	</div>
+	
 	
 <!--
 	<div id="about-us" class="about-us py-standard-separator pt-separator-above pb-0 ">

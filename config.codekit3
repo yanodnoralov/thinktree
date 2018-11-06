@@ -879,7 +879,44 @@
 		"oT": 1,
 		"q": 100
 		},
+<<<<<<< HEAD
 	"/img/tt/Center_Integrative_Medicine.png": {
+=======
+	"\/img\/TT\/blog-1.jpg": {
+		"ft": 16384,
+		"iS": 133549,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/img\/TT\/blog-1.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"\/img\/TT\/blog-2.jpg": {
+		"ft": 16384,
+		"iS": 21978,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/img\/TT\/blog-2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/img\/TT\/blog-3.jpg": {
+		"ft": 16384,
+		"iS": 24432,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/img\/TT\/blog-3.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/img\/TT\/Center_Integrative_Medicine.png": {
+>>>>>>> ab1441b5d884d8b743457703b20c85de8e285208
 		"ft": 32768,
 		"iS": 4253,
 		"oA": 0,
@@ -890,11 +927,19 @@
 		"oT": 1,
 		"q": 100
 		},
+<<<<<<< HEAD
 	"/img/tt/colman-publishing.png": {
 		"ft": 32768,
 		"iS": 7733,
 		"oA": 0,
 		"oAP": "/img/tt/colman-publishing.png",
+=======
+	"\/img\/TT\/coman-publishing.png": {
+		"ft": 32768,
+		"iS": 7733,
+		"oA": 0,
+		"oAP": "\/img\/TT\/coman-publishing.png",
+>>>>>>> ab1441b5d884d8b743457703b20c85de8e285208
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -912,7 +957,44 @@
 		"opt": 0,
 		"q": 100
 		},
+<<<<<<< HEAD
 	"/img/tt/fliptask.png": {
+=======
+	"\/img\/TT\/design.png": {
+		"ft": 32768,
+		"iS": 10649,
+		"oA": 0,
+		"oAP": "\/img\/TT\/design.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/img\/TT\/development.png": {
+		"ft": 32768,
+		"iS": 9998,
+		"oA": 0,
+		"oAP": "\/img\/TT\/development.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/img\/TT\/enso.png": {
+		"ft": 32768,
+		"iS": 11929,
+		"oA": 0,
+		"oAP": "\/img\/TT\/enso.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/img\/TT\/fliptask.png": {
+>>>>>>> ab1441b5d884d8b743457703b20c85de8e285208
 		"ft": 32768,
 		"iS": 25119,
 		"oA": 0,
@@ -956,7 +1038,22 @@
 		"oT": 1,
 		"q": 100
 		},
+<<<<<<< HEAD
 	"/img/tt/kidcase.jpg": {
+=======
+	"\/img\/TT\/irrived.png": {
+		"ft": 32768,
+		"iS": 18962,
+		"oA": 0,
+		"oAP": "\/img\/TT\/irrived.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/img\/TT\/kidcase.jpg": {
+>>>>>>> ab1441b5d884d8b743457703b20c85de8e285208
 		"ft": 16384,
 		"iS": 2414,
 		"jF": 0,
@@ -967,11 +1064,37 @@
 		"opt": 0,
 		"q": 100
 		},
+<<<<<<< HEAD
 	"/img/tt/luminaid.png": {
+=======
+	"\/img\/TT\/launch.png": {
+		"ft": 32768,
+		"iS": 26870,
+		"oA": 0,
+		"oAP": "\/img\/TT\/launch.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/img\/TT\/luminaid.png": {
+>>>>>>> ab1441b5d884d8b743457703b20c85de8e285208
 		"ft": 32768,
 		"iS": 7771,
 		"oA": 0,
 		"oAP": "/img/tt/luminaid.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/img\/TT\/maintenance.png": {
+		"ft": 32768,
+		"iS": 25101,
+		"oA": 0,
+		"oAP": "\/img\/TT\/maintenance.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -989,7 +1112,22 @@
 		"opt": 0,
 		"q": 100
 		},
+<<<<<<< HEAD
 	"/img/tt/process-background.jpg": {
+=======
+	"\/img\/TT\/pica-logo.png": {
+		"ft": 32768,
+		"iS": 63991,
+		"oA": 0,
+		"oAP": "\/img\/TT\/pica-logo.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/img\/TT\/process-background.jpg": {
+>>>>>>> ab1441b5d884d8b743457703b20c85de8e285208
 		"ft": 16384,
 		"iS": 79400,
 		"jF": 0,
@@ -1000,25 +1138,48 @@
 		"opt": 0,
 		"q": 100
 		},
+<<<<<<< HEAD
 	"/img/tt/project-1-mockup.png": {
+=======
+	"\/img\/TT\/project-1-background.png": {
+		"ft": 32768,
+		"iS": 26779,
+		"oA": 0,
+		"oAP": "\/img\/TT\/project-1-background.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/img\/TT\/project-1-mockup.png": {
+>>>>>>> ab1441b5d884d8b743457703b20c85de8e285208
 		"ft": 32768,
 		"iS": 339684,
 		"oA": 0,
 		"oAP": "/img/tt/project-1-mockup.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
+<<<<<<< HEAD
 	"/img/tt/project-1.png": {
+=======
+	"\/img\/TT\/project-2-background.png": {
+>>>>>>> ab1441b5d884d8b743457703b20c85de8e285208
 		"ft": 32768,
-		"iS": 26662,
+		"iS": 25741,
 		"oA": 0,
+<<<<<<< HEAD
 		"oAP": "/img/tt/project-1.png",
+=======
+		"oAP": "\/img\/TT\/project-2-background.png",
+>>>>>>> ab1441b5d884d8b743457703b20c85de8e285208
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -1033,14 +1194,33 @@
 		"oT": 1,
 		"q": 100
 		},
+<<<<<<< HEAD
 	"/img/tt/project-2.png": {
 		"ft": 32768,
 		"iS": 25110,
 		"oA": 0,
 		"oAP": "/img/tt/project-2.png",
+=======
+	"\/img\/TT\/project-3-background.jpg": {
+		"ft": 16384,
+		"iS": 59714,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/img\/TT\/project-3-background.jpg",
+>>>>>>> ab1441b5d884d8b743457703b20c85de8e285208
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
+		"q": 100
+		},
+	"\/img\/TT\/project-3-background.png": {
+		"ft": 32768,
+		"iS": 28022,
+		"oA": 0,
+		"oAP": "\/img\/TT\/project-3-background.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -1050,19 +1230,27 @@
 		"oA": 0,
 		"oAP": "/img/tt/project-3-mockup.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
+<<<<<<< HEAD
 	"/img/tt/project-3.png": {
+=======
+	"\/img\/TT\/project-4-background.png": {
+>>>>>>> ab1441b5d884d8b743457703b20c85de8e285208
 		"ft": 32768,
-		"iS": 25694,
+		"iS": 32694,
 		"oA": 0,
+<<<<<<< HEAD
 		"oAP": "/img/tt/project-3.png",
+=======
+		"oAP": "\/img\/TT\/project-4-background.png",
+>>>>>>> ab1441b5d884d8b743457703b20c85de8e285208
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -1077,6 +1265,7 @@
 		"oT": 1,
 		"q": 100
 		},
+<<<<<<< HEAD
 	"/img/tt/project-4.png": {
 		"ft": 32768,
 		"iS": 32694,
@@ -1089,6 +1278,9 @@
 		"q": 100
 		},
 	"/img/tt/rage-unlimited.png": {
+=======
+	"\/img\/TT\/rage-unlimited.png": {
+>>>>>>> ab1441b5d884d8b743457703b20c85de8e285208
 		"ft": 32768,
 		"iS": 3758,
 		"oA": 0,
@@ -1105,8 +1297,8 @@
 		"oA": 0,
 		"oAP": "/img/tt/repz.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -1127,6 +1319,17 @@
 		"oA": 0,
 		"oAP": "/img/tt/sky-networks.png",
 		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/img\/TT\/sky-networks1.png": {
+		"ft": 32768,
+		"iS": 28725,
+		"oA": 0,
+		"oAP": "\/img\/TT\/sky-networks1.png",
+		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
@@ -1137,6 +1340,17 @@
 		"iS": 22928,
 		"oA": 0,
 		"oAP": "/img/tt/strategy.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/img\/TT\/synq3.png": {
+		"ft": 32768,
+		"iS": 15758,
+		"oA": 0,
+		"oAP": "\/img\/TT\/synq3.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -1174,7 +1388,22 @@
 		"oT": 1,
 		"q": 100
 		},
+<<<<<<< HEAD
 	"/img/tt/wicis-sports.png": {
+=======
+	"\/img\/TT\/Voiptel-Logo.png": {
+		"ft": 32768,
+		"iS": 21646,
+		"oA": 0,
+		"oAP": "\/img\/TT\/Voiptel-Logo.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/img\/TT\/wicis-sports.png": {
+>>>>>>> ab1441b5d884d8b743457703b20c85de8e285208
 		"ft": 32768,
 		"iS": 4632,
 		"oA": 0,
@@ -1808,7 +2037,11 @@
 		"oS": 0,
 		"uL": 1
 		},
+<<<<<<< HEAD
 	"/sass/_plugins.scss": {
+=======
+	"\/sass\/_plugins.scss": {
+>>>>>>> ab1441b5d884d8b743457703b20c85de8e285208
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -2547,27 +2780,67 @@
 		"oF": 0,
 		"oS": 3
 		},
+<<<<<<< HEAD
 	"/style_LOCAL_92431.css": {
+=======
+	"\/style_BACKUP_92431.css": {
+>>>>>>> ab1441b5d884d8b743457703b20c85de8e285208
 		"aP": 1,
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
 		"oA": 0,
+<<<<<<< HEAD
 		"oAP": "/style_LOCAL_92431-min.css",
 		"oF": 0,
 		"oS": 3
 		},
 	"/style_REMOTE_92431.css": {
+=======
+		"oAP": "\/style_BACKUP_92431-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/style_BASE_92431.css": {
+>>>>>>> ab1441b5d884d8b743457703b20c85de8e285208
 		"aP": 1,
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
 		"oA": 0,
+<<<<<<< HEAD
 		"oAP": "/style_REMOTE_92431-min.css",
 		"oF": 0,
 		"oS": 3
 		},
 	"/template-parts/content-none.php": {
+=======
+		"oAP": "\/style_BASE_92431-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/style_LOCAL_92431.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/style_LOCAL_92431-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/style_REMOTE_92431.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/style_REMOTE_92431-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/template-parts\/content-none.php": {
+>>>>>>> ab1441b5d884d8b743457703b20c85de8e285208
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,

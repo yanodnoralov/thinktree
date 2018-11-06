@@ -162,6 +162,11 @@ require get_template_directory() . '/inc/template-functions.php';
 require get_template_directory() . '/inc/customizer.php';
 
 /**
+ * Include layout functions
+ */
+require get_template_directory() . '/inc/layout_functions.php';
+
+/**
  * Load Jetpack compatibility file.
  */
 if ( defined( 'JETPACK__VERSION' ) ) {
@@ -180,3 +185,47 @@ function cc_mime_types($mimes) {
   return $mimes;
 }
 add_filter('upload_mimes', 'cc_mime_types');
+
+//response source set images
+function ar_responsive_image($image_id,$image_size,$max_width){
+
+	// check the image ID is not blank
+	if($image_id != '') {
+
+		// set the default src image size
+		$image_src = wp_get_attachment_image_url( $image_id, $image_size );
+
+		// set the srcset with various image sizes
+		$image_srcset = wp_get_attachment_image_srcset( $image_id, $image_size );
+		
+		//if wp rocket lazyload exists
+		if ( function_exists( 'get_rocket_option' ) && get_rocket_option( 'lazyload' )) {
+			echo 'src="data:image/gif;base64,R0lGODdhAQABAPAAAP///wAAACwAAAAAAQABAEACAkQBADs=" data-lazy-src="' . $image_src . '" data-lazy-srcset="'.$image_srcset.'" sizes="(max-width: '.$max_width.') 100vw, '.$max_width.'"';
+		} else {
+			// generate the markup for the responsive image without lazy load
+			echo 'src="'.$image_src.'" srcset="'.$image_srcset.'" sizes="(max-width: '.$max_width.') 100vw, '.$max_width.'"';
+		}
+
+	}
+}
+function get_ar_responsive_image($image_id,$image_size,$max_width){
+
+	// check the image ID is not blank
+	if($image_id != '') {
+
+		// set the default src image size
+		$image_src = wp_get_attachment_image_url( $image_id, $image_size );
+
+		// set the srcset with various image sizes
+		$image_srcset = wp_get_attachment_image_srcset( $image_id, $image_size );
+		
+		//if wp rocket lazyload exists
+		if ( function_exists( 'get_rocket_option' ) && get_rocket_option( 'lazyload' )) {
+			return 'src="data:image/gif;base64,R0lGODdhAQABAPAAAP///wAAACwAAAAAAQABAEACAkQBADs=" data-lazy-src="' . $image_src . '" data-lazy-srcset="'.$image_srcset.'" sizes="(max-width: '.$max_width.') 100vw, '.$max_width.'"';
+		} else {
+			// generate the markup for the responsive image without lazy load
+			return 'src="'.$image_src.'" srcset="'.$image_srcset.'" sizes="(max-width: '.$max_width.') 100vw, '.$max_width.'"';
+		}
+
+	}
+}

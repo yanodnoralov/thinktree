@@ -23,6 +23,70 @@
 		"oAP": "/404.php",
 		"oF": 0
 		},
+	"/acf-json/group_5adcdcb7e29a4.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/acf-json/group_5adcdcb7e29a4-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/acf-json/group_5adcf545d4680.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/acf-json/group_5adcf545d4680-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/acf-json/group_5add3f8b40854.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/acf-json/group_5add3f8b40854-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/acf-json/group_5add643d898b8.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/acf-json/group_5add643d898b8-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/acf-json/group_5aeb6677b75e5.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/acf-json/group_5aeb6677b75e5-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/acf-json/group_5b9196409b9ab.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/acf-json/group_5b9196409b9ab-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/acf-json/group_5bdb437cc15dd.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/acf-json/group_5bdb437cc15dd-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/acf-json/group_5be1cefc356f1.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/acf-json/group_5be1cefc356f1-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
 	"/archive.php": {
 		"cB": 0,
 		"ft": 8192,

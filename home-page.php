@@ -23,10 +23,9 @@ get_header();
 	
 	<div class="home-hero light-head">
 		<div class="container hero-content">
-			<?php $heroContent = get_field('hero_content');
-			if( $heroContent ): ?>
+			<?php if ($heroContent = get_field('hero_content');): ?>
 				<h1 class="huge-title rellax" data-rellax-speed="-1" data-rellax-percentage="0.5">
-					We build <span>extraordinary</span><br> digital products.
+					<?php echo $heroContent; ?>
 				</h1>
 			<?php endif; ?>
 		</div>
@@ -34,16 +33,79 @@ get_header();
 	
 	
 	<div class="all-products-wrapper">
+        
+        <?php if (have_rows('list_Item')): ?>
+        
+        <?php while (have_rows('list_Item')): the_row(); ?>
+        
+            <div class="product-row has-curve-bottom ">
+                <div class="product-inner">
+                <div class="parallax-bg rellax" data-rellax-speed=".75"  data-rellax-percentage="0.5"></div>
+                <div class="container">
+                    <div class="row d-sm-flex align-items-center reverse-wrap-mobile">
+                        <div class="col-md-6 img-wrapper rellax" data-rellax-speed="-1.5"  data-rellax-percentage="0.5">
+                            <?php if ($product_img = get_sub_field('product_img')): ?>
+                            <img src="<?php echo $product_img['url']; ?>" alt="<?php echo $product_img['alt'] ?>" />
+                            <?php endif; ?>
+                        </div>            
+                        <div class="col-md-6 hide pl-md-0 p-right">
+                            
+                            <?php if ($product_title = get_sub_field('product_title')): ?>
+                            
+                            <h2><?php echo $product_title; ?></h2>
+                            
+                            <?php
+
+                            endif;
+
+                            if( have_rows('product_tags') ):
+
+                                echo '<div class="product-tags">';
+
+                                // loop through the rows of data
+                                while ( have_rows('product_tags') ) : the_row();
+
+                                    $product_tag = get_sub_field('product_tag');
+                                    echo '<div>'.get_sub_field('product_tag').'</div>';
+
+                                endwhile;
+
+                                echo '</div>';
+
+                            endif;
+                            
+                            if ($product_description = get_sub_field('product_description')): ?>
+                            
+                            <p><?php $product_description; ?></p>
+                            
+                            <?php endif; ?>
+                            
+                            <?php if ($product_link = get_sub_field('product_link')): ?>
+                            
+                            <a href="<?php echo $product_link['url'];?>" class="btn btn-outline btn-primary"><span class="filler"></span><?php echo $product_link['title'];?></a>
+                            
+                            <?php endif; ?>
+                            
+                        </div>
+                    </div>
+                </div>
+                </div><!-- product-inner -->
+            </div><!-- product-row -->
+        
+            <?php endwhile; ?>
+        
+        
+        <?php endif; ?>
 		
 		<?php $product1 = get_field('product_row_1');
 		if( $product1 ): ?>
-		<div id="healthio" class="product-row has-curve-bottom ">
+		<!--div id="healthio" class="product-row has-curve-bottom ">
 			<div class="product-inner">
 			<div class="parallax-bg rellax" data-rellax-speed=".75"  data-rellax-percentage="0.5"></div>
 			<div class="container">
 				<div class="row d-sm-flex align-items-center reverse-wrap-mobile">
 					<div class="col-md-6 img-wrapper rellax" data-rellax-speed="-1.5"  data-rellax-percentage="0.5">
-							<img src="<?php echo get_template_directory_uri(); ?>/img/TT/project-1-mockup.png">
+							<img src="<?php echo $product_img['url']; ?>" alt="<?php echo $product_img['alt'] ?>" />
 		            </div>            
 		            <div class="col-md-6 hide pl-md-0 p-right">
 		                <h2>Healthio</h2>
@@ -56,13 +118,13 @@ get_header();
 		            </div>
 				</div>
 			</div>
-			</div><!-- product-inner -->
+			</div><!-- product-inner ->
 		</div><!-- healthio -->
 		<?php endif; ?>
 		
 		<?php $product2 = get_field('product_row_2');
 		if( $product2 ): ?>
-		<div id="wicis-sports" class="product-row">
+		<!--div id="wicis-sports" class="product-row">
 			<div class="product-inner">
 			<div class="parallax-bg rellax" data-rellax-speed=".75"  data-rellax-percentage="0.5"></div>
 			<div class="container">
@@ -81,13 +143,13 @@ get_header();
 		            </div>    
 				</div>
 			</div>
-			</div><!-- product-inner -->
+			</div><!-- product-inner --
 		</div><!-- wicis -->
 		<?php endif; ?>
 		
 		<?php $product3 = get_field('product_row_3');
 		if( $product3 ): ?>
-		<div id="luminaid" class="product-row pt-0">
+		<!--div id="luminaid" class="product-row pt-0">
 			<div class="product-inner ">
 			<div class="parallax-bg rellax" data-rellax-speed=".75"  data-rellax-percentage="0.5"></div>
 			<div class="container">
@@ -107,13 +169,13 @@ get_header();
 		            </div>
 				</div>
 			</div>
-			</div><!-- product-inner -->
+			</div><!-- product-inner --
 		</div><!-- luminaid -->
 		<?php endif; ?>
 		
 		<?php $product4 = get_field('product_row_4');
 		if( $product4 ): ?>
-		<div id="pica" class="product-row">
+		<!--div id="pica" class="product-row">
 			<div class="product-inner">
 			<div class="parallax-bg rellax" data-rellax-speed=".75"  data-rellax-percentage="0.5"></div>
 			<div class="container">
@@ -132,7 +194,7 @@ get_header();
 		            </div> 
 				</div>
 			</div>
-			</div><!-- product-inner -->
+			</div><!-- product-inner --
 		</div><!-- pica-->
 		<?php endif; ?>
 				
@@ -229,53 +291,82 @@ get_header();
 	
 <div id="services" class="pt-separator-above">
 	<div class="container rellax" data-rellax-speed="-1" data-rellax-percentage="0.5">
-			<h3 class="white section-title">Services</h3>
-			<div id="services-inner">
-				<div class="services-content col-lg-8 col-md-9 col-sm-12">
-			            <div class="active">
-			                <h4>Mobile Design</h4>
-			                <p>Anyone can make an app but it takes hard work and ingenuity to make an app have a lasting impression. We’re here to do exactly that. Build the best to keep your customers engaged and wanting more. Pulling from an experienced team of iOS and Android developers we will make sure to deliver a mobile app that is sure to dominate the App Store.</p>
-			            </div>
+        <h3 class="white section-title">Services</h3>
+        <div id="services-inner">
+            
+            <div class="services-content col-lg-8 col-md-9 col-sm-12">
+                
+                <?php
 
-			            <div class="inactive">
-				            <h4>Web Development</h4>
-			                <p>Sed posuere consectetur est at lobortis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla vitae elit libero, a pharetra augue. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Maecenas sed diam eget risus varius blandit sit amet non magna. Vestibulum id ligula porta felis euismod semper. Cras mattis consectetur purus sit amet fermentum.</p>
-			            </div>
+                if (have_rows('services')):
 
-			            <div class="inactive">
-				            <h4>UI Design</h4>
-			                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed diam eget risus varius blandit sit amet non magna. Donec id elit non mi porta gravida at eget metus. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
-			            </div>
-							
-			            <div class="inactive">
-				            <h4>Bluetooth</h4>
-			                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Donec id elit non mi porta gravida at eget metus.</p>
-			            </div>
+                    $count = 0;
 
-			            <div class="inactive">
-				            <h4>Internet of Things</h4>
-			                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
-			            </div>
+                    while (have_rows('services')): the_row();
+
+                        $active = ($count == 0) ? 'active' : ''; ?>
+
+                        <div class="<?php echo $active; ?>">
+
+                            <?php if ($service_title = get_sub_field('service_title')): ?>
+
+                            <h4><?php echo $service_title; ?></h4>
+
+                            <?php endif; ?>
+
+                            <h4>Mobile Design</h4>
+
+                            <?php if ($service_text = get_sub_field('service_text')): ?>
+
+                            <p><?php echo $service_text; ?></p>
+
+                            <?php endif; ?>
+                        </div>
+
+                        <?php
+
+                        $service_links .= '
+                        <div class="'.$active.'">
+                            <h5>'.$service_title.'</h5>
+                        </div>';
+
+                        $count++;
+
+                    endwhile;
+
+                endif;
+
+                ?>
+
+                <!--div class="active">
+                    <h4>Mobile Design</h4>
+                    <p>Anyone can make an app but it takes hard work and ingenuity to make an app have a lasting impression. We’re here to do exactly that. Build the best to keep your customers engaged and wanting more. Pulling from an experienced team of iOS and Android developers we will make sure to deliver a mobile app that is sure to dominate the App Store.</p>
+                </div>
+
+                <div class="inactive">
+                    <h4>Web Development</h4>
+                    <p>Sed posuere consectetur est at lobortis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla vitae elit libero, a pharetra augue. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Maecenas sed diam eget risus varius blandit sit amet non magna. Vestibulum id ligula porta felis euismod semper. Cras mattis consectetur purus sit amet fermentum.</p>
+                </div>
+
+                <div class="inactive">
+                    <h4>UI Design</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed diam eget risus varius blandit sit amet non magna. Donec id elit non mi porta gravida at eget metus. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+                </div>
+
+                <div class="inactive">
+                    <h4>Bluetooth</h4>
+                    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Donec id elit non mi porta gravida at eget metus.</p>
+                </div>
+
+                <div class="inactive">
+                    <h4>Internet of Things</h4>
+                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
+                </div-->
 
 			</div>
-			
-
+                
 			<div class="services-titles col-lg-4 col-md-3 col-sm-12">
-                <div class="active">
-                    <h5>Mobile Design</h5>
-                </div>
-                <div class="inactive">
-                    <h5>Web Development</h5>
-	            </div>
-                <div class="inactive">
-                    <h5>UI Design</h5>
-                    </div>
-                <div class="inactive">
-                    <h5>Bluetooth</h5>
-                </div>
-                <div class="inactive">
-                    <h5>Internet of Things</h5>
-                </div>
+                <?php echo $service_links; ?>
 			</div><!-- row -->
 		</div>
 	</div><!-- container -->
@@ -334,10 +425,42 @@ get_header();
 				
 	        </div>
 -->
-
+        
+        <?php if (have_rows('customer_partners')): ?>
 
 		<div id="logos-container">
-			<img src="wp-content/themes/yan-base/img/TT/healthio.png">
+            
+            <?php
+
+            while (have_rows('customer_partners')): the_row();
+
+                $logo_link = get_sub_field('logo_link');
+
+                if ($logo_link): ?>
+
+                <a href="<?php echo $logo_link['url'];?>" alt="<?php echo $logo_link['title']; ?>">
+
+                <?php endif; ?>
+
+                    <?php if ($logo = get_sub_field('logo')): ?>
+
+                    <img src="<?php echo $logo['url']; ?>" alt="<?php echo $logo['alt'] ?>" />
+
+                    <?php endif; ?>
+
+                <?php if ($logo_link): ?>
+
+                </a>
+
+                <?php
+            
+                endif;
+
+            endwhile;
+
+            ?>
+
+			<!--img src="wp-content/themes/yan-base/img/TT/healthio.png">
 			<img src="wp-content/themes/yan-base/img/TT/wicis-sports.png">
 			<img src="wp-content/themes/yan-base/img/TT/luminaid.png">
 			<img src="wp-content/themes/yan-base/img/TT/sky-networks1.png">
@@ -353,26 +476,113 @@ get_header();
 			<img src="wp-content/themes/yan-base/img/TT/irrived.png">
 			<img src="wp-content/themes/yan-base/img/TT/enso.png">
 			<img src="wp-content/themes/yan-base/img/TT/aci.png">
-			<img src="wp-content/themes/yan-base/img/TT/nusura.jpg">
+			<img src="wp-content/themes/yan-base/img/TT/nusura.jpg"-->
 
-		</div>
-		</div>
 	</div><!-- our-clients -->
+    <?php endif; ?>
 	
+    <?php if (have_rows('accolades')): ?>
 	
 	<div id="accolades" class="pt-separator-above">
 		<div class="container">
-		<h3 class="green_border">Accolades</h3>
-		<div class="accolades-container">
-		<img src="wp-content/themes/yan-base/img/TT/App_Developers_Denver_2018.png">
-		<img src="wp-content/themes/yan-base/img/TT/IPhone_App_Developers_Denver_2018.png">
-		<img src="wp-content/themes/yan-base/img/TT/Android_App_Developers_Denver_2018.png">
-		<img src="wp-content/themes/yan-base/img/TT/UX_Agencies_Denver_2018.png">
-		</div>
+            <h3 class="green_border">Accolades</h3>
+            <div class="accolades-container">
+                
+                <?php
+
+                while (have_rows('accolades')): the_row();
+
+                    $accolade = get_sub_field('accolade');
+
+                    if ($accolade = get_sub_field('accolade')): ?>
+
+                    <img src="<?php echo $accolade['url']; ?>" alt="<?php echo $accolade['alt'] ?>" />
+                
+                    <?php
+
+                    endif;
+
+                endwhile;
+
+                ?>
+                
+                <!--img src="wp-content/themes/yan-base/img/TT/App_Developers_Denver_2018.png">
+                <img src="wp-content/themes/yan-base/img/TT/IPhone_App_Developers_Denver_2018.png">
+                <img src="wp-content/themes/yan-base/img/TT/Android_App_Developers_Denver_2018.png">
+                <img src="wp-content/themes/yan-base/img/TT/UX_Agencies_Denver_2018.png"-->
+                
+            </div>
 		</div>
 	</div>
+            
+    <?php endif; ?>
 	
-	<div id="process" class="pt-separator-above">
+    <?php if (have_rows('processes')): ?>
+            
+        <?php
+            
+        $process_content = $process_links = '';
+            
+        $count = 1;
+
+        while (have_rows('processes')): the_row();
+            
+            $process_title = get_sub_field('process_title')
+            
+            $active = ($count == 1) ? ' active' : 'inactive';
+            $active_process = ($count == 1) ? ' active-process' : 'inactive-process';
+            
+            $process_links .= '<div id="process-'.$count.'-title" class="'.$active.'"><span class="num">'.sprintf('%02d',$count).'</span><h5>'.$process_title.'</h5></div>';
+            
+            $process_content .= '
+            <div id="process-1-content" class="'.$active.'">';
+            
+                if ($process_img = get_sub_field('process_img')):
+            
+                $process_content .= '<img src="'.$process_img['url'].'" alt="'.$process_img['alt'].'" />';
+            
+                endif;
+            
+                $process_content .= '<div>';
+            
+                if ($process_title):
+            
+                    $process_content .= '<h4>'.$process_title.'</h4>';
+            
+                endif;
+            
+                if ($process_text = get_sub_field('process_text')):
+            
+                    $process_content .= '<p>'.$process_text.'</p>';
+            
+                endif;
+            
+            $process_content .= '
+                </div>
+                
+            </div>';
+            
+            $count++;
+
+        endwhile;
+
+        ?>
+
+    <div id="process" class="pt-separator-above">
+        <div class="container rellax" data-rellax-speed="-1" data-rellax-percentage="0.5">
+            <div id="process-titles">
+                <h3>Process</h3>
+	            <?php echo $process_links; ?>
+            </div>
+            <div id="process-content">
+                <?php echo $process_content; ?>
+            </div>
+        </div>
+    </div>
+            
+    <?php endif; ?>
+            
+	<!--div id="process" class="pt-separator-above">
 		<div class="container rellax" data-rellax-speed="-1" data-rellax-percentage="0.5">
 			<div id="process-titles">
 				<h3>Process</h3>
@@ -420,26 +630,73 @@ get_header();
 				</div>
 			</div>
 		</div>
-	</div>
+	</div-->
 	
 	<div id="blog" class="pt-separator-above">
+        
 		<div class="container">
-		<h3 class="green_border">Blog</h3>
-		<div class="blog-container row">
-			<div class="blog-left col-lg-9">
-				<h5 id="blog-1">Think Tree Studios Shines as 
-					Leading Denver App Developers</h5>
-			</div>
-			<div class="blog-right col-lg-3">
-				<h5 id="blog-2">Best Mobile Solutions 
-					Development Company – Colorado</h5>
-				<h5 id="blog-3">Top Colorado 
-					Mobile App Developers</h5>
-			</div>
-			
+            
+            <h3 class="green_border">Blog</h3>
+            
+            <div class="blog-container row">
+                
+                <?php
+                
+                $query = new WP_Query(
+                    array(
+                        'post_type' => 'post',
+                        'posts_per_page' => '3',
+                        'orderby' => 'date',
+	                   'order' => 'DESC',
+                    )
+                );
+                
+                $posts = $query->posts;
+                
+                $count = 1;
 
+                foreach($posts as $post):
+                
+                    if ($count == 1):
+                
+                        echo '
+                        <div class="blog-left col-lg-9">
+
+                            <h5 id="blog-'.$count.'">'.$post->post_title.'</h5>
+
+                        </div>
+                        <div class="blog-right col-lg-3">';
+
+                    else:
+                
+                        echo '<h5 id="blog-'.$count.'">'.$post->post_title.'</h5>';
+                
+                    endif;
+                
+                endforeach;
+                
+                wp_reset_query();
+                
+                ?>
+                
+                <!--div class="blog-left col-lg-9">
+                    
+                    <h5 id="blog-1">Think Tree Studios Shines as Leading Denver App Developers</h5>
+                    
+                </div>
+                
+                <div class="blog-right col-lg-3">
+                    
+                    <h5 id="blog-2">Best Mobile Solutions Development Company – Colorado</h5>
+                    
+                    <h5 id="blog-3">Top Colorado Mobile App Developers</h5-->
+                    
+                </div>
+
+            </div>
+            
 		</div>
-		</div>
+        
 	</div>
 	
 	

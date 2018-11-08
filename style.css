@@ -3017,7 +3017,7 @@ h1, h2 {
   font-family: "proxima-nova-condensed", sans-serif;
   font-weight: 600; }
 
-h3, h5 {
+h3, h5, .h3, .h5 {
   font-family: "proxima-nova-condensed", sans-serif;
   font-weight: 500; }
 
@@ -3039,8 +3039,9 @@ h4, .h4 {
   line-height: 1.2em; }
 
 h5, .h5 {
-  font-size: 1.75em;
-  margin-bottom: 15px;
+  font-size: 1.5em;
+  margin-top: 10px;
+  margin-bottom: 10px;
   line-height: 1.17em; }
 
 h6, .h6 {
@@ -3048,6 +3049,14 @@ h6, .h6 {
   font-weight: 500;
   margin: 0.7em 0;
   font-size: .8em; }
+
+div > h1:first-child, div > .h1:first-child, div > h2:first-child, div > .h2:first-child, div > h3:first-child, div > .h3:first-child, div > h4:first-child, div > .h4:first-child, div > h5:first-child, div > .h5:first-child, div > h6:first-child, div > .h6:first-child, div > p:first-child {
+  margin-top: 0; }
+
+ul.list-no-format {
+  list-style: none;
+  padding-left: 0 !important;
+  margin: 0; }
 
 .huge-title {
   font-size: 3.8em;
@@ -4298,7 +4307,7 @@ h3.section-title {
   font-size: 0.8em;
   letter-spacing: 1px;
   font-family: "work-sans", sans-serif;
-  font-weight: 500;
+  font-weight: 600;
   text-transform: uppercase;
   transition: all 0.45s ease-out;
   position: relative; }
@@ -4329,10 +4338,11 @@ h3.section-title {
 
 .btn-outline {
   border: 1px solid; }
-  .btn-outline:hover {
-    color: white !important; }
   .btn-outline.btn-primary {
     border-color: #3ABA5D; }
+    .btn-outline.btn-primary:hover {
+      color: white;
+      background: #3ABA5D; }
 
 .btn-primary {
   color: #3ABA5D; }
@@ -4504,11 +4514,72 @@ a.btn-header {
       .section .title.title-left h2 {
         padding-left: 0;
         padding-right: 0; }
+  .section:not(.disable-img-shadow):not(.prallax_hero) img {
+    box-shadow: 0 5px 50px rgba(0, 0, 0, 0.2); }
   .section.no_subtitle .section-title {
     margin-bottom: 0; }
   @media (max-width: 991.98px) {
     .section h2 br {
       display: none; } }
+
+.about-deliverables ul {
+  color: #555; }
+  .about-deliverables ul .h5 {
+    color: inherit; }
+
+.customer-reviews .review-header i {
+  color: rgba(0, 0, 0, 0.5); }
+
+@media (min-width: 768px) {
+  .customer-reviews .row {
+    align-items: center; } }
+
+.prallax_hero {
+  position: relative;
+  overflow: hidden; }
+  .prallax_hero .p-bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat; }
+  .prallax_hero .container {
+    position: relative;
+    z-index: 1; }
+
+@media (min-width: 768px) {
+  .border-right {
+    border-right: 3px solid #3ABA5D; } }
+
+@media (min-width: 768px) {
+  .wide-gutter > div:not(:first-child):not(:last-child) {
+    padding-left: 30px;
+    padding-right: 30px; }
+  .wide-gutter > div:first-child {
+    padding-right: 30px; }
+  .wide-gutter > div:last-child {
+    padding-left: 30px; } }
+
+@media (min-width: 992px) {
+  .wide-gutter > div:not(:first-child):not(:last-child) {
+    padding-left: 60px;
+    padding-right: 60px; }
+  .wide-gutter > div:first-child {
+    padding-right: 60px; }
+  .wide-gutter > div:last-child {
+    padding-left: 60px; } }
+
+@media (min-width: 992px) {
+  .wide-gutter-lg > div:not(:first-child):not(:last-child) {
+    padding-left: 60px;
+    padding-right: 60px; }
+  .wide-gutter-lg > div:first-child {
+    padding-right: 60px; }
+  .wide-gutter-lg > div:last-child {
+    padding-left: 60px; } }
 
 .overview {
   max-width: 70%;
@@ -4544,19 +4615,6 @@ a.btn-header {
         .content-area ul.ul-w-images li.li-with-img .li-content {
           display: flex; }
 
-.content-area a.btn {
-  border: 1px solid #3ABA5D;
-  color: #3ABA5D;
-  font-weight: 600 !important; }
-  .content-area a.btn.file {
-    background-image: url("./img/file-icon.png");
-    background-size: 17px;
-    background-position: 35px center;
-    background-repeat: no-repeat;
-    padding: 15px 35px 15px 70px; }
-  .content-area a.btn:hover {
-    color: #3ABA5D; }
-
 .product-content-row {
   margin-top: 3.5em; }
 
@@ -4565,7 +4623,8 @@ body.products-template-default #primary {
   margin-bottom: 70px; }
 
 .footer-cta {
-  background: #2167d5;
+  background: url("./img/contact-bg.jpg") no-repeat center center;
+  background-size: cover;
   position: relative;
   color: #accfff;
   padding: 100px 0 60px;

@@ -52,9 +52,27 @@ get_header();
 	                echo get_template_by_layout( get_row_layout() );
 	            }
 	        }
+	        
+	    
+		$next_post = get_next_post();
+		$prev_post = get_previous_post();
+		if ( $next_post ) : ?>
+			<div class="next-article-wrapper">
+				<p class="h5">NEXT PROJECT</p>
+		    	<a href="<?php echo get_permalink( $next_post->ID ); ?>"><?php echo get_the_title( $next_post->ID ); ?></a>
+			</div>
+		<?php
+		elseif ( $prev_post ) : ?>
+			<div class="next-article-wrapper">
+				<p class="h5">PREVIOUS PROJECT</p>
+		    	<a href="<?php echo get_permalink( $prev_post->ID ); ?>"><?php echo get_the_title( $prev_post->ID ); ?></a>
+			</div>
+		<?php endif;?>
 
+		<?php
 		endwhile; // End of the loop.
 		?>
+		
 		
 		</main><!-- #main -->
 	</div><!-- #primary -->

@@ -140,6 +140,17 @@
 		"oT": 1,
 		"q": 100
 		},
+	"/img/app-store.png": {
+		"ft": 32768,
+		"iS": 8766,
+		"oA": 0,
+		"oAP": "/img/app-store.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"/img/Application-Infrastructure.png": {
 		"ft": 32768,
 		"iS": 3010,
@@ -304,6 +315,17 @@
 		"oT": 1,
 		"q": 100
 		},
+	"/img/contact-bg.jpg": {
+		"ft": 16384,
+		"iS": 58171,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/contact-bg.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
 	"/img/contact-map.png": {
 		"ft": 32768,
 		"iS": 48300,
@@ -342,6 +364,17 @@
 		"iS": 8543,
 		"oA": 0,
 		"oAP": "/img/general-service.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/img/google-play.png": {
+		"ft": 32768,
+		"iS": 13281,
+		"oA": 0,
+		"oAP": "/img/google-play.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,

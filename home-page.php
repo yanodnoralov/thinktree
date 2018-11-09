@@ -23,7 +23,7 @@ get_header();
 	
 	<div class="home-hero light-head">
 		<div class="container hero-content">
-			<?php if ($heroContent = get_field('hero_content');): ?>
+			<?php if ($heroContent = get_field('hero_content')): ?>
 				<h1 class="huge-title rellax" data-rellax-speed="-1" data-rellax-percentage="0.5">
 					<?php echo $heroContent; ?>
 				</h1>
@@ -527,7 +527,7 @@ get_header();
 
         while (have_rows('processes')): the_row();
             
-            $process_title = get_sub_field('process_title')
+            $process_title = get_sub_field('process_title');
             
             $active = ($count == 1) ? ' active' : 'inactive';
             $active_process = ($count == 1) ? ' active-process' : 'inactive-process';

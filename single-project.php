@@ -22,10 +22,10 @@ get_header();
 
 <style>
 	.parallax-overlay .parallax-img {
-		<?php if get_field('align_parallax_image_to') == 'top'){ ?>
+		<?php if (get_field('align_parallax_image_to') == 'top'){ ?>
 			top: 0;
 		<?php }?>
-		<?php if get_field('align_parallax_image_to') == 'bottom'){ ?>
+		<?php if (get_field('align_parallax_image_to') == 'bottom'){ ?>
 			bottom: 0;
 		<?php }?>
 	}

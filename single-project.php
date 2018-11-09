@@ -92,7 +92,7 @@ get_header();
 						<div class="col-12">
 							<div class="next-article-inner">
 								<p class="h5">NEXT PROJECT</p>
-								<a href="<?php echo get_permalink( $next_post->ID ); ?>"><?php echo get_the_title( $next_post->ID ); ?></a>
+								<p class="h2"><?php echo get_the_title( $next_post->ID ); ?></p>
 							</div>
 						</div>
 					</div>

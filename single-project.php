@@ -20,6 +20,23 @@ get_header();
 	$header_bg = "background-color:".get_field('header_bg');
 } ?>
 
+<style>
+	@media (min-width:768px) {
+	
+	.parallax-overlay .parallax-img {
+		max-width: <?php the_field('parallax_image_width'); ?>;
+	}
+	
+	}
+	@media (max-width:767px) {
+	
+	.parallax-overlay .parallax-img {
+		max-width: <?php the_field('parallax_image_width_mobile'); ?>;
+	}
+	
+	}
+</style>
+
 <div class="hero <?php echo $has_bg_color;?>" style="<?php echo $header_bg;?>">
 	<div class="custom-container">
 		<div class="rowz">

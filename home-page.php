@@ -44,7 +44,7 @@ get_header();
         
             $product_background = get_sub_field('product_background');
         
-            if ($count%2 == 0):
+            if ($count%2 != 0):
         
             ?>
         
@@ -731,21 +731,25 @@ get_header();
 
                 foreach($posts as $post):
                 
+                    $featured_img_url = get_the_post_thumbnail_url($post->ID, 'full');
+                
                     if ($count == 1):
                 
                         echo '
                         <div class="blog-left col-lg-9">
 
-                            <h5 id="blog-'.$count.'">'.$post->post_title.'</h5>
+                            <h5 id="blog-'.$count.'" style="background-image: url('.$featured_img_url.');">'.$post->post_title.'</h5>
 
                         </div>
                         <div class="blog-right col-lg-3">';
 
                     else:
                 
-                        echo '<h5 id="blog-'.$count.'">'.$post->post_title.'</h5>';
+                        echo '<h5 id="blog-'.$count.'" style="background-image: url('.$featured_img_url.');">'.$post->post_title.'</h5>';
                 
                     endif;
+                
+                    $count++;
                 
                 endforeach;
                 

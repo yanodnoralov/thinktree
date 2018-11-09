@@ -36,11 +36,21 @@ get_header();
         
         <?php if (have_rows('list_Item')): ?>
         
-        <?php while (have_rows('list_Item')): the_row(); ?>
+        <?php 
+        
+        $count = 1;
+        
+        while (have_rows('list_Item')): the_row();
+        
+            $product_background = get_sub_field('product_background');
+        
+            if ($count%2 == 0):
+        
+            ?>
         
             <div class="product-row has-curve-bottom ">
                 <div class="product-inner">
-                <div class="parallax-bg rellax" data-rellax-speed=".75"  data-rellax-percentage="0.5"></div>
+                <div class="parallax-bg rellax" style="background-image: url(<?php echo $product_background; ?>);" data-rellax-speed=".75"  data-rellax-percentage="0.5"></div>
                 <div class="container">
                     <div class="row d-sm-flex align-items-center reverse-wrap-mobile">
                         <div class="col-md-6 img-wrapper rellax" data-rellax-speed="-1.5"  data-rellax-percentage="0.5">
@@ -92,7 +102,76 @@ get_header();
                 </div><!-- product-inner -->
             </div><!-- product-row -->
         
-            <?php endwhile; ?>
+            <?php 
+
+            else:
+        
+            ?>
+        
+            <div class="product-row has-curve-bottom ">
+                <div class="product-inner">
+                <div class="parallax-bg rellax" style="background-image: url(<?php echo $product_background; ?>);" data-rellax-speed=".75"  data-rellax-percentage="0.5"></div>
+                <div class="container">
+                    <div class="row d-sm-flex align-items-center reverse-wrap-mobile">      
+                        <div class="col-md-6 hide pl-md-0 p-left">
+                            
+                            <?php if ($product_title = get_sub_field('product_title')): ?>
+                            
+                            <h2><?php echo $product_title; ?></h2>
+                            
+                            <?php
+
+                            endif;
+
+                            if( have_rows('product_tags') ):
+
+                                echo '<div class="product-tags">';
+
+                                // loop through the rows of data
+                                while ( have_rows('product_tags') ) : the_row();
+
+                                    $product_tag = get_sub_field('product_tag');
+                                    echo '<div>'.get_sub_field('product_tag').'</div>';
+
+                                endwhile;
+
+                                echo '</div>';
+
+                            endif;
+                            
+                            if ($product_description = get_sub_field('product_description')): ?>
+                            
+                            <p><?php $product_description; ?></p>
+                            
+                            <?php endif; ?>
+                            
+                            <?php if ($product_link = get_sub_field('product_link')): ?>
+                            
+                            <a href="<?php echo $product_link['url'];?>" class="btn btn-outline btn-primary"><span class="filler"></span><?php echo $product_link['title'];?></a>
+                            
+                            <?php endif; ?>
+                            
+                        </div>
+                        <div class="col-md-6 img-wrapper rellax" data-rellax-speed="-1.5"  data-rellax-percentage="0.5">
+                            <?php if ($product_img = get_sub_field('product_img')): ?>
+                            <img src="<?php echo $product_img['url']; ?>" alt="<?php echo $product_img['alt'] ?>" />
+                            <?php endif; ?>
+                        </div>      
+                    </div>
+                </div>
+                </div><!-- product-inner -->
+            </div><!-- product-row -->
+        
+            <?php 
+
+
+            endif;
+
+            $count++;
+        
+        endwhile;
+        
+        ?>
         
         
         <?php endif; ?>

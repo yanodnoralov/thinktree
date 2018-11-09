@@ -21,19 +21,25 @@ get_header();
 } ?>
 
 <style>
-	@media (min-width:768px) {
+	.parallax-overlay .parallax-img {
+		<?php if get_field('align_parallax_image_to') == 'top'){ ?>
+			top: 0;
+		<?php }?>
+		<?php if get_field('align_parallax_image_to') == 'bottom'){ ?>
+			bottom: 0;
+		<?php }?>
+	}
 	
+	@media (min-width:768px) {
 	.parallax-overlay .parallax-img {
 		max-width: <?php the_field('parallax_image_width'); ?>;
 	}
 	
 	}
 	@media (max-width:767px) {
-	
 	.parallax-overlay .parallax-img {
 		max-width: <?php the_field('parallax_image_width_mobile'); ?>;
 	}
-	
 	}
 </style>
 

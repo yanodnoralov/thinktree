@@ -1793,7 +1793,6 @@ $color-primary-mix: darken($color-primary, 10%);
 		.parallax-img {
 			right: 0;
 			position: relative;
-			bottom: 0;
 			@include media-breakpoint-up(lg) {
 				position: absolute;
 				left: 0; bottom: 0;

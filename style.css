@@ -4516,8 +4516,7 @@ a.btn-header {
         top: 0; } }
     .hero .parallax-overlay .parallax-img {
       right: 0;
-      position: relative;
-      bottom: 0; }
+      position: relative; }
       @media (min-width: 992px) {
         .hero .parallax-overlay .parallax-img {
           position: absolute;

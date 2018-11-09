@@ -21,22 +21,28 @@ get_header();
 } ?>
 
 <div class="hero <?php echo $has_bg_color;?>" style="<?php echo $header_bg;?>">
-	<div class="container">
-		<header class="entry-header rellax hide" data-rellax-speed=".5" data-rellax-percentage="0.5">
-			<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-			<?php if( get_field('sub_title') ): ?>
-				<p class="sub-title"><?php the_field('sub_title'); ?></p>
-			<?php endif; ?>
-		</header><!-- .entry-header -->
-	</div>
-	<?php if( get_field('header_image') ): ?>
-		<div class="img-overlay" style="background-image: url('<?php the_field('header_image'); ?>');"></div>
-	<?php endif; ?>
-	<?php if( get_field('parallax_image') ): ?>
-		<div class="parallax-overlay rellax" data-rellax-speed="-1" data-rellax-percentage="0.5">
-			<img class="parallax-img hide" src="<?php the_field('parallax_image'); ?>" width="<?php if( get_field('parallax_image_width') ): the_field('parallax_image_width'); endif;?>"/>
+	<div class="custom-container">
+		<div class="rowz">
+			<div class="content-col">
+				<header class="entry-header rellax hide" data-rellax-speed=".5" data-rellax-percentage="0.5">
+					<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+					<?php if( get_field('sub_title') ): ?>
+						<p class="sub-title"><?php the_field('sub_title'); ?></p>
+					<?php endif; ?>
+				</header><!-- .entry-header -->
+			</div>
+			<div class="img-col">
+				<?php if( get_field('header_image') ): ?>
+					<div class="img-overlay" style="background-image: url('<?php the_field('header_image'); ?>');"></div>
+				<?php endif; ?>
+				<?php if( get_field('parallax_image') ): ?>
+					<div class="parallax-overlay rellax" data-rellax-speed="-1" data-rellax-percentage="0.5">
+						<img class="parallax-img hide" src="<?php the_field('parallax_image'); ?>"/>
+					</div>
+				<?php endif; ?>
+			</div>
 		</div>
-	<?php endif; ?>
+	</div>
 </div>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
@@ -57,15 +63,31 @@ get_header();
 		$next_post = get_next_post();
 		$prev_post = get_previous_post();
 		if ( $next_post ) : ?>
-			<div class="next-article-wrapper">
-				<p class="h5">NEXT PROJECT</p>
-		    	<a href="<?php echo get_permalink( $next_post->ID ); ?>"><?php echo get_the_title( $next_post->ID ); ?></a>
+			<div class="next-article-wrapper section">
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+							<div class="next-article-inner">
+								<p class="h5">NEXT PROJECT</p>
+								<a href="<?php echo get_permalink( $next_post->ID ); ?>"><?php echo get_the_title( $next_post->ID ); ?></a>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		<?php
 		elseif ( $prev_post ) : ?>
-			<div class="next-article-wrapper">
-				<p class="h5">PREVIOUS PROJECT</p>
-		    	<a href="<?php echo get_permalink( $prev_post->ID ); ?>"><?php echo get_the_title( $prev_post->ID ); ?></a>
+			<div class="next-article-wrapper section">
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+							<a class="next-article-inner" href="<?php echo get_permalink( $prev_post->ID ); ?>">
+								<p class="h5">PREVIOUS PROJECT</p>
+								<p class="h2"><?php echo get_the_title( $prev_post->ID ); ?></p>
+							</a>
+						</div>
+					</div>
+				</div>
 			</div>
 		<?php endif;?>
 

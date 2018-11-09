@@ -105,9 +105,11 @@
 				</div>
 
 				</nav>
-				<nav id="portfolio"><div id="portfolioline"></div>
-				<a href="#">PORTFOLIO</a>
-				</nav>
+				<?php if ( is_front_page() ) { ?>
+					<nav id="portfolio"><div id="portfolioline"></div>
+					<a href="#">PORTFOLIO</a>
+					</nav>
+				<?php }?>
 			</div>
 		</div>
 	</header><!-- #masthead -->

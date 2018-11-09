@@ -292,7 +292,7 @@ function get_template_by_layout($layout){
             <div class="section customer-reviews <?php echo $no_bg_color; echo $section_classes; echo ' '.$random_class;?>">
                 <div class="container">
 	                <div class="row wide-gutter">
-		                <div class="col-md-6 col-lg-5">
+		                <div class="col-md-6 col-lg-5 mb-md-0 mb-5">
 			                <?php if ( get_sub_field('left_image')):?>
 			                	<img class="parallax-img hide" <?php ar_responsive_image(get_sub_field('left_image'),'full','900px'); ?> />
 		                    <?php endif; ?>
@@ -300,7 +300,7 @@ function get_template_by_layout($layout){
 		                
 		                <div class="col-md-6 col-offset-lg-1">
 			                <?php if ( get_sub_field('customer_title')):?>
-		                    	<h2 class="mb-5"><?php echo get_sub_field('customer_title');?></h2>
+		                    	<h2 class="mb-4 mb-md-5"><?php echo get_sub_field('customer_title');?></h2>
 		                    <?php endif; ?>
 	                        <?php
 	                        if ( have_rows('reviews') ) :?>

@@ -12,38 +12,22 @@
 ?>
 	<?php if(!is_front_page() && !is_home()): ?>
 	
-	<?php if( get_field('footer_call_to_action', 'option') ): ?>
-	<div class="footer-cta">
-		<div class="container">
-			<div class="row d-flex align-items-center">
-				<h4>[CONTACT FORM WILL GO HERE]</h4>
-			</div>
-		</div>
-	</div>
-	<?php endif; ?>
-	
-	<?php if( get_field('area_1', 'option') ): ?>
-		<div class="footer-widgets-wrap">
+		<?php if( get_field('footer_call_to_action', 'option') ): ?>
+		<div class="footer-cta">
 			<div class="container">
-				<div class="row">
-					<div class="foot-widget col-sm-6 col-lg-4">
-						<?php the_field('area_1', 'option'); ?>
+				<div class="row mb-5">
+					<div class="col-12">
+						<h3 class="text-center section-title green_border white-text">Contact</h3>
 					</div>
-					<div class="foot-widget col-sm-6 col-lg-4">
-						<?php if( get_field('area_2', 'option') ): ?>
-							<?php the_field('area_2', 'option'); ?>
-						<?php endif; ?>
+				</div>
+				<div class="row d-flex align-items-center">
+					<div class="col-12">
+						<?php echo get_field('footer_call_to_action', 'option'); ?>
 					</div>
-					<div class="foot-widget col-sm-6 col-lg-4 pl-xl-5">
-						<?php if( get_field('area_3', 'option') ): ?>
-							<?php the_field('area_3', 'option'); ?>
-						<?php endif; ?>
-					</div>
-					<div class="sep"></div>
 				</div>
 			</div>
 		</div>
-	<?php endif; ?>
+		<?php endif; ?>
 		
 	<?php endif; ?>
 

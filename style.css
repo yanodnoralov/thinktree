@@ -3913,50 +3913,64 @@ body:not(.home) .site-header {
 }
 }
 */
-#blog .green_border:after {
-  margin: 20px 0px 0px 0px !important; }
+#blog {
+  /*
+	#blog-1{
+	background:url(img/TT/blog-1.jpg);
+	background-size:cover;
+	background-position: center center;
+	height:100%;
+	}
+	
+	#blog-2{
+	background:url(img/TT/blog-2.jpg);
+	background-size:cover;
+	background-position: center top;
+	height:100%;
+	font-size:20px;
+	margin-bottom: 20px !important;
+	
+	}
 
-#blog .blog-container {
-  margin-top: 60px;
-  display: flex;
-  align-items: flex-end;
-  height: 450px; }
-  #blog .blog-container h5 {
-    margin: 0px !important;
+
+	#blog-3{
+	background:url(img/TT/blog-3.jpg);
+	background-size:cover;
+	background-position: center top;
+	height:100%;
+	font-size:20px;
+
+	}*/ }
+  #blog .green_border:after {
+    margin: 20px 0px 0px 0px !important; }
+  #blog .blog-container {
+    margin-top: 60px;
     display: flex;
     align-items: flex-end;
-    text-transform: uppercase;
-    padding: 15px;
-    color: #ffffff; }
-  #blog .blog-container .blog-left {
-    height: 100%; }
-  #blog .blog-container .blog-right {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    font-size: 16px; }
-
-#blog #blog-1 {
-  background: url(img/TT/blog-1.jpg);
-  background-size: cover;
-  background-position: center center;
-  height: 100%; }
-
-#blog #blog-2 {
-  background: url(img/TT/blog-2.jpg);
-  background-size: cover;
-  background-position: center top;
-  height: 100%;
-  font-size: 20px;
-  margin-bottom: 20px !important; }
-
-#blog #blog-3 {
-  background: url(img/TT/blog-3.jpg);
-  background-size: cover;
-  background-position: center top;
-  height: 100%;
-  font-size: 20px; }
+    height: 450px; }
+    #blog .blog-container h5 {
+      margin: 0px !important;
+      display: flex;
+      align-items: flex-end;
+      text-transform: uppercase;
+      padding: 15px;
+      color: #ffffff;
+      background-size: cover;
+      background-position: center center;
+      height: 100%; }
+    #blog .blog-container .blog-left {
+      height: 100%; }
+    #blog .blog-container .blog-right {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      font-size: 16px; }
+      #blog .blog-container .blog-right h5 {
+        background-position: center top;
+        font-size: 20px; }
+        #blog .blog-container .blog-right h5:nth-child(1) {
+          margin-bottom: 20px !important; }
 
 .contact-us-wrapper {
   position: relative;

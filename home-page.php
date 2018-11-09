@@ -54,8 +54,8 @@ get_header();
                 <div class="container">
                     <div class="row d-sm-flex align-items-center reverse-wrap-mobile">
                         <div class="col-md-6 img-wrapper rellax" data-rellax-speed="-1.5"  data-rellax-percentage="0.5">
-                            <?php if ($product_img = get_sub_field('product_img')): ?>
-                            <img src="<?php echo $product_img['url']; ?>" alt="<?php echo $product_img['alt'] ?>" />
+                            <?php if ($product_image = get_sub_field('product_image')): ?>
+                            <img src="<?php echo $product_image['url']; ?>" alt="<?php echo $product_image['alt'] ?>" />
                             <?php endif; ?>
                         </div>            
                         <div class="col-md-6 hide pl-md-0 p-right">
@@ -86,7 +86,7 @@ get_header();
                             
                             if ($product_description = get_sub_field('product_description')): ?>
                             
-                            <p><?php $product_description; ?></p>
+                            <p><?php echo $product_description; ?></p>
                             
                             <?php endif; ?>
                             
@@ -153,8 +153,8 @@ get_header();
                             
                         </div>
                         <div class="col-md-6 img-wrapper rellax" data-rellax-speed="-1.5"  data-rellax-percentage="0.5">
-                            <?php if ($product_img = get_sub_field('product_img')): ?>
-                            <img src="<?php echo $product_img['url']; ?>" alt="<?php echo $product_img['alt'] ?>" />
+                            <?php if ($product_image = get_sub_field('product_image')): ?>
+                            <img src="<?php echo $product_image['url']; ?>" alt="<?php echo $product_image['alt'] ?>" />
                             <?php endif; ?>
                         </div>      
                     </div>
@@ -383,7 +383,7 @@ get_header();
 
                     while (have_rows('services')): the_row();
 
-                        $active = ($count == 0) ? 'active' : '';
+                        $active = ($count == 0) ? 'active' : 'inactive';
                 
                         $service_title = get_sub_field('service_title');
                         $service_text = get_sub_field('service_text');
@@ -500,13 +500,13 @@ get_header();
 	        </div>
 -->
         
-        <?php if (have_rows('customer_partners')): ?>
+        <?php if (have_rows('customers_partners')): ?>
 
 		<div id="logos-container">
             
             <?php
 
-            while (have_rows('customer_partners')): the_row();
+            while (have_rows('customers_partners')): the_row();
 
                 $logo_link = get_sub_field('logo_link');
 
@@ -566,8 +566,6 @@ get_header();
 
                 while (have_rows('accolades')): the_row();
 
-                    $accolade = get_sub_field('accolade');
-
                     if ($accolade = get_sub_field('accolade')): ?>
 
                     <img src="<?php echo $accolade['url']; ?>" alt="<?php echo $accolade['alt'] ?>" />
@@ -609,7 +607,7 @@ get_header();
             $process_links .= '<div id="process-'.$count.'-title" class="'.$active.'"><span class="num">'.sprintf('%02d',$count).'</span><h5>'.$process_title.'</h5></div>';
             
             $process_content .= '
-            <div id="process-1-content" class="'.$active.'">';
+            <div id="process-'.$count.'-content" class="'.$active_process.'">';
             
                 if ($process_img = get_sub_field('process_img')):
             

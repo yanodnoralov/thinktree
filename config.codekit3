@@ -943,493 +943,493 @@
 		"oT": 1,
 		"q": 100
 		},
-	"/img/tt/aci.png": {
+	"/img/TT/aci.png": {
 		"ft": 32768,
 		"iS": 5765,
 		"oA": 0,
-		"oAP": "/img/tt/aci.png",
+		"oAP": "/img/TT/aci.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"/img/tt/Android_App_Developers_Denver_2018.png": {
+	"/img/TT/Android_App_Developers_Denver_2018.png": {
 		"ft": 32768,
 		"iS": 149728,
 		"oA": 0,
-		"oAP": "/img/tt/Android_App_Developers_Denver_2018.png",
+		"oAP": "/img/TT/Android_App_Developers_Denver_2018.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"/img/tt/App_Developers_Denver_2018.png": {
+	"/img/TT/App_Developers_Denver_2018.png": {
 		"ft": 32768,
 		"iS": 150539,
 		"oA": 0,
-		"oAP": "/img/tt/App_Developers_Denver_2018.png",
+		"oAP": "/img/TT/App_Developers_Denver_2018.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"/img/tt/blog-1.jpg": {
+	"/img/TT/blog-1.jpg": {
 		"ft": 16384,
 		"iS": 132717,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/img/tt/blog-1.jpg",
+		"oAP": "/img/TT/blog-1.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"/img/tt/blog-2.jpg": {
+	"/img/TT/blog-2.jpg": {
 		"ft": 16384,
 		"iS": 21978,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/img/tt/blog-2.jpg",
+		"oAP": "/img/TT/blog-2.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"/img/tt/blog-3.jpg": {
+	"/img/TT/blog-3.jpg": {
 		"ft": 16384,
 		"iS": 24432,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/img/tt/blog-3.jpg",
+		"oAP": "/img/TT/blog-3.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"/img/tt/Center_Integrative_Medicine.png": {
+	"/img/TT/Center_Integrative_Medicine.png": {
 		"ft": 32768,
 		"iS": 4253,
 		"oA": 0,
-		"oAP": "/img/tt/Center_Integrative_Medicine.png",
+		"oAP": "/img/TT/Center_Integrative_Medicine.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"/img/tt/coman-publishing.png": {
+	"/img/TT/coman-publishing.png": {
 		"ft": 32768,
 		"iS": 7733,
 		"oA": 0,
-		"oAP": "/img/tt/coman-publishing.png",
+		"oAP": "/img/TT/coman-publishing.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"/img/tt/contact-background.jpg": {
+	"/img/TT/contact-background.jpg": {
 		"ft": 16384,
 		"iS": 62771,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/img/tt/contact-background.jpg",
+		"oAP": "/img/TT/contact-background.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"/img/tt/design.png": {
+	"/img/TT/design.png": {
 		"ft": 32768,
 		"iS": 10649,
 		"oA": 0,
-		"oAP": "/img/tt/design.png",
+		"oAP": "/img/TT/design.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"/img/tt/development.png": {
+	"/img/TT/development.png": {
 		"ft": 32768,
 		"iS": 9998,
 		"oA": 0,
-		"oAP": "/img/tt/development.png",
+		"oAP": "/img/TT/development.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"/img/tt/enso.png": {
+	"/img/TT/enso.png": {
 		"ft": 32768,
 		"iS": 11929,
 		"oA": 0,
-		"oAP": "/img/tt/enso.png",
+		"oAP": "/img/TT/enso.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"/img/tt/fliptask.png": {
+	"/img/TT/fliptask.png": {
 		"ft": 32768,
 		"iS": 25119,
 		"oA": 0,
-		"oAP": "/img/tt/fliptask.png",
+		"oAP": "/img/TT/fliptask.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"/img/tt/healthio.png": {
+	"/img/TT/healthio.png": {
 		"ft": 32768,
 		"iS": 8358,
 		"oA": 0,
-		"oAP": "/img/tt/healthio.png",
+		"oAP": "/img/TT/healthio.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"/img/tt/hero-placeholder.jpg": {
+	"/img/TT/hero-placeholder.jpg": {
 		"ft": 16384,
 		"iS": 242358,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/img/tt/hero-placeholder.jpg",
+		"oAP": "/img/TT/hero-placeholder.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"/img/tt/IPhone_App_Developers_Denver_2018.png": {
+	"/img/TT/IPhone_App_Developers_Denver_2018.png": {
 		"ft": 32768,
 		"iS": 147844,
 		"oA": 0,
-		"oAP": "/img/tt/IPhone_App_Developers_Denver_2018.png",
+		"oAP": "/img/TT/IPhone_App_Developers_Denver_2018.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"/img/tt/irrived.png": {
+	"/img/TT/irrived.png": {
 		"ft": 32768,
 		"iS": 18962,
 		"oA": 0,
-		"oAP": "/img/tt/irrived.png",
+		"oAP": "/img/TT/irrived.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"/img/tt/kidcase.jpg": {
+	"/img/TT/kidcase.jpg": {
 		"ft": 16384,
 		"iS": 2414,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/img/tt/kidcase.jpg",
+		"oAP": "/img/TT/kidcase.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"/img/tt/launch.png": {
+	"/img/TT/launch.png": {
 		"ft": 32768,
 		"iS": 26870,
 		"oA": 0,
-		"oAP": "/img/tt/launch.png",
+		"oAP": "/img/TT/launch.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"/img/tt/luminaid.png": {
+	"/img/TT/luminaid.png": {
 		"ft": 32768,
-		"iS": 7771,
+		"iS": 5452,
 		"oA": 0,
-		"oAP": "/img/tt/luminaid.png",
+		"oAP": "/img/TT/luminaid.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"/img/tt/maintenance.png": {
+	"/img/TT/maintenance.png": {
 		"ft": 32768,
 		"iS": 25101,
 		"oA": 0,
-		"oAP": "/img/tt/maintenance.png",
+		"oAP": "/img/TT/maintenance.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"/img/tt/nusura.jpg": {
+	"/img/TT/nusura.jpg": {
 		"ft": 16384,
 		"iS": 6870,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/img/tt/nusura.jpg",
+		"oAP": "/img/TT/nusura.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"/img/tt/pica-logo.png": {
+	"/img/TT/pica-logo.png": {
 		"ft": 32768,
 		"iS": 63991,
 		"oA": 0,
-		"oAP": "/img/tt/pica-logo.png",
+		"oAP": "/img/TT/pica-logo.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"/img/tt/process-background.jpg": {
+	"/img/TT/process-background.jpg": {
 		"ft": 16384,
 		"iS": 79400,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/img/tt/process-background.jpg",
+		"oAP": "/img/TT/process-background.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"/img/tt/project-1-background.png": {
+	"/img/TT/project-1-background.png": {
 		"ft": 32768,
 		"iS": 9262,
 		"oA": 0,
-		"oAP": "/img/tt/project-1-background.png",
+		"oAP": "/img/TT/project-1-background.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"/img/tt/project-1-mockup.png": {
+	"/img/TT/project-1-mockup.png": {
 		"ft": 32768,
-		"iS": 339684,
+		"iS": 105551,
 		"oA": 0,
-		"oAP": "/img/tt/project-1-mockup.png",
+		"oAP": "/img/TT/project-1-mockup.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"/img/tt/project-2-background.png": {
+	"/img/TT/project-2-background.png": {
 		"ft": 32768,
 		"iS": 11184,
 		"oA": 0,
-		"oAP": "/img/tt/project-2-background.png",
+		"oAP": "/img/TT/project-2-background.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"/img/tt/project-2-mockup.png": {
+	"/img/TT/project-2-mockup.png": {
 		"ft": 32768,
 		"iS": 202314,
 		"oA": 0,
-		"oAP": "/img/tt/project-2-mockup.png",
+		"oAP": "/img/TT/project-2-mockup.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"/img/tt/project-3-background.jpg": {
+	"/img/TT/project-3-background.jpg": {
 		"ft": 16384,
 		"iS": 59714,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/img/tt/project-3-background.jpg",
+		"oAP": "/img/TT/project-3-background.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"/img/tt/project-3-background.png": {
+	"/img/TT/project-3-background.png": {
 		"ft": 32768,
 		"iS": 10284,
 		"oA": 0,
-		"oAP": "/img/tt/project-3-background.png",
+		"oAP": "/img/TT/project-3-background.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"/img/tt/project-3-mockup.png": {
+	"/img/TT/project-3-mockup.png": {
 		"ft": 32768,
-		"iS": 1055504,
+		"iS": 224474,
 		"oA": 0,
-		"oAP": "/img/tt/project-3-mockup.png",
+		"oAP": "/img/TT/project-3-mockup.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"/img/tt/project-4-background.png": {
+	"/img/TT/project-4-background.png": {
 		"ft": 32768,
 		"iS": 14459,
 		"oA": 0,
-		"oAP": "/img/tt/project-4-background.png",
+		"oAP": "/img/TT/project-4-background.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"/img/tt/project-4-mockup.png": {
+	"/img/TT/project-4-mockup.png": {
 		"ft": 32768,
 		"iS": 654016,
 		"oA": 0,
-		"oAP": "/img/tt/project-4-mockup.png",
+		"oAP": "/img/TT/project-4-mockup.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"/img/tt/rage-unlimited.png": {
+	"/img/TT/rage-unlimited.png": {
 		"ft": 32768,
 		"iS": 3758,
 		"oA": 0,
-		"oAP": "/img/tt/rage-unlimited.png",
+		"oAP": "/img/TT/rage-unlimited.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"/img/tt/repz.png": {
+	"/img/TT/repz.png": {
 		"ft": 32768,
-		"iS": 56828,
+		"iS": 7830,
 		"oA": 0,
-		"oAP": "/img/tt/repz.png",
+		"oAP": "/img/TT/repz.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"/img/tt/services.jpg": {
+	"/img/TT/services.jpg": {
 		"ft": 16384,
 		"iS": 365020,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/img/tt/services.jpg",
+		"oAP": "/img/TT/services.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"/img/tt/sky-networks.png": {
+	"/img/TT/sky-networks.png": {
 		"ft": 32768,
-		"iS": 25726,
+		"iS": 5715,
 		"oA": 0,
-		"oAP": "/img/tt/sky-networks.png",
+		"oAP": "/img/TT/sky-networks.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"/img/tt/sky-networks1.png": {
+	"/img/TT/sky-networks1.png": {
 		"ft": 32768,
 		"iS": 28725,
 		"oA": 0,
-		"oAP": "/img/tt/sky-networks1.png",
+		"oAP": "/img/TT/sky-networks1.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"/img/tt/strategy.png": {
+	"/img/TT/strategy.png": {
 		"ft": 32768,
-		"iS": 22928,
+		"iS": 8094,
 		"oA": 0,
-		"oAP": "/img/tt/strategy.png",
+		"oAP": "/img/TT/strategy.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"/img/tt/synq3.png": {
+	"/img/TT/synq3.png": {
 		"ft": 32768,
 		"iS": 15758,
 		"oA": 0,
-		"oAP": "/img/tt/synq3.png",
+		"oAP": "/img/TT/synq3.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"/img/tt/synq3.svg": {
+	"/img/TT/synq3.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 2,
-		"oAP": "/img/tt/synq3.svg",
+		"oAP": "/img/TT/synq3.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"/img/tt/thinktree-logo.svg": {
+	"/img/TT/thinktree-logo.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 2,
-		"oAP": "/img/tt/thinktree-logo.svg",
+		"oAP": "/img/TT/thinktree-logo.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"/img/tt/UX_Agencies_Denver_2018.png": {
+	"/img/TT/UX_Agencies_Denver_2018.png": {
 		"ft": 32768,
 		"iS": 148186,
 		"oA": 0,
-		"oAP": "/img/tt/UX_Agencies_Denver_2018.png",
+		"oAP": "/img/TT/UX_Agencies_Denver_2018.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"/img/tt/Voiptel-Logo.png": {
+	"/img/TT/Voiptel-Logo.png": {
 		"ft": 32768,
 		"iS": 8994,
 		"oA": 0,
-		"oAP": "/img/tt/Voiptel-Logo.png",
+		"oAP": "/img/TT/Voiptel-Logo.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"/img/tt/wicis-sports.png": {
+	"/img/TT/wicis-sports.png": {
 		"ft": 32768,
 		"iS": 4632,
 		"oA": 0,
-		"oAP": "/img/tt/wicis-sports.png",
+		"oAP": "/img/TT/wicis-sports.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,

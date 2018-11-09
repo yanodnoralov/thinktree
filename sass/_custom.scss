@@ -529,9 +529,6 @@ body:not(.home) {
 	position: absolute;
 	width:100%;
 	height:100%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: right center;
 }
 
 
@@ -1167,7 +1164,7 @@ body:not(.home) {
         display: flex;
         align-items: flex-end;
         height: 450px;
-    
+
         h5 {
             margin:0px !important;
             display:flex;
@@ -1175,22 +1172,11 @@ body:not(.home) {
             text-transform:uppercase;
             padding:15px;
             color:#ffffff;
-            font-size:20px;
             background-size:cover;
-            background-position: center top;
+            background-position: center center;
             height:100%;
-            
-            &:nth-child(1) {
-                margin-bottom: 20px !important;
-            }
-
-            &:first-child {
-                font-size: 1.5em;
-                background-position: center center;
-            }
-
         }
-    
+
         .blog-left {
             height: 100%;
         }
@@ -1201,35 +1187,45 @@ body:not(.home) {
             flex-direction: column;
             justify-content: center;
             font-size:16px;
+
+            h5 {
+                background-position: center top;
+                font-size: 20px;
+                
+                &:nth-child(1) {
+                    margin-bottom: 20px!important;
+                }
+            }
+            
         }
-        
-    }
+	}
 	/*
 	#blog-1{
-        background:url(img/TT/blog-1.jpg);
-        background-size:cover;
-        background-position: center center;
-        height:100%;
+	background:url(img/TT/blog-1.jpg);
+	background-size:cover;
+	background-position: center center;
+	height:100%;
 	}
 	
 	#blog-2{
-        background:url(img/TT/blog-2.jpg);
-        background-size:cover;
-        background-position: center top;
-        height:100%;
-        font-size:20px;
-        margin-bottom: 20px !important;
+	background:url(img/TT/blog-2.jpg);
+	background-size:cover;
+	background-position: center top;
+	height:100%;
+	font-size:20px;
+	margin-bottom: 20px !important;
+	
 	}
 
 
 	#blog-3{
-        background:url(img/TT/blog-3.jpg);
-        background-size:cover;
-        background-position: center top;
-        height:100%;
-        font-size:20px;
+	background:url(img/TT/blog-3.jpg);
+	background-size:cover;
+	background-position: center top;
+	height:100%;
+	font-size:20px;
+
 	}*/
-    
 }
 
 

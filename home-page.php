@@ -110,7 +110,7 @@ get_header();
         
             <div class="product-row has-curve-bottom ">
                 <div class="product-inner">
-                <div class="parallax-bg rellax" data-rellax-speed=".75"  data-rellax-percentage="0.5"></div>
+                <div class="parallax-bg rellax" style="background-image: url(<?php echo $product_background; ?>);" data-rellax-speed=".75"  data-rellax-percentage="0.5"></div>
                 <div class="container">
                     <div class="row d-sm-flex align-items-center reverse-wrap-mobile">      
                         <div class="col-md-6 hide pl-md-0 p-left">
@@ -141,7 +141,7 @@ get_header();
                             
                             if ($product_description = get_sub_field('product_description')): ?>
                             
-                            <p><?php $product_description; ?></p>
+                            <p><?php echo $product_description; ?></p>
                             
                             <?php endif; ?>
                             
@@ -383,23 +383,18 @@ get_header();
 
                     while (have_rows('services')): the_row();
 
-                        $active = ($count == 0) ? 'active' : ''; ?>
+                        $active = ($count == 0) ? 'active' : '';
+                
+                        $service_title = get_sub_field('service_title');
+                        $service_text = get_sub_field('service_text');
+                
+                        ?>
 
                         <div class="<?php echo $active; ?>">
 
-                            <?php if ($service_title = get_sub_field('service_title')): ?>
-
                             <h4><?php echo $service_title; ?></h4>
 
-                            <?php endif; ?>
-
-                            <h4>Mobile Design</h4>
-
-                            <?php if ($service_text = get_sub_field('service_text')): ?>
-
                             <p><?php echo $service_text; ?></p>
-
-                            <?php endif; ?>
                         </div>
 
                         <?php

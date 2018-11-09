@@ -34,13 +34,13 @@ get_header();
 	
 	<div class="all-products-wrapper">
         
-        <?php if (have_rows('list_Item')): ?>
+        <?php if (have_rows('products')): ?>
         
         <?php 
         
         $count = 1;
         
-        while (have_rows('list_Item')): the_row();
+        while (have_rows('products')): the_row();
         
             $product_background = get_sub_field('product_background');
         
@@ -110,7 +110,7 @@ get_header();
         
             <div class="product-row has-curve-bottom ">
                 <div class="product-inner">
-                <div class="parallax-bg rellax" style="background-image: url(<?php echo $product_background; ?>);" data-rellax-speed=".75"  data-rellax-percentage="0.5"></div>
+                <div class="parallax-bg rellax" data-rellax-speed=".75"  data-rellax-percentage="0.5"></div>
                 <div class="container">
                     <div class="row d-sm-flex align-items-center reverse-wrap-mobile">      
                         <div class="col-md-6 hide pl-md-0 p-left">
@@ -280,11 +280,11 @@ get_header();
 	</div><!-- all-products-wrapper -->
 	
 	<?php 
-		$service1 = get_field('service_1');
-		$service2 = get_field('service_2');
-		$service3 = get_field('service_3');
-		$service4 = get_field('service_4');
-		$service5 = get_field('service_5');
+		//$service1 = get_field('service_1');
+		//$service2 = get_field('service_2');
+		//$service3 = get_field('service_3');
+		//$service4 = get_field('service_4');
+		//$service5 = get_field('service_5');
 	?>
 	
 	

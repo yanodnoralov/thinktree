@@ -44,6 +44,8 @@ get_header();
         
             $product_background = get_sub_field('product_background');
         
+            $rellax_speed = ($count == 1) ? '-1.5' : '-1';
+        
             if ($count%2 != 0):
         
             ?>
@@ -53,7 +55,7 @@ get_header();
                 <div class="parallax-bg rellax" style="background-image: url(<?php echo $product_background; ?>);" data-rellax-speed=".75"  data-rellax-percentage="0.5"></div>
                 <div class="container">
                     <div class="row d-sm-flex align-items-center reverse-wrap-mobile">
-                        <div class="col-md-6 img-wrapper rellax" data-rellax-speed="-1.5"  data-rellax-percentage="0.5">
+                        <div class="col-md-6 img-wrapper rellax" data-rellax-speed="<?php echo $rellax_speed; ?>"  data-rellax-percentage="0.5">
                             <?php if ($product_image = get_sub_field('product_image')): ?>
                             <img src="<?php echo $product_image['url']; ?>" alt="<?php echo $product_image['alt'] ?>" />
                             <?php endif; ?>
@@ -152,7 +154,7 @@ get_header();
                             <?php endif; ?>
                             
                         </div>
-                        <div class="col-md-6 img-wrapper rellax" data-rellax-speed="-1.5"  data-rellax-percentage="0.5">
+                        <div class="col-md-6 img-wrapper rellax" data-rellax-speed="<?php echo $rellax_speed; ?>"  data-rellax-percentage="0.5">
                             <?php if ($product_image = get_sub_field('product_image')): ?>
                             <img src="<?php echo $product_image['url']; ?>" alt="<?php echo $product_image['alt'] ?>" />
                             <?php endif; ?>

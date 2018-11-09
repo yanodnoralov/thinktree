@@ -570,7 +570,7 @@ get_header();
 
                     if ($accolade = get_sub_field('accolade')): ?>
 
-                    <img src="<?php echo $accolade['url']; ?>" alt="<?php echo $accolade['alt'] ?>" />
+                    <div><img src="<?php echo $accolade['url']; ?>" alt="<?php echo $accolade['alt'] ?>" /></div>
                 
                     <?php
 

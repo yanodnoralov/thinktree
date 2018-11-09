@@ -4642,6 +4642,8 @@ a.btn-header {
   .prallax_hero .container {
     position: relative;
     z-index: 1; }
+  .prallax_hero .parallax-img {
+    max-width: 600px; }
 
 @media (min-width: 768px) {
   .border-right {

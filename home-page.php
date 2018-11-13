@@ -36,32 +36,58 @@ get_header();
 	<div class="all-products-wrapper">
         
         <?php
+	    
+	    
         
         if (have_rows('products')):
 
             $count = 1;
 
             while (have_rows('products')): the_row();
+            
+            	$random_class = 'id-'.mt_rand();
 
                 $product_background = get_sub_field('product_background');
 
                 $rellax_speed = ($count == 1) ? '-1.5' : '-1';
+                
+                $invert_order = '';
 
-                if ($count%2 != 0):
+                if (get_sub_field('invert_order')) {
+	                $invert_order = " invert-columns";
+                }
 
                 ?>
+                
+                <?php if (get_sub_field('project_image_width_mobile') || get_sub_field('project_image_width')):?>
+                <style>
+	                <?php if (get_sub_field('project_image_width')):?>
+					@media (min-width:768px) {
+					.<?php echo $random_class;?> .project-img {
+						max-width: <?php the_sub_field('project_image_width'); ?>;
+					}
+					}
+					<?php endif; if (get_sub_field('project_image_width_mobile')):?>
+					@media (max-width:767px) {
+					.<?php echo $random_class;?> .project-img {
+						max-width: <?php the_sub_field('project_image_width_mobile'); ?>;
+					}
+					}
+					<?php endif;?>
+				</style>
+				<?php endif;?>
 
-                <div class="product-row has-curve-bottom ">
+                <div class="product-row <?php echo $random_class; echo $invert_order;?>">
                     <div class="product-inner">
                     <div class="parallax-bg rellax" style="background-image: url(<?php echo $product_background; ?>);" data-rellax-speed=".75"  data-rellax-percentage="0.5"></div>
                     <div class="container">
                         <div class="row d-sm-flex align-items-center reverse-wrap-mobile">
                             <div class="col-md-6 img-wrapper rellax" data-rellax-speed="<?php echo $rellax_speed; ?>"  data-rellax-percentage="0.5">
                                 <?php if ($product_image = get_sub_field('product_image')): ?>
-                                <img src="<?php echo $product_image['url']; ?>" alt="<?php echo $product_image['alt'] ?>" />
+                                <img class="project-img" src="<?php echo $product_image['url']; ?>" alt="<?php echo $product_image['alt'] ?>" />
                                 <?php endif; ?>
                             </div>            
-                            <div class="col-md-6 hide pl-md-0 p-right">
+                            <div class="col-md-6 hide pl-md-0 p-right txt-col">
 
                                 <?php if ($product_title = get_sub_field('product_title')): ?>
 
@@ -105,71 +131,10 @@ get_header();
                     </div><!-- product-inner -->
                 </div><!-- product-row -->
 
-                <?php 
-
-                else:
-
-                ?>
-
-                <div class="product-row has-curve-bottom ">
-                    <div class="product-inner">
-                    <div class="parallax-bg rellax" style="background-image: url(<?php echo $product_background; ?>);" data-rellax-speed=".75"  data-rellax-percentage="0.5"></div>
-                    <div class="container">
-                        <div class="row d-sm-flex align-items-center reverse-wrap-mobile">      
-                            <div class="col-md-6 hide pl-md-0 p-left">
-
-                                <?php if ($product_title = get_sub_field('product_title')): ?>
-
-                                <h2><?php echo $product_title; ?></h2>
-
-                                <?php
-
-                                endif;
-
-                                if( have_rows('product_tags') ):
-
-                                    echo '<div class="product-tags">';
-
-                                    // loop through the rows of data
-                                    while ( have_rows('product_tags') ) : the_row();
-
-                                        $product_tag = get_sub_field('product_tag');
-                                        echo '<div>'.get_sub_field('product_tag').'</div>';
-
-                                    endwhile;
-
-                                    echo '</div>';
-
-                                endif;
-
-                                if ($product_description = get_sub_field('product_description')): ?>
-
-                                <p><?php echo $product_description; ?></p>
-
-                                <?php endif; ?>
-
-                                <?php if ($product_link = get_sub_field('product_link')): ?>
-
-                                <a href="<?php echo $product_link['url'];?>" class="btn btn-outline btn-primary"><span class="filler"></span><?php echo $product_link['title'];?></a>
-
-                                <?php endif; ?>
-
-                            </div>
-                            <div class="col-md-6 img-wrapper rellax" data-rellax-speed="<?php echo $rellax_speed; ?>"  data-rellax-percentage="0.5">
-                                <?php if ($product_image = get_sub_field('product_image')): ?>
-                                <img src="<?php echo $product_image['url']; ?>" alt="<?php echo $product_image['alt'] ?>" />
-                                <?php endif; ?>
-                            </div>      
-                        </div>
-                    </div>
-                    </div><!-- product-inner -->
-                </div><!-- product-row -->
-
-                <?php 
 
 
-                endif;
 
+				<?php
                 $count++;
 
             endwhile;
@@ -180,7 +145,7 @@ get_header();
 		
         <div id="services" class="pt-separator-above">
             
-            <div class="container rellax" data-rellax-speed="-1" data-rellax-percentage="0.5">
+            <div class="container">
                 
                 <h3 class="white section-title">Services</h3>
                 
@@ -243,51 +208,52 @@ get_header();
 
             <div class="container">
 
-            <h3 class="text-center section-title green_border">Customers + Partners</h3>
+            	<h3 class="text-center section-title green_border">Customers + Partners</h3>
 
             <?php if (have_rows('customers_partners')): ?>
 
-            <div id="logos-container">
-
-                <?php
-
-                while (have_rows('customers_partners')): the_row();
-
-                    $logo_link = get_sub_field('logo_link');
-
-                    if ($logo_link): ?>
-
-                    <a href="<?php echo $logo_link['url'];?>" alt="<?php echo $logo_link['title']; ?>">
-
-                    <?php endif; ?>
-
-                        <?php if ($logo = get_sub_field('logo')): ?>
-
-                        <img src="<?php echo $logo['url']; ?>" alt="<?php echo $logo['alt'] ?>" />
-
-                        <?php endif; ?>
-
-                    <?php if ($logo_link): ?>
-
-                    </a>
-
-                    <?php
-
-                    endif;
-
-                endwhile;
-
-                ?>
-                
+	            <div id="logos-container">
+	
+	                <?php
+	
+		                while (have_rows('customers_partners')): the_row();
+		                
+		                	echo '<div class="logo-wrap">';
+		
+		                    $logo_link = get_sub_field('logo_link');
+		                    
+		                    $size = 'thumbnail';
+		
+		                    if ($logo_link): ?>
+		
+		                    	<a href="<?php echo $logo_link['url'];?>" alt="<?php echo $logo_link['title']; ?>">
+		
+		                    <?php endif; ?>
+		
+		                        <?php if ($logo = get_sub_field('logo')): ?>
+		                        
+		                        	<?php echo wp_get_attachment_image( $logo, $size );?>
+		
+		                        <?php endif; ?>
+		
+		                    <?php if ($logo_link): ?>
+		
+		                    	</a>
+		
+		                    <?php endif;
+		                    
+		                    echo '</div>';
+		
+		                endwhile;
+	
+	                ?>
+	                
+	            </div>
             </div>
-
-        </div><!-- our-clients -->
+			<?php endif;?>
+    	</div><!-- our-clients -->
             
-        <?php
-            
-        endif;
-            
-        if (have_rows('accolades')):
+        <?php if (have_rows('accolades')):
             
         ?>
 

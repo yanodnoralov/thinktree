@@ -520,6 +520,8 @@ body:not(.home) {
 	min-height: 100vh;
 	background:url(img/TT/hero-placeholder.jpg);
 	background-size:cover;
+	align-items: center;
+    display: flex;
 	.bg-overlay {
 		@include gradient(#00b5e9, #1839c6, vertical);
 		opacity: 0.88;
@@ -536,7 +538,15 @@ body:not(.home) {
 	span{
 		color:#3ABA5D;
 	}
-	
+}
+
+//home page
+body.home {
+	@media (min-width: 1400px) {
+		.container {
+			max-width: 1260px;
+		}
+	}
 }
 
 
@@ -669,6 +679,28 @@ body:not(.home) {
 		margin-top: 0;
 		span {
 			font-weight: 500;
+		}
+	}
+	.parallax-bg {
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center center;
+	}
+	.txt-col {
+		@include media-breakpoint-up(lg) {
+			padding-right: 10%;
+		}
+	}
+	&.invert-columns {
+		.reverse-wrap-mobile {
+			@include media-breakpoint-up(md) {
+				flex-direction: row-reverse;
+			}
+			@include media-breakpoint-up(lg) {
+				.txt-col {
+					
+				}
+			}
 		}
 	}
 }
@@ -978,9 +1010,14 @@ body:not(.home) {
 			align-items: center;
 			margin-top: 20px;
 			
-			img{
+			.logo-wrap {
 				width:20%;
-				padding:20px;
+				padding:20px 40px;
+				img {
+					max-width: 130px;
+					margin-left: auto;
+					margin-right: auto;
+				}
 			}
 		}
 }

@@ -39,7 +39,7 @@
         },
         {
             "key": "field_5aef2709a5f5a",
-            "label": "Products",
+            "label": "Projects",
             "name": "",
             "type": "tab",
             "instructions": "",
@@ -55,7 +55,7 @@
         },
         {
             "key": "field_5be4baf93b352",
-            "label": "Products",
+            "label": "Projects",
             "name": "products",
             "type": "repeater",
             "instructions": "",
@@ -72,54 +72,6 @@
             "layout": "block",
             "button_label": "",
             "sub_fields": [
-                {
-                    "key": "field_5be4bb113b353",
-                    "label": "Product Image",
-                    "name": "product_image",
-                    "type": "image",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "return_format": "array",
-                    "preview_size": "thumbnail",
-                    "library": "all",
-                    "min_width": "",
-                    "min_height": "",
-                    "min_size": "",
-                    "max_width": "",
-                    "max_height": "",
-                    "max_size": "",
-                    "mime_types": ""
-                },
-                {
-                    "key": "field_5be5b3328a07e",
-                    "label": "Product Background",
-                    "name": "product_background",
-                    "type": "image",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "return_format": "url",
-                    "preview_size": "thumbnail",
-                    "library": "all",
-                    "min_width": "",
-                    "min_height": "",
-                    "min_size": "",
-                    "max_width": "",
-                    "max_height": "",
-                    "max_size": "",
-                    "mime_types": ""
-                },
                 {
                     "key": "field_5be4bb563b354",
                     "label": "Product Title",
@@ -199,6 +151,92 @@
                     "new_lines": ""
                 },
                 {
+                    "key": "field_5be4bb113b353",
+                    "label": "Project Image",
+                    "name": "product_image",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "preview_size": "thumbnail",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": ""
+                },
+                {
+                    "key": "field_5be77bc78037d",
+                    "label": "Project image width",
+                    "name": "project_image_width",
+                    "type": "text",
+                    "instructions": "use \"px\" or \"%\" in value",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "15",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_5be77c108037f",
+                    "label": "Project image width Mobile",
+                    "name": "project_image_width_mobile",
+                    "type": "text",
+                    "instructions": "use \"px\" or \"%\" in value",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_5be5b3328a07e",
+                    "label": "Project Background",
+                    "name": "product_background",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "url",
+                    "preview_size": "thumbnail",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": ""
+                },
+                {
                     "key": "field_5be4bd243b35a",
                     "label": "Product Link",
                     "name": "product_link",
@@ -212,6 +250,25 @@
                         "id": ""
                     },
                     "return_format": "array"
+                },
+                {
+                    "key": "field_5bea59035d73e",
+                    "label": "Invert Column Order",
+                    "name": "invert_order",
+                    "type": "true_false",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "message": "",
+                    "default_value": 0,
+                    "ui": 0,
+                    "ui_on_text": "",
+                    "ui_off_text": ""
                 }
             ]
         },
@@ -338,7 +395,7 @@
                         "class": "",
                         "id": ""
                     },
-                    "return_format": "array",
+                    "return_format": "id",
                     "preview_size": "thumbnail",
                     "library": "all",
                     "min_width": "",
@@ -591,5 +648,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1541781475
+    "modified": 1542088084
 }

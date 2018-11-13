@@ -146,10 +146,14 @@ get_header();
         <div id="services" class="pt-separator-above">
             
             <div class="container">
+	            
+	            <div class="row">
+		            <div class="col-12">
+						<h2 class="white section-title mb-5">Services</h2>
+		            </div>
+	            </div>
                 
-                <h3 class="white section-title">Services</h3>
-                
-                <div id="services-inner">
+                <div id="services-inner" class="row">
 
                     <div class="services-content col-lg-8 col-md-9 col-sm-12">
 
@@ -178,7 +182,7 @@ get_header();
                                 <?php
 
                                 $service_links .= '
-                                <div class="'.$active.'">
+                                <div class="service-nav-item '.$active.'">
                                     <h5>'.$service_title.'</h5>
                                 </div>';
 

@@ -240,7 +240,7 @@ $(".info-popup").each(function(){
 
 //our services slider
 $(document).ready(function(){
-  $('.active-services-wrapper').slick({
+  $('.services-content').slick({
     adaptiveHeight: false,
     arrows: false,
     draggable: false,
@@ -251,8 +251,7 @@ $(document).ready(function(){
       breakpoint: 769,
       settings: {
         infinite: true,
-        draggable: true,
-        asNavFor: ".services-nav-wrapper",
+        draggable: true
       }
     },
     {
@@ -265,36 +264,27 @@ $(document).ready(function(){
 
   });
   
-  $('.services-nav-wrapper').slick({
+/*
+  $('.services-titles').slick({
     arrows: false,
-    asNavFor: ".active-services-wrapper",
+    asNavFor: ".services-content",
     slidesPerRow: 5,
     slidesToShow: 5,
-    infinite: true,
+    infinite: false,
     focusOnSelect: true,
     adaptiveHeight: false,
-    responsive: [
-    {
-      breakpoint: 769,
-      settings: {
-        centerMode: true,
-        centerPadding: '80px',
-        slidesPerRow: 3,
-		slidesToShow: 3,
-      }
-    },
-    {
-      breakpoint: 767,
-      settings: {
-        centerMode: true,
-        centerPadding: '100px',
-        slidesPerRow: 1,
-		slidesToShow: 1,
-		adaptiveHeight: true
-      }
-    }
-	]
+    verticalSwiping: true
   });
+*/
+  
+  	$(".service-nav-item").on('click touchstart', function(e) {
+        e.preventDefault();
+        slideIndex = $(this).index();
+        $( '.services-content' ).slick( 'slickGoTo', parseInt(slideIndex) );
+        $('.service-nav-item.active').removeClass('active');
+        $(this).removeClass("inactive").addClass("active");
+	});
+	
 });
 //window resize, refresh sliders
 var resizeTimer;

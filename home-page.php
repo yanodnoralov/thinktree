@@ -33,7 +33,7 @@ get_header();
 	</div><!-- home-hero -->
 	
 	
-	<div class="all-products-wrapper">
+	<div id="our-portfolio" class="all-products-wrapper">
         
         <?php
 	    
@@ -143,19 +143,19 @@ get_header();
         
         ?>
 		
-        <div id="services" class="pt-separator-above">
+        <div id="services" class="section-padding">
             
             <div class="container">
 	            
 	            <div class="row">
 		            <div class="col-12">
-						<h2 class="white section-title mb-5">Services</h2>
+						<h2 class="white section-title mb-3 mb-md-5">Services</h2>
 		            </div>
 	            </div>
                 
                 <div id="services-inner" class="row">
 
-                    <div class="services-content col-lg-8 col-md-9 col-sm-12">
+                    <div class="services-content col-lg-8 col-md-8 col-sm-12">
 
                         <?php
 
@@ -208,7 +208,7 @@ get_header();
             
         </div><!-- our-services -->
 
-        <div id="our-clients" class="our-clients-wrapper py-standard-separator pt-separator-above position-relative">
+        <div id="our-clients" class="our-clients-wrapper section-padding position-relative">
 
             <div class="container">
 
@@ -261,13 +261,17 @@ get_header();
             
         ?>
 
-        <div id="accolades" class="pt-separator-above">
+        <div id="accolades" class="section-padding">
 
             <div class="container">
+				
+				<div class="row">
+					<div class="col-12">
+						<h3 class="green_border">Accolades</h3>
+					</div>
+				</div>
 
-                <h3 class="green_border">Accolades</h3>
-
-                <div class="accolades-container">
+                <div class="accolades-container row">
 
                     <?php
 
@@ -275,7 +279,7 @@ get_header();
 
                         if ($accolade = get_sub_field('accolade')): ?>
 
-                        <div><img src="<?php echo $accolade['url']; ?>" alt="<?php echo $accolade['alt'] ?>" /></div>
+                        <div class="col-md-3 col-sm-6"><div class="accolade-wrap"><img src="<?php echo $accolade['url']; ?>" alt="<?php echo $accolade['alt'] ?>" /></div></div>
 
                         <?php
 
@@ -308,10 +312,10 @@ get_header();
                 $active = ($count == 1) ? ' active' : 'inactive';
                 $active_process = ($count == 1) ? ' active-process' : 'inactive-process';
 
-                $process_links .= '<div id="process-'.$count.'-title" class="'.$active.'"><span class="num">'.sprintf('%02d',$count).'</span><h5>'.$process_title.'</h5></div>';
+                $process_links .= '<div id="process-'.$count.'-title" class="process-nav-item '.$active.'"><span class="num">'.sprintf('%02d',$count).'</span><h5>'.$process_title.'</h5></div>';
 
                 $process_content .= '
-                <div id="process-'.$count.'-content" class="'.$active_process.'">';
+                <div id="process-'.$count.'-content" class="process-content-single '.$active_process.'">';
 
                     if ($process_img = get_sub_field('process_img')):
 
@@ -344,11 +348,13 @@ get_header();
 
             ?>
 
-        <div id="process" class="pt-separator-above">
-            <div class="container rellax" data-rellax-speed="-1" data-rellax-percentage="0.5">
+        <div id="process" class="section-padding">
+            <div class="container">
                 <div id="process-titles">
-                    <h3>Process</h3>
-                    <?php echo $process_links; ?>
+                    <h2>Process</h2>
+                    <div class="process-titles-slider">
+                    	<?php echo $process_links; ?>
+                    </div>
                 </div>
                 <div id="process-content">
                     <?php echo $process_content; ?>
@@ -358,11 +364,11 @@ get_header();
             
         <?php endif; ?>
 	
-        <div id="blog" class="pt-separator-above">
+        <div id="blog" class="section-padding">
 
             <div class="container">
 
-                <h3 class="green_border">Blog</h3>
+                <h2 class="green_border">Blog</h2>
 
                 <div class="blog-container row">
 
@@ -384,20 +390,21 @@ get_header();
                     foreach($posts as $post):
 
                         $featured_img_url = get_the_post_thumbnail_url($post->ID, 'full');
+                        $permlink = get_permalink($post->ID);
 
                         if ($count == 1):
 
                             echo '
                             <div class="blog-left col-lg-9">
 
-                                <h5 id="blog-'.$count.'" style="background-image: url('.$featured_img_url.');">'.$post->post_title.'</h5>
+                                <a class="blog-wrap" href="'.$permlink.'"><div class="blog-wrap-inner" id="blog-'.$count.'" style="background-image: url('.$featured_img_url.');"><p class="h4">'.$post->post_title.'</p></div></a>
 
                             </div>
                             <div class="blog-right col-lg-3">';
 
                         else:
 
-                            echo '<h5 id="blog-'.$count.'" style="background-image: url('.$featured_img_url.');">'.$post->post_title.'</h5>';
+                            echo '<a class="blog-wrap" href="'.$permlink.'"><div class="blog-wrap-inner" id="blog-'.$count.'" style="background-image: url('.$featured_img_url.');"><p>'.$post->post_title.'</p></div></a>';
 
                         endif;
 
@@ -417,7 +424,7 @@ get_header();
 
         </div>
 	
-        <div class="contact-us-wrapper pt-separator-above" id="contact">
+        <div class="contact-us-wrapper section-padding" id="contact">
 
             <div class="container">
 
@@ -425,7 +432,7 @@ get_header();
 
                     <div class="col-lg-12" data-rellax-speed="-1.5" data-rellax-percentage="0">
 
-                        <h3 class="section-title green_border">Contact</h3>
+                        <h2 class="section-title green_border">Contact</h2>
 
                     </div>
 

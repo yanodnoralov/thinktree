@@ -80,7 +80,7 @@ $("#our-services").waypoint(function(direction) {
 
 
 //our happy clients
-$(".our-clients-wrapper").waypoint(function(direction) {
+$("#services").waypoint(function(direction) {
   if (direction === 'down') {
     makeHeaderDark();
     console.log("makeHeaderDark down");
@@ -88,7 +88,7 @@ $(".our-clients-wrapper").waypoint(function(direction) {
 }, {
   offset: 0
 });
-$(".our-clients-wrapper").waypoint(function(direction) {
+$("#services").waypoint(function(direction) {
   if (direction === 'up') {
     makeHeaderDark();
     console.log("makeHeaderDark up");
@@ -261,45 +261,130 @@ $(document).ready(function(){
       }
     }
 	]
-
   });
   
-/*
-  $('.services-titles').slick({
-    arrows: false,
-    asNavFor: ".services-content",
-    slidesPerRow: 5,
-    slidesToShow: 5,
-    infinite: false,
-    focusOnSelect: true,
+  $('#process-content').slick({
     adaptiveHeight: false,
-    verticalSwiping: true
+    arrows: false,
+    draggable: false,
+    lazyLoad: true,
+    slidesPerRow: 1,
+	slidesToShow: 1,
+    fade: true,
+    responsive: [
+    {
+      breakpoint: 769,
+      settings: {
+        infinite: true,
+        draggable: true
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        arrows: false
+      }
+    }
+	]
   });
-*/
-  
-  	$(".service-nav-item").on('click touchstart', function(e) {
-        e.preventDefault();
-        slideIndex = $(this).index();
-        $( '.services-content' ).slick( 'slickGoTo', parseInt(slideIndex) );
-        $('.service-nav-item.active').removeClass('active');
-        $(this).removeClass("inactive").addClass("active");
+  	
+  	function service_titles_desktop() {
+	  	$(".service-nav-item").on('click touchstart', function(e) {
+	        e.preventDefault();
+	        slideIndex = $(this).index();
+	        $( '.services-content' ).slick( 'slickGoTo', parseInt(slideIndex) );
+	        $('.service-nav-item.active').removeClass('active');
+	        $(this).removeClass("inactive").addClass("active");
+		});
+		$('.services-titles.slick-initialized').slick('unslick');
+	}
+	
+	function process_titles_desktop() {
+	  	$(".process-nav-item").on('click touchstart', function(e) {
+	        e.preventDefault();
+	        slideIndex = $(this).index();
+	        $( '#process-content' ).slick( 'slickGoTo', parseInt(slideIndex) );
+	        $('.process-nav-item.active').removeClass('active');
+	        $(this).removeClass("inactive").addClass("active");
+		});
+		$('.process-titles.slick-initialized').slick('unslick');
+	}
+	
+	function service_titles_sliders() {
+		$('.services-titles').not('.slick-initialized').slick({
+		    arrows: false,
+		    asNavFor: ".services-content",
+		    slidesPerRow: 1,
+		    slidesToShow: 3,
+		    variableWidth: true,
+		    centerMode: true,
+		    infinite: true,
+		    focusOnSelect: true,
+		    adaptiveHeight: false,
+		});
+		$('.services-titles').on("beforeChange", function (){
+		    $(".service-nav-item.active").removeClass("active");
+		})
+		$('.services-titles').on("afterChange", function (){
+			$('.slick-current').find(".service-nav-item").addClass("active");
+		})
+	}
+	
+	function process_titles_sliders() {
+		$('.process-titles-slider').not('.slick-initialized').slick({
+		    arrows: false,
+		    asNavFor: "#process-content",
+		    slidesPerRow: 1,
+		    slidesToShow: 1,
+		    variableWidth: true,
+		    centerMode: true,
+		    infinite: true,
+		    focusOnSelect: true,
+		    adaptiveHeight: false,
+		});
+		$('.process-titles-slider').on("beforeChange", function (){
+		    $(".process-nav-item.active").removeClass("active");
+		})
+		$('.process-titles-slider').on("afterChange", function (){
+			$('.process-titles-slider .slick-current').find(".process-nav-item").addClass("active");
+		})
+	}
+	
+	if ($(window).width() >= 768) {
+		service_titles_desktop();
+		process_titles_desktop();
+	}
+	if ($(window).width() < 768) {
+		service_titles_sliders();
+		process_titles_sliders();
+	}
+	
+	
+	//window resize, refresh sliders
+	var resizeTimer;
+	$(window).on('resize', function(e) {
+	
+	  clearTimeout(resizeTimer);
+	  resizeTimer = setTimeout(function() {
+	
+	    $('.services-nav-wrapper').slick('setPosition');
+	    $('.active-services-wrapper').slick('setPosition');
+	    
+	    if ($(window).width() >= 768) {
+			service_titles_desktop();
+			process_titles_desktop();
+		}
+		if ($(window).width() < 768) {
+			service_titles_sliders();
+			process_titles_sliders();
+		}
+	            
+	  }, 250);
+	
 	});
 	
 });
-//window resize, refresh sliders
-var resizeTimer;
-$(window).on('resize', function(e) {
 
-  clearTimeout(resizeTimer);
-  resizeTimer = setTimeout(function() {
-
-    $('.services-nav-wrapper').slick('setPosition');
-    $('.active-services-wrapper').slick('setPosition');
-    console.log("sliders resized");
-            
-  }, 250);
-
-});
 
 
 

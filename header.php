@@ -66,7 +66,6 @@
 				<div class="site-branding align-self-start">
 					<div class="logo">
 							<a href="<?php echo get_home_url(); ?>">
-								<img src="<?php echo get_template_directory_uri()?>/img/TT/thinktree-logo.svg">
 						</a>
 					</div>
 					<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
@@ -106,9 +105,9 @@
 
 				</nav>
 				<?php if ( is_front_page() ) { ?>
-					<nav id="portfolio"><div id="portfolioline"></div>
-					<a href="#">PORTFOLIO</a>
-					</nav>
+					<div id="portfolio"><div id="portfolioline"></div>
+						<a href="#our-portfolio">PORTFOLIO</a>
+					</div>
 				<?php }?>
 			</div>
 		</div>

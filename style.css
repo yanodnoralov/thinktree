@@ -3159,7 +3159,7 @@ body:not(.home) .site-header {
     fill: #000;
     transition: all 0.2s ease-out; }
   .site-header.dark .logo a {
-    background-image: url(img/tt/thinktree-logo-darkk.svg); }
+    background-image: url(img/tt/thinktree-logo-dark.svg); }
   .site-header.dark #nav-toggle:before {
     color: #000; }
   .site-header.dark a.btn-header {

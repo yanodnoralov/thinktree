@@ -104,13 +104,15 @@
 				</div>
 
 				</nav>
-				<?php if ( is_front_page() ) { ?>
-					<div id="portfolio"><div id="portfolioline"></div>
-						<a href="#our-portfolio">PORTFOLIO</a>
-					</div>
-				<?php }?>
 			</div>
 		</div>
 	</header><!-- #masthead -->
+	
+	<?php if ( is_front_page() ) { ?>
+		<div id="portfolio" class="hide">
+			<div id="portfolioline"></div>
+			<a href="#our-portfolio">PORTFOLIO</a>
+		</div>
+	<?php }?>
 
 	<div id="content" class="site-content">

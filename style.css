@@ -3430,14 +3430,11 @@ body:not(.home) .site-header {
   position: relative;
   padding: 10em 0 10em 0;
   min-height: 100vh;
-  background: url(img/TT/hero-placeholder.jpg);
   background-size: cover;
   align-items: center;
   display: flex; }
   .home-hero .bg-overlay {
-    background: #00b5e9;
-    background: linear-gradient(to bottom, #00b5e9, #1839c6);
-    opacity: 0.88; }
+    background: rgba(0, 0, 0, 0.7); }
   .home-hero h1, .home-hero h3 {
     color: #fff; }
   .home-hero h1 {
@@ -3446,6 +3443,13 @@ body:not(.home) .site-header {
     font-size: 1.5em; }
   .home-hero span {
     color: #3ABA5D; }
+  .home-hero .bgvid {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: 1; }
 
 @media (min-width: 1400px) {
   body.home .container {
@@ -3751,7 +3755,7 @@ body:not(.home) .site-header {
     align-items: flex-end;
     height: 450px; }
     #blog .blog-container .blog-wrap {
-      margin: 0px !important;
+      margin: 0px;
       display: flex;
       color: #ffffff;
       background-size: cover;
@@ -4004,6 +4008,10 @@ body:not(.home) .site-header {
 .section-padding {
   padding-top: 60px;
   padding-bottom: 60px; }
+  @media (min-width: 768px) {
+    .section-padding {
+      padding-top: 100px;
+      padding-bottom: 100px; } }
 
 h3.section-title {
   margin-top: 0; }
@@ -4821,12 +4829,13 @@ body.products-template-default #primary {
   #portfolio {
     position: absolute;
     top: 43vh;
-    left: -50px;
+    left: -30px;
     -webkit-transform: rotate(270deg);
             transform: rotate(270deg);
     display: flex;
     flex-direction: column;
-    align-items: center; }
+    align-items: center;
+    z-index: 3; }
     #portfolio a {
       color: #ffffff;
       font-weight: 400; }

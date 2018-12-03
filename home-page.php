@@ -23,6 +23,11 @@ get_header();
     <main id="main" class="site-main">
 	
 	<div class="home-hero light-head">
+		<video id="top-video" playsinline="" autoplay muted="" loop poster="<?php echo get_stylesheet_directory_uri(); ?>/img/tt/tr-poster-min.jpg" class="bgvid">
+        	<source data-src="https://fishermenlabs.com/wp-content/themes/fl/dist/images/fl.webm" type="video/webm" src="<?php echo get_stylesheet_directory_uri(); ?>/img/tt/tr-hero-min.webm">
+			<source data-src="https://fishermenlabs.com/wp-content/themes/fl/dist/images/fl.mp4" type="video/mp4" src="<?php echo get_stylesheet_directory_uri(); ?>/img/tt/tr-hero-min.mp4">
+    	</video>
+    	<div class="bg-overlay"></div>
 		<div class="container hero-content">
 			<?php if ($heroContent = get_field('hero_content')): ?>
 				<h1 class="huge-title rellax" data-rellax-speed="-1" data-rellax-percentage="0.5">

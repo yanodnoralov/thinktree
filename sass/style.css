@@ -3164,7 +3164,7 @@ body:not(.home) .site-header {
     fill: #000;
     transition: all 0.2s ease-out; }
   .site-header.dark .logo a {
-    background-image: url(img/TT/thinktree-logo-dark.svg); }
+    background-image: url(img/tt/thinktree-logo-darkk.svg); }
   .site-header.dark #nav-toggle:before {
     color: #000; }
   .site-header.dark a.btn-header {
@@ -3311,7 +3311,7 @@ body:not(.home) .site-header {
   height: auto; }
   .logo a {
     display: block;
-    background: url(img/TT/thinktree-logo.svg);
+    background: url(img/tt/thinktree-logo.svg);
     background-repeat: no-repeat;
     background-size: 100%;
     width: 100%;
@@ -3467,24 +3467,24 @@ body:not(.home) .site-header {
 #healthio {
   position: relative; }
   #healthio .parallax-bg {
-    background: url(img/TT/project-1-background.png); }
+    background: url(img/tt/project-1-background.png); }
 
 #wicis-sports {
   position: relative; }
   #wicis-sports .parallax-bg {
-    background: url(img/TT/project-2-background.png); }
+    background: url(img/tt/project-2-background.png); }
   #wicis-sports img {
     max-width: 60%; }
 
 #luminaid {
   position: relative; }
   #luminaid .parallax-bg {
-    background: url(img/TT/project-3-background.png); }
+    background: url(img/tt/project-3-background.png); }
 
 #pica {
   position: relative; }
   #pica .parallax-bg {
-    background: url(img/TT/project-4-background.png); }
+    background: url(img/tt/project-4-background.png); }
 
 .product-tags {
   margin-top: 5px;
@@ -3533,7 +3533,7 @@ body:not(.home) .site-header {
       flex-direction: row-reverse; } }
 
 #services {
-  background-image: url(img/TT/services.jpg);
+  background-image: url(img/tt/services.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center bottom; }
@@ -3649,7 +3649,7 @@ body:not(.home) .site-header {
         margin: 0; }
 
 #process {
-  background: url(img/TT/process-background.jpg);
+  background: url(img/tt/process-background.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center; }
@@ -3718,14 +3718,14 @@ body:not(.home) .site-header {
 #blog {
   /*
 	#blog-1{
-	background:url(img/TT/blog-1.jpg);
+	background:url(img/tt/blog-1.jpg);
 	background-size:cover;
 	background-position: center center;
 	height:100%;
 	}
 	
 	#blog-2{
-	background:url(img/TT/blog-2.jpg);
+	background:url(img/tt/blog-2.jpg);
 	background-size:cover;
 	background-position: center top;
 	height:100%;
@@ -3736,7 +3736,7 @@ body:not(.home) .site-header {
 
 
 	#blog-3{
-	background:url(img/TT/blog-3.jpg);
+	background:url(img/tt/blog-3.jpg);
 	background-size:cover;
 	background-position: center top;
 	height:100%;
@@ -3791,7 +3791,7 @@ body:not(.home) .site-header {
 
 .contact-us-wrapper {
   position: relative;
-  background-image: url("img/TT/contact-background.jpg");
+  background-image: url("img/tt/contact-background.jpg");
   padding-bottom: 160px; }
   .contact-us-wrapper .section-title {
     color: #ffffff;

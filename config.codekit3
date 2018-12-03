@@ -151,17 +151,6 @@
 		"oT": 1,
 		"q": 100
 		},
-	"/img/Application-Infrastructure.png": {
-		"ft": 32768,
-		"iS": 3010,
-		"oA": 0,
-		"oAP": "/img/Application-Infrastructure.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
 	"/img/caret.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -304,17 +293,6 @@
 		"oT": 1,
 		"q": 100
 		},
-	"/img/consulting-support.png": {
-		"ft": 32768,
-		"iS": 5000,
-		"oA": 0,
-		"oAP": "/img/consulting-support.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
 	"/img/contact-bg.jpg": {
 		"ft": 16384,
 		"iS": 58171,
@@ -326,193 +304,11 @@
 		"opt": 1,
 		"q": 100
 		},
-	"/img/contact-map.png": {
-		"ft": 32768,
-		"iS": 48300,
-		"oA": 0,
-		"oAP": "/img/contact-map.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/img/database.png": {
-		"ft": 32768,
-		"iS": 4301,
-		"oA": 0,
-		"oAP": "/img/database.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/img/file-icon.png": {
-		"ft": 32768,
-		"iS": 629,
-		"oA": 0,
-		"oAP": "/img/file-icon.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/img/general-service.png": {
-		"ft": 32768,
-		"iS": 8543,
-		"oA": 0,
-		"oAP": "/img/general-service.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
 	"/img/google-play.png": {
 		"ft": 32768,
 		"iS": 13281,
 		"oA": 0,
 		"oAP": "/img/google-play.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/img/hero-first-frame.jpg": {
-		"ft": 16384,
-		"iS": 98109,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/img/hero-first-frame.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/img/hero-hq.mp4": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "/img/hero-hq.mp4",
-		"oF": 0
-		},
-	"/img/hero-lq.mp4": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "/img/hero-lq.mp4",
-		"oF": 0
-		},
-	"/img/info-icon.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "/img/info-icon.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"/img/infrastructure.png": {
-		"ft": 32768,
-		"iS": 3829,
-		"oA": 0,
-		"oAP": "/img/infrastructure.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/img/inside-page-icons/sky-dance/skydance-a sip.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "/img/inside-page-icons/sky-dance/skydance-a sip.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"/img/inside-page-icons/sky-dance/skydance-database.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "/img/inside-page-icons/sky-dance/skydance-database.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"/img/inside-page-icons/sky-dance/skydance-infrastructure.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "/img/inside-page-icons/sky-dance/skydance-infrastructure.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"/img/inside-page-icons/sky-dance/skydance-inter cluster.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "/img/inside-page-icons/sky-dance/skydance-inter cluster.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"/img/inside-page-icons/sky-dance/skydance-process.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "/img/inside-page-icons/sky-dance/skydance-process.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"/img/inside-page-icons/sky-dance/skydance-reporting.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "/img/inside-page-icons/sky-dance/skydance-reporting.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"/img/inside-page-icons/sky-dance/skydance-session controller.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "/img/inside-page-icons/sky-dance/skydance-session controller.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"/img/inter-cluster.png": {
-		"ft": 32768,
-		"iS": 3742,
-		"oA": 0,
-		"oAP": "/img/inter-cluster.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/img/mail-icon.png": {
-		"ft": 32768,
-		"iS": 1853,
-		"oA": 0,
-		"oAP": "/img/mail-icon.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -528,140 +324,6 @@
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
-		},
-	"/img/mobile-development-phone.png": {
-		"ft": 32768,
-		"iS": 13630,
-		"oA": 0,
-		"oAP": "/img/mobile-development-phone.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/img/mobile-development.png": {
-		"ft": 32768,
-		"iS": 7271,
-		"oA": 0,
-		"oAP": "/img/mobile-development.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/img/phone-app-full.png": {
-		"ft": 32768,
-		"iS": 0,
-		"oA": 0,
-		"oAP": "/img/phone-app-full.png",
-		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
-		},
-	"/img/phone-app-left.png": {
-		"ft": 32768,
-		"iS": 0,
-		"oA": 0,
-		"oAP": "/img/phone-app-left.png",
-		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
-		},
-	"/img/phone-app-right.jpg": {
-		"ft": 16384,
-		"iS": 111015,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/img/phone-app-right.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/img/phone-app-right.png": {
-		"ft": 32768,
-		"iS": 132805,
-		"oA": 0,
-		"oAP": "/img/phone-app-right.png",
-		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
-		},
-	"/img/phone-app-right.psd": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "/img/phone-app-right.psd",
-		"oF": 0
-		},
-	"/img/phone-app-selective.png": {
-		"ft": 32768,
-		"iS": 283431,
-		"oA": 0,
-		"oAP": "/img/phone-app-selective.png",
-		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
-		},
-	"/img/phone-app-selective.psd": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "/img/phone-app-selective.psd",
-		"oF": 0
-		},
-	"/img/process-management.png": {
-		"ft": 32768,
-		"iS": 3473,
-		"oA": 0,
-		"oAP": "/img/process-management.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/img/protocol-expertise.png": {
-		"ft": 32768,
-		"iS": 8727,
-		"oA": 0,
-		"oAP": "/img/protocol-expertise.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/img/protocol-icon.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "/img/protocol-icon.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"/img/reporting.png": {
-		"ft": 32768,
-		"iS": 3292,
-		"oA": 0,
-		"oAP": "/img/reporting.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
 		},
 	"/img/seperators/seperator-circle-alt-reverse.svg": {
 		"ft": 2097152,
@@ -723,223 +385,14 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"/img/services-bg-sm.jpg": {
-		"ft": 16384,
-		"iS": 399317,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/img/services-bg-sm.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 1,
-		"q": 100
-		},
-	"/img/services-bg.jpg": {
-		"ft": 16384,
-		"iS": 527777,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/img/services-bg.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/img/services/active/active-Application Infrastructure copy.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "/img/services/active/active-Application Infrastructure copy.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"/img/services/active/active-consulting-support copy.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "/img/services/active/active-consulting-support copy.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"/img/services/active/active-general-service.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "/img/services/active/active-general-service.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"/img/services/active/active-mobile development.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "/img/services/active/active-mobile development.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"/img/services/active/active-protocol-expertise.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "/img/services/active/active-protocol-expertise.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"/img/services/Application Infrastructure.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "/img/services/Application Infrastructure.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"/img/services/consulting-support.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "/img/services/consulting-support.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"/img/services/general-service.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "/img/services/general-service.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"/img/services/mobile-development2.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "/img/services/mobile-development2.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"/img/services/Protocol Expertise.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "/img/services/Protocol Expertise.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"/img/session-controller.jpg": {
-		"ft": 16384,
-		"iS": 49043,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/img/session-controller.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/img/sky-dance-globe-sm8.png": {
-		"ft": 32768,
-		"iS": 25155,
-		"oA": 0,
-		"oAP": "/img/sky-dance-globe-sm8.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/img/sky-dance-web.png": {
-		"ft": 32768,
-		"iS": 71709,
-		"oA": 0,
-		"oAP": "/img/sky-dance-web.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/img/sky-networks-1.jpg": {
-		"ft": 16384,
-		"iS": 28379,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/img/sky-networks-1.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/img/sky-networks-2.jpg": {
-		"ft": 16384,
-		"iS": 109349,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/img/sky-networks-2.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/img/sky-networks-logo-default.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "/img/sky-networks-logo-default.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"/img/sky-pbx-img.jpg": {
-		"ft": 16384,
-		"iS": 49832,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/img/sky-pbx-img.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 1,
-		"q": 100
-		},
-	"/img/sky-ss7-gateway.jpg": {
-		"ft": 16384,
-		"iS": 61934,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/img/sky-ss7-gateway.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
 	"/img/skynetwork_logo_full_res.png": {
 		"ft": 32768,
 		"iS": 104403,
 		"oA": 0,
 		"oAP": "/img/skynetwork_logo_full_res.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -1476,17 +929,6 @@
 		"iS": 227089,
 		"oA": 0,
 		"oAP": "/img/wicis-3.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/img/year.png": {
-		"ft": 32768,
-		"iS": 8492,
-		"oA": 0,
-		"oAP": "/img/year.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -2891,6 +2333,13 @@
 		"oAP": "/style_REMOTE_92431-min.css",
 		"oF": 0,
 		"oS": 3
+		},
+	"/template-parts/content-no-title.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/template-parts/content-no-title.php",
+		"oF": 0
 		},
 	"/template-parts/content-none.php": {
 		"cB": 0,

@@ -3045,6 +3045,24 @@ h6, .h6 {
   margin: 0.7em 0;
   font-size: .8em; }
 
+body:not(.home) h1, body:not(.home) .h1 {
+  font-size: 3em; }
+
+body:not(.home) h2, body:not(.home) .h2 {
+  font-size: 2.6em; }
+
+body:not(.home) h3, body:not(.home) .h3 {
+  font-size: 2.25em; }
+
+body:not(.home) h4, body:not(.home) .h4 {
+  font-size: 1.9em; }
+
+body:not(.home) h5, body:not(.home) .h6 {
+  font-size: 1.5em; }
+
+body:not(.home) h6, body:not(.home) .h6 {
+  font-size: 1.2em; }
+
 .white-text, p.white-text {
   color: white; }
 
@@ -3414,7 +3432,8 @@ body:not(.home) .site-header {
   min-height: 100vh;
   background-size: cover;
   align-items: center;
-  display: flex; }
+  display: flex;
+  overflow: hidden; }
   .home-hero .bg-overlay {
     background: rgba(0, 0, 0, 0.7); }
   .home-hero h1, .home-hero h3 {
@@ -4061,7 +4080,8 @@ h3.section-title {
   max-width: none;
   padding-left: 30px;
   padding-right: 30px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  width: 100%; }
 
 .bg-overlay {
   position: absolute;
@@ -4199,10 +4219,6 @@ a.btn-header {
   @media (min-width: 992px) {
     .hero {
       min-height: 700px; } }
-  .hero.single-hero {
-    min-height: 0;
-    padding-top: 160px;
-    padding-bottom: 80px; }
   .hero .custom-container {
     width: 100%;
     height: 100%;
@@ -4222,11 +4238,17 @@ a.btn-header {
       height: 100%;
       display: flex;
       flex-wrap: wrap; }
+      @media (min-width: 992px) {
+        .hero .custom-container .rowz {
+          padding-left: 30px; } }
       @media screen and (min-width: 1460px) {
         .hero .custom-container .rowz {
           max-width: 1460px;
           margin-left: auto;
           margin-right: auto; } }
+      @media screen and (min-width: 1520px) {
+        .hero .custom-container .rowz {
+          max-width: 1500px; } }
       .hero .custom-container .rowz .content-col {
         align-items: center;
         display: flex;
@@ -4240,8 +4262,8 @@ a.btn-header {
           text-align: left; }
           @media (min-width: 768px) {
             .hero .custom-container .rowz .content-col .entry-header {
-              padding-left: 15px;
-              padding-right: 15px; } }
+              padding-right: 15px;
+              padding-left: 15px; } }
           @media (min-width: 992px) {
             .hero .custom-container .rowz .content-col .entry-header {
               padding-left: 30px; } }
@@ -4306,6 +4328,10 @@ a.btn-header {
           position: absolute;
           left: 0;
           bottom: 0; } }
+  .hero.single-hero {
+    min-height: 0;
+    padding-top: 160px;
+    padding-bottom: 80px; }
 
 .section {
   background-size: cover;
@@ -4395,6 +4421,9 @@ a.btn-header {
   @media (max-width: 991.98px) {
     .section h2 br {
       display: none; } }
+
+.section .boxes-row .boxes-col:not(:last-child) {
+  margin-bottom: 30px; }
 
 .about-deliverables ul {
   color: #555; }

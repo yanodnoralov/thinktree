@@ -11,7 +11,7 @@ get_header();
 ?>
 
 <div class="hero single-hero mb-5">
-	<div class="container">
+	<div class="container-wide">
 		<div class="row">
 			<div class="col-12">
 				<?php the_title( '<h1 class="entry-title">', '</h1>' );?>

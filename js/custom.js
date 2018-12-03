@@ -3,9 +3,18 @@ var bod = $("body");
 var menuItemWithSub = $(".menu-item.menu-item-has-children > a");
 var mastHead = $("#masthead");
 var vid = document.getElementById("hero_vid"); 
+var headerContact = $("#header-contact");
 
 $(document).ready(function(){
 	bod.addClass("hide-elements")
+	
+	headerContact.on('click touchstart', function() {
+		if ( $('body.open-menu').length ) {
+			setTimeout(function(){
+				closeMenuFunction();
+			}, 50);
+		}
+	});
 })
 
 inView('.hide').on('enter', function(t) {

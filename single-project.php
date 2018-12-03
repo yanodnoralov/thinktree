@@ -90,10 +90,10 @@ get_header();
 				<div class="container">
 					<div class="row">
 						<div class="col-12">
-							<div class="next-article-inner">
+							<a class="next-article-inner" href="<?php echo get_permalink( $prev_post->ID ); ?>">
 								<p class="h5">NEXT PROJECT</p>
 								<p class="h2"><?php echo get_the_title( $next_post->ID ); ?></p>
-							</div>
+							</a>
 						</div>
 					</div>
 				</div>

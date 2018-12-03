@@ -217,7 +217,7 @@ get_header();
 
             <div class="container">
 
-            	<h3 class="text-center section-title green_border">Customers + Partners</h3>
+            	<h2 class="text-center section-title green_border">Customers + Partners</h2>
 
             <?php if (have_rows('customers_partners')): ?>
 
@@ -272,7 +272,7 @@ get_header();
 				
 				<div class="row">
 					<div class="col-12">
-						<h3 class="green_border">Accolades</h3>
+						<h2 class="green_border">Accolades</h2>
 					</div>
 				</div>
 

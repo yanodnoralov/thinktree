@@ -298,7 +298,7 @@ $(document).ready(function(){
   });
   	
   	function service_titles_desktop() {
-	  	$(".service-nav-item").on('click touchstart', function(e) {
+	  	$(".service-nav-item").on('click touchstart mouseover', function(e) {
 	        e.preventDefault();
 	        slideIndex = $(this).index();
 	        $( '.services-content' ).slick( 'slickGoTo', parseInt(slideIndex) );
@@ -309,7 +309,7 @@ $(document).ready(function(){
 	}
 	
 	function process_titles_desktop() {
-	  	$(".process-nav-item").on('click touchstart', function(e) {
+	  	$(".process-nav-item").on('click touchstart mouseover', function(e) {
 	        e.preventDefault();
 	        slideIndex = $(this).index();
 	        $( '#process-content' ).slick( 'slickGoTo', parseInt(slideIndex) );

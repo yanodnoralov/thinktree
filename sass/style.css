@@ -3861,7 +3861,7 @@ body:not(.home) .site-header {
   .form-wrap p {
     margin-bottom: 20px; }
   .form-wrap input.btn {
-    color: #ffffff;
+    color: #3ABA5D;
     padding: 12px 30px;
     min-width: 200px;
     font-size: 0.8em;
@@ -3871,12 +3871,22 @@ body:not(.home) .site-header {
     margin-top: -5px;
     line-height: 24px;
     cursor: pointer;
-    border-color: #ffffff; }
+    border-color: #ffffff;
+    background: white; }
     .form-wrap input.btn:hover {
       border-color: #ffffff; }
     .form-wrap input.btn:focus {
       outline: none;
       border-color: #ffffff; }
+  @media (min-width: 768px) {
+    .form-wrap .contact-foot {
+      display: flex; }
+      .form-wrap .contact-foot .w-half {
+        width: 50%;
+        display: flex;
+        align-content: center; }
+        .form-wrap .contact-foot .w-half .wpcf7-form-control-wrap {
+          margin-bottom: 0; } }
 
 .site-footer {
   background: #f4f4f4;

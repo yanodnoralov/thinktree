@@ -3894,7 +3894,7 @@ body:not(.home) .site-header {
     color: #3ABA5D;
     padding: 12px 30px;
     min-width: 200px;
-    font-size: 0.8em;
+    font-size: 0.9em;
     font-family: "work-sans", sans-serif;
     background: none;
     border-radius: 0;
@@ -3914,7 +3914,8 @@ body:not(.home) .site-header {
       .form-wrap .contact-foot .w-half {
         width: 50%;
         display: flex;
-        align-content: center; }
+        align-content: center;
+        align-items: center; }
         .form-wrap .contact-foot .w-half .wpcf7-form-control-wrap {
           margin-bottom: 0; } }
 

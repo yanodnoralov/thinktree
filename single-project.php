@@ -84,35 +84,42 @@ get_header();
 	        
 	    
 		$next_post = get_next_post();
+		$next_post_id = $next_post->ID;
+		
 		$prev_post = get_previous_post();
-		if ( $next_post ) : ?>
-			<div class="next-article-wrapper section">
-				<div class="container">
-					<div class="row">
-						<div class="col-12">
-							<a class="next-article-inner" href="<?php echo get_permalink( $prev_post->ID ); ?>">
-								<p class="h5">NEXT PROJECT</p>
-								<p class="h2"><?php echo get_the_title( $next_post->ID ); ?></p>
-							</a>
+		$prev_post_id = $prev_post->ID;
+		
+		if (get_the_ID() !== $next_post_id->ID || get_the_ID() !== $prev_post_id->ID ) {
+			if ( $next_post ) : ?>
+				<div class="next-article-wrapper section">
+					<div class="container">
+						<div class="row">
+							<div class="col-12">
+								<a class="next-article-inner" href="<?php echo get_permalink( $next_post_id ); ?>">
+									<p class="h5">NEXT PROJECT</p>
+									<p class="h2"><?php echo get_the_title( $next_post_id ); ?></p>
+								</a>
+							</div>
 						</div>
 					</div>
 				</div>
-			</div>
+			<?php
+			elseif ( $prev_post ) : ?>
+				<div class="next-article-wrapper section">
+					<div class="container">
+						<div class="row">
+							<div class="col-12">
+								<a class="next-article-inner" href="<?php echo get_permalink( $prev_post->ID ); ?>">
+									<p class="h5">PREVIOUS PROJECT</p>
+									<p class="h2"><?php echo get_the_title( $prev_post->ID ); ?></p>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			<?php endif;?>
 		<?php
-		elseif ( $prev_post ) : ?>
-			<div class="next-article-wrapper section">
-				<div class="container">
-					<div class="row">
-						<div class="col-12">
-							<a class="next-article-inner" href="<?php echo get_permalink( $prev_post->ID ); ?>">
-								<p class="h5">PREVIOUS PROJECT</p>
-								<p class="h2"><?php echo get_the_title( $prev_post->ID ); ?></p>
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		<?php endif;?>
+		} ?>
 
 		<?php
 		endwhile; // End of the loop.

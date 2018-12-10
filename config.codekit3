@@ -293,6 +293,24 @@
 		"opt": 1,
 		"q": 100
 		},
+	"/img/favicon": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/img/favicon",
+		"oF": 0
+		},
+	"/img/fi.png": {
+		"ft": 32768,
+		"iS": 63341,
+		"oA": 0,
+		"oAP": "/img/fi.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"/img/google-play.png": {
 		"ft": 32768,
 		"iS": 13281,

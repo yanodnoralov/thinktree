@@ -1139,7 +1139,7 @@ body.home {
 	div.wpcf7-response-output {
 		margin: 15px 0;
 		padding: 10px 15px;
-		background: #f3eb78;
+		background: #d6cd4b;
 		border: 0;
 		font-size: 18px;
 	}
@@ -2068,6 +2068,22 @@ body.products-template-default {
 }
 
 //contact forms
+
+.contact-us-wrapper {
+	.form-wrap .wpcf7 {
+		background: rgba(0,0,0,0.2);
+		border-radius: 4px;
+		padding: 30px;
+	}
+	.green_border {
+		&::before {
+			background: #49a345;
+		}
+		&::after {
+			background: #49a345;
+		}
+	}
+}
 .wpcf7 {
 	input, select {
 		background: none;

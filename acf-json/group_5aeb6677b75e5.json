@@ -38,6 +38,46 @@
             "maxlength": ""
         },
         {
+            "key": "field_5c0aefbed0da6",
+            "label": "Highlight Words",
+            "name": "highlighted_words",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "table",
+            "button_label": "",
+            "sub_fields": [
+                {
+                    "key": "field_5c0af02ad0da7",
+                    "label": "Word",
+                    "name": "word",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                }
+            ]
+        },
+        {
             "key": "field_5aef2709a5f5a",
             "label": "Projects",
             "name": "",
@@ -648,5 +688,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1542088084
+    "modified": 1544220955
 }

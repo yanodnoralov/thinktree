@@ -33,6 +33,38 @@ get_header();
 				<h1 class="huge-title rellax" data-rellax-speed="-1" data-rellax-percentage="0.5">
 					<?php echo $heroContent; ?>
 				</h1>
+				<div class="d-none highlight-words">
+					<?php
+						$word_count = count(get_field('highlighted_words'));
+						while (have_rows('highlighted_words')): the_row();
+							if (get_sub_field('word')) {
+								echo '<span>'.get_sub_field('word').'</span>';
+							}
+						endwhile;
+					?>
+				</div>
+				<script>
+					jQuery(document).ready(function(){
+						$wordCount = <?php echo $word_count;?>+1;
+						$highlight_word = jQuery(".hero-content .huge-title span");
+						$word1 = jQuery(".hero-content .huge-title span").html();
+	
+						var typewriter = new Typewriter($highlight_word[0], {
+						    loop: true,
+						    blinkSpeed: 100,
+						    cursor: ''
+						});
+						
+						typewriter.typeString($word1)
+							.pauseFor(3000)
+							<?php while (have_rows('highlighted_words')): the_row(); ?>
+							    .deleteAll()
+							    .typeString('<?php the_sub_field('word');?>')
+							    .pauseFor(3000)
+						    <?php endwhile;?>
+						    .start();
+					});
+				</script>
 			<?php endif; ?>
 		</div>
 	</div><!-- home-hero -->

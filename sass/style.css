@@ -3816,7 +3816,7 @@ body:not(.home) .site-header {
   .contact-us-wrapper div.wpcf7-response-output {
     margin: 15px 0;
     padding: 10px 15px;
-    background: #f3eb78;
+    background: #d6cd4b;
     border: 0;
     font-size: 18px; }
 
@@ -4575,6 +4575,17 @@ body.products-template-default #primary {
     background-repeat: no-repeat;
     padding: 15px 45px;
     cursor: pointer; }
+
+.contact-us-wrapper .form-wrap .wpcf7 {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  padding: 30px; }
+
+.contact-us-wrapper .green_border::before {
+  background: #49a345; }
+
+.contact-us-wrapper .green_border::after {
+  background: #49a345; }
 
 .wpcf7 input, .wpcf7 select {
   background: none;

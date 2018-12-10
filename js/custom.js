@@ -17,20 +17,24 @@ $(document).ready(function(){
 	});
 })
 
-inView('.hide').on('enter', function(t) {
-	setTimeout(function(){
-			$(t).addClass("now-in-view");
-		}, 200);
-});
+if ($(".hide").length) {
+	inView('.hide').on('enter', function(t) {
+		setTimeout(function(){
+				$(t).addClass("now-in-view");
+			}, 200);
+	});
+}
 
-var rellax = new Rellax('.rellax', {
-    center: false,
-    round: true,
-    vertical: true,
-    horizontal: false
-});
-if ($(window).width() < 576) {
-	rellax.destroy();
+if ($(".rellax").length) {
+	var rellax = new Rellax('.rellax', {
+	    center: false,
+	    round: true,
+	    vertical: true,
+	    horizontal: false
+	});
+	if ($(window).width() < 576) {
+		rellax.destroy();
+	}
 }
 
 // home hero waypoint 

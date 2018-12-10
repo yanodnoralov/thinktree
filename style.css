@@ -4657,6 +4657,8 @@ body.products-template-default #primary {
     background-repeat: no-repeat;
     padding: 15px 45px;
     cursor: pointer; }
+  .footer-cta .contact-us-wrapper {
+    background: none; }
 
 .contact-us-wrapper .form-wrap .wpcf7 {
   background: rgba(0, 0, 0, 0.2);

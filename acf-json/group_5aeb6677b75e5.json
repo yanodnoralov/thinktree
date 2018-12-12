@@ -23,7 +23,7 @@
             "label": "Hero Content",
             "name": "hero_content",
             "type": "text",
-            "instructions": "To color a word, please add \"<span>\" at the beginning of the work and \"<\/span>\" at the end of the word.  Please do not include the quotes(\"). (i.e.  <span>convert<\/span>)",
+            "instructions": "Be careful not to remove the html markup when editing",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -42,7 +42,7 @@
             "label": "Highlight Words",
             "name": "highlighted_words",
             "type": "repeater",
-            "instructions": "",
+            "instructions": "the typewriter effect words",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -688,5 +688,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1544220955
+    "modified": 1544635708
 }

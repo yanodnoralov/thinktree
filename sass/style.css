@@ -4472,7 +4472,10 @@ a.btn-header {
     position: relative;
     z-index: 1; }
   .prallax_hero .parallax-img {
-    max-width: 600px; }
+    max-width: 100%; }
+    @media (min-width: 768px) {
+      .prallax_hero .parallax-img {
+        max-width: 600px; } }
 
 @media (min-width: 768px) {
   .border-right {

@@ -1929,7 +1929,10 @@ $spacerx: 3.5rem;
 		z-index: 1;
 	}
 	.parallax-img {
-		max-width: 600px;
+		max-width: 100%;
+		@include media-breakpoint-up(md) {
+			max-width: 600px;
+		}
 	}
 }
 

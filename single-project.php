@@ -20,7 +20,7 @@ get_header();
 	$header_bg = "background-color:".get_field('header_bg').";";
 } 
 if( get_field('header_image') ){
-	$header_bg_img = 'background-image: url("'.get_field("header_image").'";';
+	$header_bg_img = 'background-image: url("'.get_field("header_image").'");';
 }
 ?>
 
@@ -59,9 +59,6 @@ if( get_field('header_image') ){
 				</header><!-- .entry-header -->
 			</div>
 			<div class="img-col">
-				<?php if( get_field('header_image') ): ?>
-					<div class="img-overlay" style="background-image: url('<?php the_field('header_image'); ?>');"></div>
-				<?php endif; ?>
 				<?php if( get_field('parallax_image') ): ?>
 					<div class="parallax-overlay rellax" data-rellax-speed="-1" data-rellax-percentage="0.5">
 						<img class="parallax-img hide" src="<?php the_field('parallax_image'); ?>"/>

@@ -1606,6 +1606,9 @@ $color-primary-mix: darken($color-primary, 10%);
 	display: flex;
 	align-items: stretch;
 	overflow: hidden;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
 	@include media-breakpoint-up(lg) {
 		min-height: 700px;
 	}

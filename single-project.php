@@ -20,7 +20,7 @@ get_header();
 	$header_bg = "background-color:".get_field('header_bg');
 } 
 if( get_field('header_image') ){
-	$header_bg_img = 'background-image: url("'.the_field("header_image");.'";';
+	$header_bg_img = 'background-image: url("'.get_field("header_image").'";';
 }
 ?>
 

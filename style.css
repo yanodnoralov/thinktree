@@ -4283,6 +4283,9 @@ a.btn-header {
   display: flex;
   align-items: stretch;
   overflow: hidden;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
   /*
 	.container {
 		z-index: 5;

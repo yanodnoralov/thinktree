@@ -18,7 +18,11 @@ get_header();
 <?php if( get_field('header_bg') ) {
 	$has_bg_color = "has_bg_color";
 	$header_bg = "background-color:".get_field('header_bg');
-} ?>
+} 
+if( get_field('header_image') ){
+	$header_bg_img = 'background-image: url("'.the_field("header_image");.'";';
+}
+?>
 
 <style>
 	.hero .parallax-overlay .parallax-img {
@@ -43,7 +47,7 @@ get_header();
 	}
 </style>
 
-<div class="hero <?php echo $has_bg_color;?>" style="<?php echo $header_bg;?>">
+<div class="hero <?php echo $has_bg_color;?>" style='<?php echo $header_bg; echo $header_bg_img;?>'>
 	<div class="custom-container">
 		<div class="rowz">
 			<div class="content-col">

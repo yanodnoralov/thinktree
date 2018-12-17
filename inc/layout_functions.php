@@ -337,7 +337,7 @@ function get_template_by_layout($layout){
 		                        </div>
 	                        <?php endif;?>
 							<?php if ( get_sub_field('ios_link') || get_sub_field('android_link')):?>
-								<p class="h4">Available for <?php if ( get_sub_field('ios_link')){ 'iOS';} if ( get_sub_field('ios_link') && get_sub_field('android_link')) { echo ' and ';} if ( get_sub_field('android_link')){ echo 'Android';}?></p>
+								<p class="h4">Available for <?php if ( get_sub_field('ios_link')){ echo 'iOS';} if ( get_sub_field('ios_link') && get_sub_field('android_link')) { echo ' and ';} if ( get_sub_field('android_link')){ echo 'Android';}?></p>
 		                        <?php if ( get_sub_field('ios_link')):?>
 			                    	<a href="<?php echo get_sub_field('ios_link');?>" class="ios-link"><img width="140" height="45" src="<?php echo get_stylesheet_directory_uri();?>/img/app-store.png"/></a>
 			                    <?php endif; ?>

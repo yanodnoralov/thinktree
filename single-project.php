@@ -17,7 +17,7 @@ get_header();
 
 <?php if( get_field('header_bg') ) {
 	$has_bg_color = "has_bg_color";
-	$header_bg = "background-color:".get_field('header_bg');
+	$header_bg = "background-color:".get_field('header_bg').";";
 } 
 if( get_field('header_image') ){
 	$header_bg_img = 'background-image: url("'.get_field("header_image").'";';

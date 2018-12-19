@@ -253,6 +253,37 @@ $(".info-popup").each(function(){
 
 //our services slider
 $(document).ready(function(){
+	
+  $('.accolades-container').slick({
+    adaptiveHeight: false,
+    arrows: false,
+    draggable: true,
+    lazyLoad: false,
+    fade: false,
+    slidesPerRow: 1,
+	slidesToShow: 4,
+    responsive: [
+    {
+      breakpoint: 769,
+      settings: {
+        infinite: true,
+        draggable: true,
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        arrows: false,
+        slidesPerRow: 1,
+		slidesToShow: 2,
+		dots: true
+      }
+    }
+	]
+  });
+  
+	
+	
   $('.services-content').slick({
     adaptiveHeight: false,
     arrows: false,

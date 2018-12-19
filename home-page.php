@@ -308,7 +308,7 @@ get_header();
 					</div>
 				</div>
 
-                <div class="accolades-container row">
+                <div class="accolades-container rowx">
 
                     <?php
 
@@ -316,7 +316,7 @@ get_header();
 
                         if ($accolade = get_sub_field('accolade')): ?>
 
-                        <div class="col-md-3 col-sm-6"><div class="accolade-wrap"><img src="<?php echo $accolade['url']; ?>" alt="<?php echo $accolade['alt'] ?>" /></div></div>
+                        <div class="accolade col-md-3x col-sm-6x"><div class="accolade-wrap"><img src="<?php echo $accolade['url']; ?>" alt="<?php echo $accolade['alt'] ?>" /></div></div>
 
                         <?php
 

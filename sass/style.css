@@ -3650,6 +3650,9 @@ body:not(.home) .site-header {
         width: 100%;
         height: auto;
         margin: 0; }
+  #accolades .slick-track {
+    display: flex;
+    align-items: center; }
   #accolades .slick-dots {
     width: 100%;
     display: block;

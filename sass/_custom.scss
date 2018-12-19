@@ -898,6 +898,11 @@ body.home {
         
 	}
 	
+	.slick-track {
+		display: flex;
+		align-items: center;
+	}
+	
 	.slick-dots {
 		width: 100%;
 		display: block;

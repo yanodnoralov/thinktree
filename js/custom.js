@@ -262,12 +262,14 @@ $(document).ready(function(){
     fade: false,
     slidesPerRow: 1,
 	slidesToShow: 4,
+	dots: true,
     responsive: [
     {
       breakpoint: 769,
       settings: {
         infinite: true,
         draggable: true,
+        dots: true
       }
     },
     {

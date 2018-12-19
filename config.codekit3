@@ -922,14 +922,25 @@
 		"oT": 1,
 		"q": 100
 		},
+	"/img/tt/wici-mockup.png": {
+		"ft": 32768,
+		"iS": 215785,
+		"oA": 0,
+		"oAP": "/img/tt/wici-mockup.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 2,
+		"q": 100
+		},
 	"/img/tt/wicis-sports.png": {
 		"ft": 32768,
 		"iS": 4632,
 		"oA": 0,
 		"oAP": "/img/tt/wicis-sports.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
